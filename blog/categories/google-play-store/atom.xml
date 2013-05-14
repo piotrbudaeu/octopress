@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: google play store | Software Development Ramblings]]></title>
+  <link href="http://piotrbuda.eu/blog/categories/google-play-store/atom.xml" rel="self"/>
+  <link href="http://piotrbuda.eu/"/>
+  <updated>2013-05-14T14:31:53+02:00</updated>
+  <id>http://piotrbuda.eu/</id>
+  <author>
+    <name><![CDATA[Piotr Buda]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Play Store API on GitHub.com]]></title>
+    <link href="http://piotrbuda.eu/2012/07/play-store-api-on-github-dot-com.html"/>
+    <updated>2012-07-23T11:59:00+02:00</updated>
+    <id>http://piotrbuda.eu/2012/07/play-store-api-on-github-dot-com</id>
+    <content type="html"><![CDATA[<p><strong>[Update 2013-05-14] I will no longer keep this project on my GitHub, I didn&rsquo;t have time to play with it and most likely this is already obsolete API. It has been removed.</strong></p>
+
+<p><del>If anyone is interested, I mirrored a great project: <a href="http://code.google.com/p/android-market-api/">Android Market API</a> and it&rsquo;s now available <a href="https://github.com/pbuda/playstoreapi">on GitHub.com</a>. I am using this API for my yet-to-be announced Android project and because of lack of support from original authors I decided to mirror it and introduce fixes/new features.</del></p>
+
+<p><del>Currently I&rsquo;m reworking the API of the project, but for now you can download the sources and build with Maven OR download the jar directly from project downloads section.</del></p>
+
+<p><del>However, please notice that I focus on making this library work well on Android devices because in order to work properly it requires actual Android device capable of running Play Store.</del></p>
+]]></content>
+  </entry>
+  
+</feed>
