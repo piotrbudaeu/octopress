@@ -1,0 +1,401 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Scala case classes and annotations, part 1 - Software Development Ramblings</title>
+  <meta name="author" content="Piotr Buda">
+
+  
+  <meta name="description" content="Recently in Twittory I moved from Java to Scala. Well, to be honest I just switched from Java to Scala syntax and will move on to adapt to functional &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://piotrbudaeu.github.io/2012/10/scala-case-classes-and-annotations-part-1.html">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feeds.feedburner.com/SoftwareDevelopmentRamblings" rel="alternate" title="Software Development Ramblings" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-16458721-6']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Software Development Ramblings</a></h1>
+  
+    <h2>Java, Scala and Android; Architecture and Design</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/SoftwareDevelopmentRamblings" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:piotrbudaeu.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Scala Case Classes and Annotations, Part 1</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-10-28T19:23:00+01:00" pubdate data-updated="true">Oct 28<span>th</span>, 2012</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Recently in Twittory I moved from Java to Scala. Well, to be honest I just switched from Java to Scala syntax and will move on to adapt to functional programming principles.</p>
+
+<p>There was one glitch during the process. I am using Spring Data for MongoDb and to ease up a few queries I used statics to define field names of objects I store.</p>
+
+<p>Here&rsquo;s an example: very simple class that I use to store tweet scanning bookmarks:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ScanningBookmark</span> <span class="o">{</span>
+</span><span class='line'>    <span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">USER_ID</span> <span class="o">=</span> <span class="s">&quot;userId&quot;</span><span class="o">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">STATUS_ID</span> <span class="o">=</span> <span class="s">&quot;statusId&quot;</span><span class="o">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="kd">private</span> <span class="nf">ScanningBookmark</span><span class="o">(</span><span class="kt">long</span> <span class="n">userId</span><span class="o">,</span> <span class="kt">long</span> <span class="n">statusId</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>        <span class="k">this</span><span class="o">.</span><span class="na">userId</span> <span class="o">=</span> <span class="n">userId</span><span class="o">;</span>
+</span><span class='line'>        <span class="k">this</span><span class="o">.</span><span class="na">statusId</span> <span class="o">=</span> <span class="n">statusId</span><span class="o">;</span>
+</span><span class='line'>    <span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="nd">@Field</span><span class="o">(</span><span class="n">USER_ID</span><span class="o">)</span>
+</span><span class='line'>    <span class="kd">private</span> <span class="kt">long</span> <span class="n">userId</span><span class="o">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="kd">public</span> <span class="kt">long</span> <span class="nf">getUserId</span><span class="o">()</span> <span class="o">{</span>
+</span><span class='line'>        <span class="k">return</span> <span class="n">userId</span><span class="o">;</span>
+</span><span class='line'>    <span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="nd">@Field</span><span class="o">(</span><span class="n">STATUS_ID</span><span class="o">)</span>
+</span><span class='line'>    <span class="kd">private</span> <span class="kt">long</span> <span class="n">statusId</span><span class="o">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="kd">public</span> <span class="kt">long</span> <span class="nf">getStatusId</span><span class="o">()</span> <span class="o">{</span>
+</span><span class='line'>        <span class="k">return</span> <span class="n">statusId</span><span class="o">;</span>
+</span><span class='line'>    <span class="o">}</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Storing this thing with Spring Data. The static fields defining field names are here so that somewhere else I can define a query using those fields. The @Field annotations allow customization of field names in collections and while here they are the same as actual field names, they could be set differently.</p>
+
+<p>Now when I was rewriting this to Scala, it&rsquo;s quite obvious I ended up with a case class.</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="k">case</span> <span class="k">class</span> <span class="nc">ScanningBookmark</span><span class="o">(</span><span class="n">userId</span><span class="k">:</span> <span class="kt">Long</span><span class="o">,</span> <span class="n">statusId</span><span class="k">:</span> <span class="kt">Long</span><span class="o">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>But the problem with case class is that adding @Field annotations doesn&rsquo;t work anymore. This is because writing like this:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="k">case</span> <span class="k">class</span> <span class="nc">ScanningBookmark</span><span class="o">(</span><span class="nd">@Field</span><span class="o">(</span><span class="s">&quot;userId&quot;</span><span class="o">)</span> <span class="n">userId</span><span class="k">:</span> <span class="kt">Long</span><span class="o">,</span>
+</span><span class='line'>                            <span class="nd">@Field</span><span class="o">(</span><span class="s">&quot;statusId&quot;</span><span class="o">)</span> <span class="n">statusId</span><span class="k">:</span> <span class="kt">Long</span><span class="o">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>places the @Field annotation on constructor arguments, fields and Scala accessors which probably makes Spring Data scanner fail. The result is that these fields are no longer customizable and I wanted to somehow remedy that.</p>
+
+<p>Playing with @BeanProperty annotation didn&rsquo;t solve the problem because apparently the @Field annotation is then also placed on generated accessors. But solution to this problem is actually quite easy. In Scala there are target meta-annotations that can be put on the annotation type when instantiating the annotation. There are six of those: @beanGetter, @beanSetter, @field, @getter, @setter, @param. Consult the <a href="http://www.scala-lang.org/api/current/scala/annotation/target/package.html">target package</a> for more info.</p>
+
+<p>The solution? It&rsquo;s very simple:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="k">case</span> <span class="k">class</span> <span class="nc">ScanningBookmark</span><span class="o">(@(</span><span class="nc">Field</span><span class="nd">@field</span><span class="o">)(</span><span class="s">&quot;userId2&quot;</span><span class="o">)</span> <span class="n">userId</span><span class="k">:</span> <span class="kt">Long</span><span class="o">,</span>
+</span><span class='line'>                            <span class="o">@(</span><span class="nc">Field</span><span class="nd">@field</span><span class="o">)(</span><span class="s">&quot;statusId2&quot;</span><span class="o">)</span> <span class="n">statusId</span><span class="k">:</span> <span class="kt">Long</span><span class="o">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And that&rsquo;s it! But there&rsquo;s one last thing to make it behave like Java version. In Java I used statics to define field values (so that there&rsquo;s no problem when some name changes). So I want something like this:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="k">case</span> <span class="k">class</span> <span class="nc">ScanningBookmark</span><span class="o">(@(</span><span class="nc">Field</span><span class="nd">@field</span><span class="o">)(</span><span class="nc">USER_ID</span><span class="o">)</span> <span class="n">userId</span><span class="k">:</span> <span class="kt">Long</span><span class="o">,</span>
+</span><span class='line'>                            <span class="o">@(</span><span class="nc">Field</span><span class="nd">@field</span><span class="o">)(</span><span class="nc">STATUS_ID</span><span class="o">)</span> <span class="n">statusId</span><span class="k">:</span> <span class="kt">Long</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>  <span class="k">final</span> <span class="k">val</span> <span class="nc">USER_ID</span><span class="k">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">&quot;userId2&quot;</span>
+</span><span class='line'>  <span class="k">final</span> <span class="k">val</span> <span class="nc">STATUS_ID</span><span class="k">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">&quot;statusId2&quot;</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>But this is not how things work in Scala and it took a while to learn that :) But this is for another short post.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Piotr Buda</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-10-28T19:23:00+01:00" pubdate data-updated="true">Oct 28<span>th</span>, 2012</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://piotrbudaeu.github.io/2012/10/scala-case-classes-and-annotations-part-1.html" data-via="piotrbuda" data-counturl="http://piotrbudaeu.github.io/2012/10/scala-case-classes-and-annotations-part-1.html" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2012/09/function-programming-principles-in-scala-course-week-one.html" title="Previous Post: Function Programming Principles in Scala course - week one">&laquo; Function Programming Principles in Scala course - week one</a>
+      
+      
+        <a class="basic-alignment right" href="/2012/10/scala-case-classes-and-annotations-part-2.html" title="Next Post: Scala case classes and annotations, part 2">Scala case classes and annotations, part 2 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2013/04/scalawebsocket.html">ScalaWebSocket</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/02/trying-to-deploy-scala-app-on-openshift.html">Trying to deploy Scala app on OpenShift</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/02/angularjs-directive-for-password-matching.html">Angular directive for password matching</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/02/my-first-month-at-softwaremill.html">My first month at SoftwareMill</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2012/12/scala-and-android-asynctask-implementation-problem.html">Scala and Android: AsyncTask implementation problem</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/pbuda">@pbuda</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'pbuda',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Piotr Buda -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'piotrbuda';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://piotrbudaeu.github.io/2012/10/scala-case-classes-and-annotations-part-1.html';
+        var disqus_url = 'http://piotrbudaeu.github.io/2012/10/scala-case-classes-and-annotations-part-1.html';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

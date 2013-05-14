@@ -1,0 +1,376 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Twittory lessons learned - don't mock Iterator - Software Development Ramblings</title>
+  <meta name="author" content="Piotr Buda">
+
+  
+  <meta name="description" content="So I&rsquo;m doing this pet project now called Twittory and because it&rsquo;s hosted on Github, people can review it and voice their oppinions. &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://piotrbudaeu.github.io/2012/09/twittory-lessons-learned-dont-mock-iterator.html">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feeds.feedburner.com/SoftwareDevelopmentRamblings" rel="alternate" title="Software Development Ramblings" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-16458721-6']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Software Development Ramblings</a></h1>
+  
+    <h2>Java, Scala and Android; Architecture and Design</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/SoftwareDevelopmentRamblings" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:piotrbudaeu.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Twittory Lessons Learned - Don't Mock Iterator</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-09-14T11:40:00+02:00" pubdate data-updated="true">Sep 14<span>th</span>, 2012</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p><del>So I&rsquo;m doing this pet project now called <a href="https://github.com/pbuda/twittory">Twittory</a> and because it&rsquo;s hosted on Github, people can review it and voice their oppinions.</del><strong>Update (03 Feb 2013): I no longer develop this project.</strong></p>
+
+<p>Marcin Deryło (<a href="https://twitter.com/marcinderylo">twitter</a>, <a href="http://marcinderylo.blogspot.com/">blog</a>), a friend of mine, has recently reviewed some simple tests already present in the project and he raised an issue with mocking iterators.</p>
+
+<p>I&rsquo;ve had a very simple method which iterated over a collection returned by Twitter4J API. To do that, I simply mocked an Iterator and it&rsquo;s hasNext() and next() methods (using Mockito it&rsquo;s really simple anyway):</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="nd">@Test</span>
+</span><span class='line'><span class="kd">public</span> <span class="kt">void</span> <span class="nf">returns_details_only_for_tweets_with_links</span><span class="o">()</span> <span class="kd">throws</span> <span class="n">Exception</span> <span class="o">{</span>
+</span><span class='line'>    <span class="n">Status</span> <span class="n">status1</span> <span class="o">=</span> <span class="n">prepareStatus</span><span class="o">(</span><span class="s">&quot;Status 1&quot;</span><span class="o">);</span>
+</span><span class='line'>    <span class="n">Status</span> <span class="n">status2</span> <span class="o">=</span> <span class="n">prepareStatus</span><span class="o">(</span><span class="s">&quot;Text with link http://www.onet.pl in it&quot;</span><span class="o">);</span>
+</span><span class='line'>    <span class="n">Status</span> <span class="n">status3</span> <span class="o">=</span> <span class="n">prepareStatus</span><span class="o">(</span><span class="s">&quot;Status 3&quot;</span><span class="o">);</span>
+</span><span class='line'>    <span class="n">ResponseList</span><span class="o">&lt;</span><span class="n">Status</span><span class="o">&gt;</span> <span class="n">mockResponse</span> <span class="o">=</span> <span class="n">mock</span><span class="o">(</span><span class="n">ResponseList</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>
+</span><span class='line'>    <span class="n">Iterator</span> <span class="n">mockIterator</span> <span class="o">=</span> <span class="n">mock</span><span class="o">(</span><span class="n">Iterator</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">when</span><span class="o">(</span><span class="n">mockIterator</span><span class="o">.</span><span class="na">hasNext</span><span class="o">()).</span><span class="na">thenReturn</span><span class="o">(</span><span class="kc">true</span><span class="o">).</span><span class="na">thenReturn</span><span class="o">(</span><span class="kc">true</span><span class="o">).</span><span class="na">thenReturn</span><span class="o">(</span><span class="kc">true</span><span class="o">).</span><span class="na">thenReturn</span><span class="o">(</span><span class="kc">false</span><span class="o">);</span>
+</span><span class='line'>    <span class="n">when</span><span class="o">(</span><span class="n">mockIterator</span><span class="o">.</span><span class="na">next</span><span class="o">()).</span><span class="na">thenReturn</span><span class="o">(</span><span class="n">status1</span><span class="o">).</span><span class="na">thenReturn</span><span class="o">(</span><span class="n">status2</span><span class="o">).</span><span class="na">thenReturn</span><span class="o">(</span><span class="n">status3</span><span class="o">);</span>
+</span><span class='line'>    <span class="n">when</span><span class="o">(</span><span class="n">mockResponse</span><span class="o">.</span><span class="na">iterator</span><span class="o">()).</span><span class="na">thenReturn</span><span class="o">(</span><span class="n">mockIterator</span><span class="o">);</span>
+</span><span class='line'>    <span class="n">when</span><span class="o">(</span><span class="n">twitter</span><span class="o">.</span><span class="na">getHomeTimeline</span><span class="o">()).</span><span class="na">thenReturn</span><span class="o">(</span><span class="n">mockResponse</span><span class="o">);</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">List</span><span class="o">&lt;</span><span class="n">LinkDetails</span><span class="o">&gt;</span> <span class="n">scan</span> <span class="o">=</span> <span class="n">scanner</span><span class="o">.</span><span class="na">scan</span><span class="o">();</span>
+</span><span class='line'>    <span class="n">assertNotNull</span><span class="o">(</span><span class="n">scan</span><span class="o">);</span>
+</span><span class='line'>    <span class="n">assertEquals</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span> <span class="n">scan</span><span class="o">.</span><span class="na">size</span><span class="o">());</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>But said friend of mine suggested to drop mocking here in favor of actually returning a real iterator:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="nd">@Test</span>
+</span><span class='line'><span class="kd">public</span> <span class="kt">void</span> <span class="nf">returns_details_only_for_tweets_with_links</span><span class="o">()</span> <span class="kd">throws</span> <span class="n">Exception</span> <span class="o">{</span>
+</span><span class='line'>    <span class="n">Status</span> <span class="n">status1</span> <span class="o">=</span> <span class="n">prepareStatus</span><span class="o">(</span><span class="s">&quot;Status 1&quot;</span><span class="o">);</span>
+</span><span class='line'>    <span class="n">Status</span> <span class="n">status2</span> <span class="o">=</span> <span class="n">prepareStatus</span><span class="o">(</span><span class="s">&quot;Text with link http://www.onet.pl in it&quot;</span><span class="o">);</span>
+</span><span class='line'>    <span class="n">Status</span> <span class="n">status3</span> <span class="o">=</span> <span class="n">prepareStatus</span><span class="o">(</span><span class="s">&quot;Status 3&quot;</span><span class="o">);</span>
+</span><span class='line'>    <span class="n">ResponseList</span><span class="o">&lt;</span><span class="n">Status</span><span class="o">&gt;</span> <span class="n">mockResponse</span> <span class="o">=</span> <span class="n">mock</span><span class="o">(</span><span class="n">ResponseList</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">when</span><span class="o">(</span><span class="n">mockResponse</span><span class="o">.</span><span class="na">iterator</span><span class="o">()).</span><span class="na">thenReturn</span><span class="o">(</span><span class="n">Arrays</span><span class="o">.</span><span class="na">asList</span><span class="o">(</span><span class="n">status1</span><span class="o">,</span> <span class="n">status2</span><span class="o">,</span> <span class="n">status3</span><span class="o">).</span><span class="na">iterator</span><span class="o">());</span>
+</span><span class='line'>    <span class="n">when</span><span class="o">(</span><span class="n">twitter</span><span class="o">.</span><span class="na">getHomeTimeline</span><span class="o">()).</span><span class="na">thenReturn</span><span class="o">(</span><span class="n">mockResponse</span><span class="o">);</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">List</span><span class="o">&lt;</span><span class="n">LinkDetails</span><span class="o">&gt;</span> <span class="n">scan</span> <span class="o">=</span> <span class="n">scanner</span><span class="o">.</span><span class="na">scan</span><span class="o">();</span>
+</span><span class='line'>    <span class="n">assertNotNull</span><span class="o">(</span><span class="n">scan</span><span class="o">);</span>
+</span><span class='line'>    <span class="n">assertEquals</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span> <span class="n">scan</span><span class="o">.</span><span class="na">size</span><span class="o">());</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Pretty slick, eh? Saves code and complexity while becoming much more readable at the same time.</p>
+
+<p>Learning FTW.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Piotr Buda</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-09-14T11:40:00+02:00" pubdate data-updated="true">Sep 14<span>th</span>, 2012</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://piotrbudaeu.github.io/2012/09/twittory-lessons-learned-dont-mock-iterator.html" data-via="piotrbuda" data-counturl="http://piotrbudaeu.github.io/2012/09/twittory-lessons-learned-dont-mock-iterator.html" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2012/08/gitflow-intellij-idea-plugin.html" title="Previous Post: GitFlow Intellij Idea plugin">&laquo; GitFlow Intellij Idea plugin</a>
+      
+      
+        <a class="basic-alignment right" href="/2012/09/function-programming-principles-in-scala-course-week-one.html" title="Next Post: Function Programming Principles in Scala course - week one">Function Programming Principles in Scala course - week one &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2013/04/scalawebsocket.html">ScalaWebSocket</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/02/trying-to-deploy-scala-app-on-openshift.html">Trying to deploy Scala app on OpenShift</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/02/angularjs-directive-for-password-matching.html">Angular directive for password matching</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/02/my-first-month-at-softwaremill.html">My first month at SoftwareMill</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2012/12/scala-and-android-asynctask-implementation-problem.html">Scala and Android: AsyncTask implementation problem</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/pbuda">@pbuda</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'pbuda',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Piotr Buda -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'piotrbuda';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://piotrbudaeu.github.io/2012/09/twittory-lessons-learned-dont-mock-iterator.html';
+        var disqus_url = 'http://piotrbudaeu.github.io/2012/09/twittory-lessons-learned-dont-mock-iterator.html';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

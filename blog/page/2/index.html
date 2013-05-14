@@ -1,0 +1,1347 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Software Development Ramblings</title>
+  <meta name="author" content="Piotr Buda">
+
+  
+  <meta name="description" content="I am creating a few side projects currently and I use git-flow Git extension for each of them, but I lack the support from Intellij Idea in this &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://piotrbudaeu.github.io/blog/page/2/index.html">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feeds.feedburner.com/SoftwareDevelopmentRamblings" rel="alternate" title="Software Development Ramblings" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-16458721-6']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Software Development Ramblings</a></h1>
+  
+    <h2>Java, Scala and Android; Architecture and Design</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/SoftwareDevelopmentRamblings" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:piotrbudaeu.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2012/08/gitflow-intellij-idea-plugin.html">GitFlow Intellij Idea Plugin</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-08-06T13:37:00+02:00" pubdate data-updated="true">Aug 6<span>th</span>, 2012</time>
+        
+         | <a href="/2012/08/gitflow-intellij-idea-plugin.html#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I am creating a few side projects currently and I use git-flow Git extension for each of them, but I lack the support from Intellij Idea in this regard – mainly the starting and stopping of features and releases.</p>
+
+<p>So because of that I’ve started a small project to include said functionality in Idea. It’s nothing major as apparently Jetbrains will include such plugin in some version of Intellij, but I need it now and I’m interested in how to write plugins for Idea
+What will the plugin be able to do?</p>
+
+<p>git flow init -d
+git flow feature start/finish
+git flow release start/finish
+The first version I will release will be able to do 1 and 2 while option 3 will be available at some later time. But I don’t know yet when I will release it, so stay tuned if you’re interested.</p>
+
+<p>The project is of course at <a href="https://github.com/pbuda/gitflowidea">GitHub</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2012/07/play-store-api-on-github-dot-com.html">Play Store API on GitHub.com</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-23T11:59:00+02:00" pubdate data-updated="true">Jul 23<span>rd</span>, 2012</time>
+        
+         | <a href="/2012/07/play-store-api-on-github-dot-com.html#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>If anyone is interested, I mirrored a great project: <a href="http://code.google.com/p/android-market-api/">Android Market API</a> and it&rsquo;s now available <a href="https://github.com/pbuda/playstoreapi">on GitHub.com</a>. I am using this API for my yet-to-be announced Android project and because of lack of support from original authors I decided to mirror it and introduce fixes/new features.</p>
+
+<p>Currently I&rsquo;m reworking the API of the project, but for now you can download the sources and build with Maven OR download the jar directly from project downloads section.</p>
+
+<p>However, please notice that I focus on making this library work well on Android devices because in order to work properly it requires actual Android device capable of running Play Store.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2012/06/play-store-on-emulator-and-morals.html">Play Store on Emulator and Morals</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-06-26T11:30:00+02:00" pubdate data-updated="true">Jun 26<span>th</span>, 2012</time>
+        
+         | <a href="/2012/06/play-store-on-emulator-and-morals.html#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I&rsquo;ve recently noticed that I have some traffic to my blog from <a href="http://stackoverflow.com/questions/11154222/google-play-in-android-4-0-emulator">some question posted on Stack Overflow</a>. I checked out the question out of curiosity and what I found made me wonder, particularly <a href="http://stackoverflow.com/a/11155703/840794">this answer</a>. I don&rsquo;t have enough rep to comment on other answers, so I decided to rant here a little.</p>
+
+<p>I understand that Google doesn&rsquo;t want their Play Store available on devices that are not licensed, I don&rsquo;t pretend to know why, I can only guess. But I don&rsquo;t want to be called a software pirate. I did not rip Play Store from a device nor I distribute it. The Play Store apk that I used comes from CyanogenMod page, AFAIK the Google apps package for CM is the only way for their users to update Google apps. Is this also pirating?  If so, we have SO MANY pirates in Android world then! There are more than <a href="http://stats.cyanogenmod.com/">one million CM users</a> out there so that means more than one million people pirate Play Store. Not to mention some Kindle Fire users who install Play Store on their rooted devices.</p>
+
+<p>I am no lawyer, but after reading Google Play EULA several times, I don&rsquo;t find any point that prohibits me from installing it on emulator. Now Google did make an attempt to limit Play Store use on emulator (even if not on purpose) by using DRM protection which makes Google Play not work on emulator anyway &ndash; <a href="http://www.piotrbuda.eu/2012/06/trying-to-solve-error-491-in-play-store.html">you can&rsquo;t download apps!</a></p>
+
+<p>Rant over, I just needed to vent.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2012/06/trying-to-solve-error-491-in-play-store-on-android-emulator.html">Trying to Solve Error 491 in Play Store on Android Emulator</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-06-26T09:23:00+02:00" pubdate data-updated="true">Jun 26<span>th</span>, 2012</time>
+        
+         | <a href="/2012/06/trying-to-solve-error-491-in-play-store-on-android-emulator.html#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Installing Google Play Store on Android emulator is quite easy &ndash; I described it in my <a href="/2012/05/installing-google-play-on-android-emulator.html">previous article</a>. However there is one problem that does not allow downloading of apps &ndash; the dreadful Error 491.
+After some investigation it appears that the error happens because Android emulator does not have DRM! This is the exact error that is displayed in Logcat:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>06-25 07:51:42.142: WARN/DownloadManager(342): Exception for id 7: android/drm/DrmManagerClient
+</span><span class='line'>        java.lang.NoClassDefFoundError: android/drm/DrmManagerClient
+</span><span class='line'>        at com.android.providers.downloads.DownloadDrmHelper.isDrmMimeType(DownloadDrmHelper.java:45)
+</span><span class='line'>        at com.android.providers.downloads.Helpers.checkCanHandleDownload(Helpers.java:148)
+</span><span class='line'>        at com.android.providers.downloads.Helpers.generateSaveFile(Helpers.java:81)
+</span><span class='line'>        at com.android.providers.downloads.DownloadThread.processResponseHeaders(DownloadThread.java:563)
+</span><span class='line'>        at com.android.providers.downloads.DownloadThread.executeDownload(DownloadThread.java:256)
+</span><span class='line'>        at com.android.providers.downloads.DownloadThread.run(DownloadThread.java:172)</span></code></pre></td></tr></table></div></figure>
+
+
+<p>I&rsquo;ve tried a few things to fix this, but nothing really helped. The CyanogenMod Google Apps package contained some DRM jar, but it didn&rsquo;t help at all. So I&rsquo;ve decided to browse my Galaxy S2 and found this <em>/system/app/DrmProvider.apk</em> which I thought might help. So I pulled it from device and pushed it to the emulator. As expected, it kind of worked, but it now threw another exception:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>06-25 07:53:52.043: WARN/DownloadManager(724): Exception for id 8: null
+</span><span class='line'>        java.lang.ExceptionInInitializerError
+</span><span class='line'>        at com.android.providers.downloads.DownloadDrmHelper.isDrmMimeType(DownloadDrmHelper.java:45)
+</span><span class='line'>        at com.android.providers.downloads.Helpers.checkCanHandleDownload(Helpers.java:148)
+</span><span class='line'>        at com.android.providers.downloads.Helpers.generateSaveFile(Helpers.java:81)
+</span><span class='line'>        at com.android.providers.downloads.DownloadThread.processResponseHeaders(DownloadThread.java:563)
+</span><span class='line'>        at com.android.providers.downloads.DownloadThread.executeDownload(DownloadThread.java:256)
+</span><span class='line'>        at com.android.providers.downloads.DownloadThread.run(DownloadThread.java:172)
+</span><span class='line'>        Caused by: java.lang.UnsatisfiedLinkError: Library drmframework_jni not found; tried [/vendor/lib/libdrmframework_jni.so, /system/lib/libdrmframework_jni.so]
+</span><span class='line'>        at java.lang.Runtime.loadLibrary(Runtime.java:393)
+</span><span class='line'>        at java.lang.System.loadLibrary(System.java:535)
+</span><span class='line'>        at android.drm.DrmManagerClient.&lt;clinit>(DrmManagerClient.java:56)
+</span><span class='line'>        ... 6 more</span></code></pre></td></tr></table></div></figure>
+
+
+<p>So I dig deeper and tried extracting missing .so files. Browsing my phone revealed four files that I might be interested in: <em>libdrm1.so</em>, <em>libdrm1_jni.so</em>, <em>libdrmframework.so</em> and <em>libdrmframework_jni.so</em>. Again, pulled those from device and pushed to emulator but I got the first exception and got stuck.</p>
+
+<p>At this point I don&rsquo;t have any more ideas how to solve this problem, but I will still try. It appears that installing DRM on emulator might be much more problematic than pulling some apks from real devices.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2012/05/installing-google-play-on-android-emulator.html">Installing Google Play on Android Emulator</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-05-02T21:40:00+02:00" pubdate data-updated="true">May 2<span>nd</span>, 2012</time>
+        
+         | <a href="/2012/05/installing-google-play-on-android-emulator.html#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h3>The problem</h3>
+
+<p>I wanted to install Google Play on emulator. Problem is no guide on the net could tell me precisely how to do this. I&rsquo;m not sure why, it seemed that they worked with old Android Market (pre version 3 era) or at least people shown some screenshots of that but I couldn&rsquo;t make it work at home.</p>
+
+<p>The difference was that I tried to install Google Play on an Ice Cream Sandwitch emulator (API level 15) and it always failed.</p>
+
+<h3>First attempts</h3>
+
+<p>I first found <a href="http://blog.varunkumar.me/2010/11/how-to-install-android-market-in-google.html">this site</a>. I tried setting up everything from there but I just couldn&rsquo;t make it work. Possible because their Vending.apk couldn&rsquo;t start, I have no clue. Then I found <a href="http://www.tech-recipes.com/rx/10004/accessing-android-market-from-android-sdk/">this site</a> and I somehow managed to install Vending.apk on emulator using this guide, but I couldn&rsquo;t reproduce that.</p>
+
+<p>One of the problems with those guides (which made me spend a lot of time on something useless) was that both these guides made me delete two files from AVD: cache.img and userdata-qemu.img. Why? Apparently when you wanted to restart emulator, these files were responsible for reinitialization of emulator to it&rsquo;s starting state (like full wipe/factory reset). I tried and tried and I always ended up without my changes.</p>
+
+<h3>New Hope</h3>
+
+<p>After that I found that there is a snapshot option in AVD configuration window so I just checked it and finally I was able to see last state of emulator. Maybe it&rsquo;s not perfect &ndash; it works like hibernation on your laptop &ndash; but it works and after a whole day of fight it was enough.</p>
+
+<p>I then though why do I install some obsolete Vending.apk and GoogleServicesFramework.apk? Why can&rsquo;t I have a new one there? So I connected my phone and pulled those apks from it. Of course it didn&rsquo;t work, but I was not sure why. But I remembered something &ndash; <del>CyanogenMod has Google apps packed in a zip</del> (UPDATE: CyanogenMod does no longer host Google Apps, but you can <a href="http://goo.im/gapps/">find them here</a>! So I downloaded their package and extracted everything I needed &ndash; Vending.apk and GoogleServicesFramework.apk. But it was not enough.</p>
+
+<p>So I had an AVD set up with snapshots enabled and I proceeded to installing my new apks &ndash; full script will be posted at the end.</p>
+
+<pre><code>1. You have to remount system partition in read-write mode.
+2. Then it's necessary to allow writing to /system/app directory
+3. After that is done just push apks to /system/app/. (notice the dot at the end) 
+4. Just for the sake of other guides I also remove /system/app/SdkSetup* (both apk and odex)
+</code></pre>
+
+<p>Voila! Google Play is installed on emulator! But it still doesn&rsquo;t work. In order for it to start working, you need an account &ndash; Google account. This step also cost me some time. My AVD was based on Android 4.0.3, not the Google APIs one. So I changed it and&hellip; still nothing.</p>
+
+<p>Apparently in recent releases Google decided to decouple their account provider from the OS so they have a separate apk that allows configuration of Google accounts &ndash; it&rsquo;s called GoogleLoginService.apk. Pushing this to emulator solved all the problems &ndash; you don&rsquo;t even need Google APIs (you can set up against Android 4.0.3 option). Now when you enter Play Store you get prompted for an account and it works!</p>
+
+<h3>Conclusion</h3>
+
+<p>After two days of trying I finally was able to launch and browse Google Play Store on an Android emulator with Ice Cream Sandwitch. Phew.</p>
+
+<p>Command I use to start my emulator</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>emulator -avd am -partition-size 200 -no-audio -no-boot-anim</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Full script (assumes you have created and started your AVD)</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>adb shell mount -o remount,rw -t yaffs2 /dev/block/mtdblock0 /system
+</span><span class='line'>adb shell chmod 777 /system/app
+</span><span class='line'>adb push GoogleLoginService.apk /system/app/.
+</span><span class='line'>adb push GoogleServicesFramework.apk /system/app/.
+</span><span class='line'>adb push Vending.apk /system/app/.
+</span><span class='line'>adb shell rm /system/app/SdkSetup*</span></code></pre></td></tr></table></div></figure>
+
+
+<p>That script will work as long as you run it from a dir in which you have all the necessary apks. Of course you have to have your PATH environment variable set correctly (so that all those commands are actually accessible) but I suppose you know that already.</p>
+
+<h3>Settings of the AVD</h3>
+
+<p><img src="/images/avdsettings.png" title="Settings of the AVD" ></p>
+
+<h3>Working Google Play Store</h3>
+
+<p><img src="/images/emulator.png" title="Working Google Play Store" ></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2012/05/getting-auth-token-on-an-android-device.html">Getting Auth Token on an Android Device</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-05-01T00:18:00+02:00" pubdate data-updated="true">May 1<span>st</span>, 2012</time>
+        
+         | <a href="/2012/05/getting-auth-token-on-an-android-device.html#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I&rsquo;m currently working on a little pet project that targets Android devices (well, at least my Galaxy) and requires auth token to operate. It wasn&rsquo;t hard to find the code to do this: <a href="http://www.toxicbakery.com/android-development/getting-google-auth-sub-tokens-in-your-android-applications/comment-page-1/#comment-238">Toxic Bakery has already shown how to do it.</a></p>
+
+<p>My first attempt of using this code was successful and running on the device was easy &ndash; I simply added a button that invoked their method and it worked. However when I used this solution in my pet project it suddenly stopped working properly. The problem was happening when I was invalidating the auth token &ndash; recursive call would fail with IllegalStateException saying that calling that method on main thread would lead to a deadlock.</p>
+
+<p>At first I didn&rsquo;t know what to do &ndash; I am, after all, Android newbie. I spent some time trying to find out why my first code worked and second didn&rsquo;t and I found a single difference &ndash; I used minSdkVersion in AndroidManifest.xml for my pet project. I have no idea why this happens, I don&rsquo;t even know where to start looking. But I created a simple workaround to solve the problem &ndash; I used AsyncTask to create a background loader and it works very well now, not to mention I&rsquo;ve had a good time reading about threading in Android.</p>
+
+<p>The project with workaround can be found at <a href="https://github.com/pbuda/android-authtoken">GitHub</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2012/04/commenting-the-code-is-obsolete.html">Commenting the Code Is Obsolete</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-04-11T12:01:00+02:00" pubdate data-updated="true">Apr 11<span>th</span>, 2012</time>
+        
+         | <a href="/2012/04/commenting-the-code-is-obsolete.html#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Some time ago I had a few visits from fellow developers asking me questions about that I supposedly created. Since I obviously created some of that code months or years ago, I often couldn&rsquo;t answer their questions because either my explanations were false (changed requirements) or I didn&rsquo;t even know about that particular case (new code). It struck me that they came to me to ask these questions because I was placed as the author of the class in Javadoc&hellip;</p>
+
+<p>More recently I&rsquo;ve been in situation when our team leader told us that we&rsquo;re not putting enough comments in our classes and the we could at least provide the @author Javadoc comment (or ASDoc in that case) so that everyone knows who to talk to about this code.</p>
+
+<p>Revelation came to me sometime after that statement &ndash; why the hell do I need author information in a file?! I am checking in my code to a VCS which provides that information out of the box, moreover when the code changes it can report who changed the code! @author becomes meaningless after some time, VCS history does not &ndash; so use VCS instead.</p>
+
+<p>This also applies to other comments (IMO). Instead of creating some code and heavily comment what it does (bad) I prefer to write smaller methods that tell what they&rsquo;re doing (good). The only thing I think a comment is necessary for is method arguments, but I could also omit them when I call my arguments with meaningful names. This does not apply to function arguments, because I have to comment that function arguments. But that can also lead to something like this:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='actionscript'><span class='line'><span class="cm">/**</span>
+</span><span class='line'><span class="cm">* @param callback function to call with signature </span>
+</span><span class='line'><span class="cm">*                 &lt;code&gt;function(arg1:String, arg2:Object):void&lt;/code&gt;</span>
+</span><span class='line'><span class="cm">*/</span>
+</span><span class='line'><span class="kd">public</span> <span class="kd">function</span> <span class="nx">myFunction</span><span class="p">(</span><span class="nx">callback</span><span class="o">:</span><span class="nb">Function</span><span class="p">)</span><span class="o">:</span><span class="nx">void</span> <span class="p">{</span>
+</span><span class='line'>  <span class="nx">callback</span><span class="p">(</span><span class="nx">arg1</span><span class="o">,</span> <span class="nx">arg2</span><span class="o">,</span> <span class="nx">arg3</span><span class="p">)</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Summary: instead of extensive comments, write better code and use tools that you&rsquo;re given.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2012/03/heroku-and-java-from-newbie-to-beginner-part-2.html">Heroku and Java - From Newbie to Beginner, Part 2</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-03-17T01:13:00+01:00" pubdate data-updated="true">Mar 17<span>th</span>, 2012</time>
+        
+         | <a href="/2012/03/heroku-and-java-from-newbie-to-beginner-part-2.html#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h3>The problem</h3>
+
+<p>So after a few days I could get back to my little Recaps project. I started with checking logs and found something like this:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>2012-03-04T01:52:51+00:00 heroku[web.1]: Idling
+</span><span class='line'>2012-03-04T01:52:53+00:00 heroku[web.1]: Stopping process with SIGTERM
+</span><span class='line'>2012-03-04T01:53:03+00:00 heroku[web.1]: Error R12 (Exit timeout) -> Process failed to exit within 10 seconds of SIGTERM
+</span><span class='line'>2012-03-04T01:53:03+00:00 heroku[web.1]: Stopping process with SIGKILL</span></code></pre></td></tr></table></div></figure>
+
+
+<p>I don&rsquo;t know what you think but whenever I see &lsquo;Error&rsquo; in my logs I get concerned. So I decided to remove that nasty line. What transpired was not pleasant.</p>
+
+<h3>The solution</h3>
+
+<p>This seems like a simple problem. I started up with finding what this SIGTERM is all about. I knew it was Linux signal, I just wanted to know what Heroku is actually doing. So basically sometimes Heroku just sends SIGTERM to your process so that it&rsquo;s allowed to gracefully shut down. This is very simple.</p>
+
+<p>As I mentioned in my last post, I decided to use Jetty instead of Grizzly. At first I decided to use jetty-runner to run my web application and it worked fine, resources were scanned as Jersey servlet started up. Deploying to Heroku was also easy and with modified Procfile the application started up.</p>
+
+<p>Nevertheless the application did not react correctly to SIGTERM, so without delving deeper in jetty-runner configuration, I decided to just use the embedded Jetty server.
+It&rsquo;s very simple and running foreman start made the application actually start. So without further consideration I just deployed the changed application to Heroku. To check whether the error appears again, after first startup I just did heroku restart and connected to logs in another terminal. But the exit timeout error message was still there. My mistake there &ndash; I did not test the application whether it will exit properly when using foreman. So again, foreman start and then ctrl+c just to see what happens (later I tried kill -s TERM procand got similar output):</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>pbu@pbudesk ~/recaps $ foreman start
+</span><span class='line'>21:57:27 web.1     | started with pid 9603
+</span><span class='line'>21:57:27 web.1     | 0    [main] INFO  org.eclipse.jetty.server.Server  - jetty-8.1.1.v20120215
+</span><span class='line'>21:57:27 web.1     | 110  [main] INFO  org.eclipse.jetty.webapp.StandardDescriptorProcessor  - NO JSP Support for /, did not find org.apache.jasper.servlet.JspServlet
+</span><span class='line'>21:57:27 web.1     | 132  [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - started o.e.j.w.WebAppContext{/,file:/home/pbu/Devel/IdeaProjects/recaps/webmodule/src/main/webapp/},webmodule/src/main/webapp
+</span><span class='line'>21:57:27 web.1     | 133  [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - started o.e.j.w.WebAppContext{/,file:/home/pbu/Devel/IdeaProjects/recaps/webmodule/src/main/webapp/},webmodule/src/main/webapp
+</span><span class='line'>21:57:27 web.1     | 183  [main] INFO  org.eclipse.jetty.server.AbstractConnector  - Started SelectChannelConnector@0.0.0.0:5000
+</span><span class='line'>^CSIGINT received
+</span><span class='line'>21:57:57 system    | sending SIGTERM to all processes
+</span><span class='line'>21:57:57 system    | sending SIGTERM to pid 9603
+</span><span class='line'>21:57:57 web.1     | process terminated
+</span><span class='line'>pbu@pbudesk ~/recaps $</span></code></pre></td></tr></table></div></figure>
+
+
+<p>OK, so when foreman receives SIGINT it sends SIGTERM to all processes, cool &ndash; probably Heroku dynos behave the same. Still, it wasn&rsquo;t a graceful shutdown, but Jetty has a <a href="http://docs.codehaus.org/display/JETTY/How+to+gracefully+shutdown">graceful shutdown section</a> that mentions two nice properties: gracefulShutdown and stopAtShutdown. The modified class looks like this:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Serve</span> <span class="o">{</span>
+</span><span class='line'>    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">Exception</span> <span class="o">{</span>
+</span><span class='line'>        <span class="kt">int</span> <span class="n">port</span> <span class="o">=</span> <span class="n">Integer</span><span class="o">.</span><span class="na">valueOf</span><span class="o">(</span><span class="n">System</span><span class="o">.</span><span class="na">getenv</span><span class="o">(</span><span class="s">&quot;PORT&quot;</span><span class="o">));</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="n">Server</span> <span class="n">jetty</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Server</span><span class="o">(</span><span class="n">port</span><span class="o">);</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="n">WebAppContext</span> <span class="n">context</span> <span class="o">=</span> <span class="k">new</span> <span class="n">WebAppContext</span><span class="o">();</span>
+</span><span class='line'>        <span class="n">context</span><span class="o">.</span><span class="na">setContextPath</span><span class="o">(</span><span class="s">&quot;/&quot;</span><span class="o">);</span>
+</span><span class='line'>        <span class="n">String</span> <span class="n">webapp</span> <span class="o">=</span> <span class="s">&quot;webmodule/src/main/webapp&quot;</span><span class="o">;</span>
+</span><span class='line'>        <span class="n">context</span><span class="o">.</span><span class="na">setWar</span><span class="o">(</span><span class="n">webapp</span><span class="o">);</span>
+</span><span class='line'>        <span class="n">context</span><span class="o">.</span><span class="na">setResourceBase</span><span class="o">(</span><span class="n">webapp</span><span class="o">);</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="n">jetty</span><span class="o">.</span><span class="na">setHandler</span><span class="o">(</span><span class="n">context</span><span class="o">);</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="n">jetty</span><span class="o">.</span><span class="na">setGracefulShutdown</span><span class="o">(</span><span class="mi">1000</span><span class="o">);</span>
+</span><span class='line'>        <span class="n">jetty</span><span class="o">.</span><span class="na">setStopAtShutdown</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="n">jetty</span><span class="o">.</span><span class="na">start</span><span class="o">();</span>
+</span><span class='line'>        <span class="n">jetty</span><span class="o">.</span><span class="na">join</span><span class="o">();</span>
+</span><span class='line'>    <span class="o">}</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Running foreman again and using ctrl+c proves this to be working! Great!</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>pbu@pbudesk ~/recaps $ foreman start
+</span><span class='line'>22:11:47 web.1     | started with pid 9863
+</span><span class='line'>22:11:47 web.1     | 0    [main] INFO  org.eclipse.jetty.server.Server  - jetty-8.1.1.v20120215
+</span><span class='line'>22:11:47 web.1     | 110  [main] INFO  org.eclipse.jetty.webapp.StandardDescriptorProcessor  - NO JSP Support for /, did not find org.apache.jasper.servlet.JspServlet
+</span><span class='line'>22:11:47 web.1     | 131  [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - started o.e.j.w.WebAppContext{/,file:/home/pbu/Devel/IdeaProjects/recaps/webmodule/src/main/webapp/},webmodule/src/main/webapp
+</span><span class='line'>22:11:47 web.1     | 132  [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - started o.e.j.w.WebAppContext{/,file:/home/pbu/Devel/IdeaProjects/recaps/webmodule/src/main/webapp/},webmodule/src/main/webapp
+</span><span class='line'>22:11:48 web.1     | 183  [main] INFO  org.eclipse.jetty.server.AbstractConnector  - Started SelectChannelConnector@0.0.0.0:5000
+</span><span class='line'>^C22:11:49 web.1     | 1969 [Thread-1] INFO  org.eclipse.jetty.server.Server  - Graceful shutdown SelectChannelConnector@0.0.0.0:5000
+</span><span class='line'>22:11:49 web.1     | 1970 [Thread-1] INFO  org.eclipse.jetty.server.Server  - Graceful shutdown o.e.j.w.WebAppContext{/,file:/home/pbu/Devel/IdeaProjects/recaps/webmodule/src/main/webapp/},webmodule/src/main/webapp
+</span><span class='line'>SIGINT received
+</span><span class='line'>22:11:49 system    | sending SIGTERM to all processes
+</span><span class='line'>22:11:49 system    | sending SIGTERM to pid 9863
+</span><span class='line'>22:11:50 web.1     | 2982 [Thread-1] INFO  org.eclipse.jetty.server.handler.ContextHandler  - stopped o.e.j.w.WebAppContext{/,file:/home/pbu/Devel/IdeaProjects/recaps/webmodule/src/main/webapp/},webmodule/src/main/webapp
+</span><span class='line'>22:11:50 web.1     | process terminated
+</span><span class='line'>pbu@pbudesk ~/recaps $
+</span><span class='line'>So off to deploy it to the cloud! Again, deploy, heroku restart and watch logs... but it doesn't work.</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Different way</h3>
+
+<p>After initial failure I&rsquo;ve tried a different approach. I found out that you can register shutdown hooks &ndash; very easy thing. To do that, just register a new thread with Runtime.getRuntime().addShutdownHook(Thread) method:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Serve</span> <span class="o">{</span>
+</span><span class='line'>    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">Exception</span> <span class="o">{</span>
+</span><span class='line'>        <span class="n">Runtime</span><span class="o">.</span><span class="na">getRuntime</span><span class="o">().</span><span class="na">addShutdownHook</span><span class="o">(</span><span class="k">new</span> <span class="n">Thread</span><span class="o">()</span> <span class="o">{</span>
+</span><span class='line'>            <span class="nd">@Override</span>
+</span><span class='line'>            <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
+</span><span class='line'>                <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;Shutting down by shutdown hook&quot;</span><span class="o">);</span>
+</span><span class='line'>            <span class="o">}</span>
+</span><span class='line'>        <span class="o">});</span>
+</span><span class='line'>        <span class="kt">int</span> <span class="n">port</span> <span class="o">=</span> <span class="n">Integer</span><span class="o">.</span><span class="na">valueOf</span><span class="o">(</span><span class="n">System</span><span class="o">.</span><span class="na">getenv</span><span class="o">(</span><span class="s">&quot;PORT&quot;</span><span class="o">));</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="n">Server</span> <span class="n">jetty</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Server</span><span class="o">(</span><span class="n">port</span><span class="o">);</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="n">WebAppContext</span> <span class="n">context</span> <span class="o">=</span> <span class="k">new</span> <span class="n">WebAppContext</span><span class="o">();</span>
+</span><span class='line'>        <span class="n">context</span><span class="o">.</span><span class="na">setContextPath</span><span class="o">(</span><span class="s">&quot;/&quot;</span><span class="o">);</span>
+</span><span class='line'>        <span class="n">String</span> <span class="n">webapp</span> <span class="o">=</span> <span class="s">&quot;webmodule/src/main/webapp&quot;</span><span class="o">;</span>
+</span><span class='line'>        <span class="n">context</span><span class="o">.</span><span class="na">setWar</span><span class="o">(</span><span class="n">webapp</span><span class="o">);</span>
+</span><span class='line'>        <span class="n">context</span><span class="o">.</span><span class="na">setResourceBase</span><span class="o">(</span><span class="n">webapp</span><span class="o">);</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="n">jetty</span><span class="o">.</span><span class="na">setHandler</span><span class="o">(</span><span class="n">context</span><span class="o">);</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="n">jetty</span><span class="o">.</span><span class="na">setGracefulShutdown</span><span class="o">(</span><span class="mi">1000</span><span class="o">);</span>
+</span><span class='line'>        <span class="n">jetty</span><span class="o">.</span><span class="na">setStopAtShutdown</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="n">jetty</span><span class="o">.</span><span class="na">start</span><span class="o">();</span>
+</span><span class='line'>        <span class="n">jetty</span><span class="o">.</span><span class="na">join</span><span class="o">();</span>
+</span><span class='line'>    <span class="o">}</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Final test with foreman proves it to be working too, however once again it doesn&rsquo;t work on Heroku.</p>
+
+<p>At this point, I have no idea how to get rid of that timeout. It is not very important, I just wanted to check whether I can somehow react to it, but to no avail. For now I guess I&rsquo;ll just contact Heroku, maybe they&rsquo;ll help. Another option could be trying embedded Tomcat, but maybe at a later time. For now, I have other things to do, like checking out <a href="http://jelastic.com/">Jelastic</a>.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2012/03/some-dos-and-donts-for-rest.html">Some DOs and DON&#8217;Ts for ReST</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-03-05T15:00:00+01:00" pubdate data-updated="true">Mar 5<span>th</span>, 2012</time>
+        
+         | <a href="/2012/03/some-dos-and-donts-for-rest.html#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I&rsquo;ve been googling around about ReST and how URIs should look like and I found this particular gem. It&rsquo;s available at <a href="http://stackoverflow.com/questions/1619152/how-to-create-rest-urls-without-verbs/1619677#1619677">Stack Overflow</a>, but I just wanted it posted here for reference. Of course all credits go to <a href="http://stackoverflow.com/users/90723/bob-aman">Bob Aman</a>, the author of said answer. So here goes.</p>
+
+<h3>General principles for good URI design:</h3>
+
+<blockquote><p>Don&#8217;t use query parameters to alter state<br/>Don&#8217;t use mixed-case paths if you can help it; lowercase is best<br/>Don&#8217;t use implementation-specific extensions in your URIs (.php, .py, .pl, etc.)<br/>Don&#8217;t fall into RPC with your URIs<br/>Do limit your URI space as much as possible<br/>Do keep path segments short<br/>Do prefer either /resource or /resource/; create 301 redirects from the one you don&#8217;t use<br/>Do use query parameters for sub-selection of a resource; i.e. pagination, search queries<br/>Do move stuff out of the URI that should be in an HTTP header or a body</p></blockquote>
+
+
+<h3>General principles for HTTP method choice:</h3>
+
+<blockquote><p>Don&#8217;t ever use GET to alter state; this is a great way to have the Googlebot ruin your day<br/>Don&#8217;t use PUT unless you are updating an entire resource<br/>Don&#8217;t use PUT unless you can also legitimately do a GET on the same URI<br/>Don&#8217;t use POST to retrieve information that is long-lived or that might be reasonable to cache<br/>Don&#8217;t perform an operation that is not idempotent with PUT<br/>Do use GET for as much as possible<br/>Do use POST in preference to PUT when in doubt<br/>Do use POST whenever you have to do something that feels RPC-like<br/>Do use PUT for classes of resources that are larger or hierarchical<br/>Do use DELETE in preference to POST to remove resources<br/>Do use GET for things like calculations, unless your input is large, in which case use POST</p></blockquote>
+
+
+<h3>General principles of web service design with <a href="HTTP:">HTTP:</a></h3>
+
+<blockquote><p>Don&#8217;t put metadata in the body of a response that should be in a header<br/>Don&#8217;t put metadata in a separate resource unless including it would create significant overhead<br/>Do use the appropriate status code<br/>201 Created after creating a resource; resource must exist at the time the response is sent<br/>202 Accepted after performing an operation successfully or creating a resource asynchronously<br/>400 Bad Request when someone does an operation on data that&#8217;s clearly bogus; for your application this could be a validation error; generally reserve 500 for uncaught exceptions<br/>403 Forbidden when someone accesses your API in a way that might be malicious or if they aren&#8217;t authorized<br/>405 Method Not Allowed when someone uses POST when they should have used PUT, etc<br/>413 Request Entity Too Large when someone attempts to send you an unacceptably large file<br/>418 I&#8217;m a teapot when attempting to brew coffee with a teapot<br/>Do use caching headers whenever you can<br/>ETag headers are good when you can easily reduce a resource to a hash value<br/>Last-Modified should indicate to you that keeping around a timestamp of when resources are updated is a good idea<br/>Cache-Control and Expires should be given sensible values<br/>Do everything you can to honor caching headers in a request (If-None-Modified, If-Modified-Since)<br/>Do use redirects when they make sense, but these should be rare for a web service</p></blockquote>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2012/02/heroku-and-java-from-newbie-to-beginner-part-1.html">Heroku and Java - From Newbie to Beginner, Part 1</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-02-29T16:47:00+01:00" pubdate data-updated="true">Feb 29<span>th</span>, 2012</time>
+        
+         | <a href="/2012/02/heroku-and-java-from-newbie-to-beginner-part-1.html#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Recently I&rsquo;ve heard that <a href="http://www.heroku.com">Heroku</a> allows deployment of Java applications in it&rsquo;s Cedar stack. Having no real software idea I decided I&rsquo;ll give it a try and just configure SOMETHING to work on Heroku.</p>
+
+<p>I have some kind of crush on ReST (I still want to learn it and practice it) so I&rsquo;ve decided my first application will be a simple hello world using <a href="http://jersey.java.net">Jersey</a> (JAX-RS implementation). So I started a <a href="https://github.com/pbuda/recaps">project</a> on GitHub and started setting up Heroku CLI.</p>
+
+<h3>Setting up Heroku CLI</h3>
+
+<p>Heroku is now easy to set up. I remember when it required Ruby env and my first encounter with Ruby was not so great (there was no installer of any sort so it was all manual &ndash; and I&rsquo;m lazy) so I gave up on Heroku back then. But now installing it is a breeze &ndash; simply go to <a href="https://toolbelt.herokuapp.com">Heroku Toolbelt</a> and download version for your platform. I have now set it up both on Linux Mint and Windows 7 and it works great.</p>
+
+<h3>Setting up project for Heroku</h3>
+
+<p>My project is called <a href="ttps://github.com/pbuda/recaps">recaps</a> &ndash; it&rsquo;s supposed to be yet another ticket management system. But that&rsquo;s irrelevant for now. The most important thing is that in order for Heroku to discover that our application is a Java application pom.xml file must be present. That&rsquo;s because Heroku uses <a href="http://maven.apache.org">Maven 3</a> to build Java applications.</p>
+
+<p>So to actually begin any work with Heroku you need a simple pom.xml file. In my case I&rsquo;ve added a separate module for the application, so my main pom looks like this:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+</span><span class='line'><span class="nt">&lt;project</span> <span class="na">xmlns=</span><span class="s">&quot;http://maven.apache.org/POM/4.0.0&quot;</span>
+</span><span class='line'>         <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+</span><span class='line'>         <span class="na">xsi:schemaLocation=</span><span class="s">&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;modelVersion&gt;</span>4.0.0<span class="nt">&lt;/modelVersion&gt;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="nt">&lt;groupId&gt;</span>com.github.pbuda.recaps<span class="nt">&lt;/groupId&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;artifactId&gt;</span>recaps<span class="nt">&lt;/artifactId&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;packaging&gt;</span>pom<span class="nt">&lt;/packaging&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;version&gt;</span>0.0.1-SNAPSHOT<span class="nt">&lt;/version&gt;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="nt">&lt;inceptionYear&gt;</span>2012<span class="nt">&lt;/inceptionYear&gt;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="nt">&lt;developers&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;developer&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;name&gt;</span>Piotr Buda<span class="nt">&lt;/name&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;email&gt;</span>pibuda@gmail.com<span class="nt">&lt;/email&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;timezone&gt;</span>+1<span class="nt">&lt;/timezone&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;/developer&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/developers&gt;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="nt">&lt;licenses&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;license&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;name&gt;</span>Apache License, version 2.0<span class="nt">&lt;/name&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;url&gt;</span>http://www.apache.org/licenses/LICENSE-2.0.html<span class="nt">&lt;/url&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;/license&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/licenses&gt;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="nt">&lt;modules&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;module&gt;</span>webmodule<span class="nt">&lt;/module&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/modules&gt;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="nt">&lt;build&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;pluginManagement&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;plugins&gt;</span>
+</span><span class='line'>                <span class="nt">&lt;plugin&gt;</span>
+</span><span class='line'>                    <span class="nt">&lt;groupId&gt;</span>org.apache.maven.plugins<span class="nt">&lt;/groupId&gt;</span>
+</span><span class='line'>                    <span class="nt">&lt;artifactId&gt;</span>maven-compiler-plugin<span class="nt">&lt;/artifactId&gt;</span>
+</span><span class='line'>                    <span class="nt">&lt;configuration&gt;</span>
+</span><span class='line'>                        <span class="nt">&lt;source&gt;</span>1.6<span class="nt">&lt;/source&gt;</span>
+</span><span class='line'>                        <span class="nt">&lt;target&gt;</span>1.6<span class="nt">&lt;/target&gt;</span>
+</span><span class='line'>                    <span class="nt">&lt;/configuration&gt;</span>
+</span><span class='line'>                <span class="nt">&lt;/plugin&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;/plugins&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;/pluginManagement&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/build&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;/project&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Then there is the web module, just for the sake of splitting projects:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+</span><span class='line'><span class="nt">&lt;project</span> <span class="na">xmlns=</span><span class="s">&quot;http://maven.apache.org/POM/4.0.0&quot;</span>
+</span><span class='line'>         <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+</span><span class='line'>         <span class="na">xsi:schemaLocation=</span><span class="s">&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;modelVersion&gt;</span>4.0.0<span class="nt">&lt;/modelVersion&gt;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="nt">&lt;parent&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;groupId&gt;</span>com.github.pbuda.recaps<span class="nt">&lt;/groupId&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;artifactId&gt;</span>recaps<span class="nt">&lt;/artifactId&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;version&gt;</span>0.0.1-SNAPSHOT<span class="nt">&lt;/version&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/parent&gt;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="nt">&lt;artifactId&gt;</span>webmodule<span class="nt">&lt;/artifactId&gt;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="nt">&lt;build&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;plugins&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;plugin&gt;</span>
+</span><span class='line'>                <span class="nt">&lt;groupId&gt;</span>org.apache.maven.plugins<span class="nt">&lt;/groupId&gt;</span>
+</span><span class='line'>                <span class="nt">&lt;artifactId&gt;</span>maven-dependency-plugin<span class="nt">&lt;/artifactId&gt;</span>
+</span><span class='line'>                <span class="nt">&lt;version&gt;</span>2.4<span class="nt">&lt;/version&gt;</span>
+</span><span class='line'>                <span class="nt">&lt;executions&gt;</span>
+</span><span class='line'>                    <span class="nt">&lt;execution&gt;</span>
+</span><span class='line'>                        <span class="nt">&lt;id&gt;</span>copy-dependencies<span class="nt">&lt;/id&gt;</span>
+</span><span class='line'>                        <span class="nt">&lt;phase&gt;</span>package<span class="nt">&lt;/phase&gt;</span>
+</span><span class='line'>                        <span class="nt">&lt;goals&gt;</span>
+</span><span class='line'>                            <span class="nt">&lt;goal&gt;</span>copy-dependencies<span class="nt">&lt;/goal&gt;</span>
+</span><span class='line'>                        <span class="nt">&lt;/goals&gt;</span>
+</span><span class='line'>                    <span class="nt">&lt;/execution&gt;</span>
+</span><span class='line'>                <span class="nt">&lt;/executions&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;/plugin&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;plugin&gt;</span>
+</span><span class='line'>                <span class="nt">&lt;groupId&gt;</span>org.apache.maven.plugins<span class="nt">&lt;/groupId&gt;</span>
+</span><span class='line'>                <span class="nt">&lt;artifactId&gt;</span>maven-compiler-plugin<span class="nt">&lt;/artifactId&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;/plugin&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;/plugins&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/build&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;dependencies&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;dependency&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;groupId&gt;</span>com.sun.jersey<span class="nt">&lt;/groupId&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;artifactId&gt;</span>jersey-server<span class="nt">&lt;/artifactId&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;version&gt;</span>1.12<span class="nt">&lt;/version&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;/dependency&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;dependency&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;groupId&gt;</span>com.sun.jersey<span class="nt">&lt;/groupId&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;artifactId&gt;</span>jersey-core<span class="nt">&lt;/artifactId&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;version&gt;</span>1.12<span class="nt">&lt;/version&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;/dependency&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;dependency&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;groupId&gt;</span>com.sun.jersey<span class="nt">&lt;/groupId&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;artifactId&gt;</span>jersey-grizzly2<span class="nt">&lt;/artifactId&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;version&gt;</span>1.12<span class="nt">&lt;/version&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;/dependency&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/dependencies&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;/project&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>My first attempt at running my sample project concentrated on setting up Jersey. After checking out docs I decided I&rsquo;ll use Grizzly2 HTTP server just because it&rsquo;s very easy to set up. I&rsquo;ve basically pasted the docs tutorial into main Main class. There were some necessary differences, because for example port of the server is dynamically assigned by Heroku. So after very few changes, the resulting Main class looks like this:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="cm">/*</span>
+</span><span class='line'><span class="cm"> * Copyright 2012 Piotr Buda</span>
+</span><span class='line'><span class="cm"> *</span>
+</span><span class='line'><span class="cm"> * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span>
+</span><span class='line'><span class="cm"> * you may not use this file except in compliance with the License.</span>
+</span><span class='line'><span class="cm"> * You may obtain a copy of the License at</span>
+</span><span class='line'><span class="cm"> *</span>
+</span><span class='line'><span class="cm"> *     http://www.apache.org/licenses/LICENSE-2.0</span>
+</span><span class='line'><span class="cm"> *</span>
+</span><span class='line'><span class="cm"> * Unless required by applicable law or agreed to in writing, software</span>
+</span><span class='line'><span class="cm"> * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span>
+</span><span class='line'><span class="cm"> * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span>
+</span><span class='line'><span class="cm"> * See the License for the specific language governing permissions and</span>
+</span><span class='line'><span class="cm"> * limitations under the License.</span>
+</span><span class='line'><span class="cm"> */</span>
+</span><span class='line'>
+</span><span class='line'><span class="kn">package</span> <span class="n">com</span><span class="o">.</span><span class="na">github</span><span class="o">.</span><span class="na">pbuda</span><span class="o">.</span><span class="na">recaps</span><span class="o">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="kn">import</span> <span class="nn">com.sun.jersey.api.container.grizzly2.GrizzlyServerFactory</span><span class="o">;</span>
+</span><span class='line'><span class="kn">import</span> <span class="nn">com.sun.jersey.api.core.PackagesResourceConfig</span><span class="o">;</span>
+</span><span class='line'><span class="kn">import</span> <span class="nn">com.sun.jersey.api.core.ResourceConfig</span><span class="o">;</span>
+</span><span class='line'><span class="kn">import</span> <span class="nn">org.glassfish.grizzly.http.server.HttpServer</span><span class="o">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="kn">import</span> <span class="nn">javax.ws.rs.core.UriBuilder</span><span class="o">;</span>
+</span><span class='line'><span class="kn">import</span> <span class="nn">java.io.IOException</span><span class="o">;</span>
+</span><span class='line'><span class="kn">import</span> <span class="nn">java.net.URI</span><span class="o">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="cm">/**</span>
+</span><span class='line'><span class="cm"> * Created by IntelliJ IDEA.</span>
+</span><span class='line'><span class="cm"> * User: pbu</span>
+</span><span class='line'><span class="cm"> * Date: 28.02.12</span>
+</span><span class='line'><span class="cm"> * Time: 21:01</span>
+</span><span class='line'><span class="cm"> * To change this template use File | Settings | File Templates.</span>
+</span><span class='line'><span class="cm"> */</span>
+</span><span class='line'><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="o">{</span>
+</span><span class='line'>    <span class="kd">private</span> <span class="kd">static</span> <span class="n">URI</span> <span class="nf">getBaseURI</span><span class="o">(</span><span class="n">String</span> <span class="n">hostname</span><span class="o">,</span> <span class="kt">int</span> <span class="n">port</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>        <span class="k">return</span> <span class="n">UriBuilder</span><span class="o">.</span><span class="na">fromUri</span><span class="o">(</span><span class="s">&quot;http://0.0.0.0/&quot;</span><span class="o">).</span><span class="na">port</span><span class="o">(</span><span class="n">port</span><span class="o">).</span><span class="na">build</span><span class="o">();</span>
+</span><span class='line'>    <span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="kd">protected</span> <span class="kd">static</span> <span class="n">HttpServer</span> <span class="nf">startServer</span><span class="o">(</span><span class="n">URI</span> <span class="n">uri</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">IOException</span> <span class="o">{</span>
+</span><span class='line'>        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;Starting grizzly...&quot;</span><span class="o">);</span>
+</span><span class='line'>        <span class="n">ResourceConfig</span> <span class="n">rc</span> <span class="o">=</span> <span class="k">new</span> <span class="n">PackagesResourceConfig</span><span class="o">(</span><span class="s">&quot;com.github.pbuda.recaps&quot;</span><span class="o">);</span>
+</span><span class='line'>        <span class="k">return</span> <span class="n">GrizzlyServerFactory</span><span class="o">.</span><span class="na">createHttpServer</span><span class="o">(</span><span class="n">uri</span><span class="o">,</span> <span class="n">rc</span><span class="o">);</span>
+</span><span class='line'>    <span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">IOException</span> <span class="o">{</span>
+</span><span class='line'>        <span class="n">URI</span> <span class="n">uri</span> <span class="o">=</span> <span class="n">getBaseURI</span><span class="o">(</span><span class="n">System</span><span class="o">.</span><span class="na">getenv</span><span class="o">(</span><span class="s">&quot;HOSTNAME&quot;</span><span class="o">),</span> <span class="n">Integer</span><span class="o">.</span><span class="na">valueOf</span><span class="o">(</span><span class="n">System</span><span class="o">.</span><span class="na">getenv</span><span class="o">(</span><span class="s">&quot;PORT&quot;</span><span class="o">)));</span>
+</span><span class='line'>        <span class="n">HttpServer</span> <span class="n">httpServer</span> <span class="o">=</span> <span class="n">startServer</span><span class="o">(</span><span class="n">uri</span><span class="o">);</span>
+</span><span class='line'>        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">String</span><span class="o">.</span><span class="na">format</span><span class="o">(</span><span class="s">&quot;Jersey app started with WADL available at &quot;</span>
+</span><span class='line'>                <span class="o">+</span> <span class="s">&quot;%sapplication.wadl\nTry out %shelloworld\nHit enter to stop it...&quot;</span><span class="o">,</span>
+</span><span class='line'>                <span class="n">uri</span><span class="o">,</span> <span class="n">uri</span><span class="o">));</span>
+</span><span class='line'>        <span class="k">while</span><span class="o">(</span><span class="kc">true</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>            <span class="n">System</span><span class="o">.</span><span class="na">in</span><span class="o">.</span><span class="na">read</span><span class="o">();</span>
+</span><span class='line'>        <span class="o">}</span>
+</span><span class='line'>    <span class="o">}</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>That starts up the server and registers some resources with it.</p>
+
+<h3>Some Grizzly tricks</h3>
+
+<p>Firstly, the GrizzlyServerFactory.createHttpServer method accepts an URI which has to begin witch schema name &ndash; in this case <a href="http://.">http://.</a> Then it has to specify host name, which at first I set up to the application name on herokuapp.com. This didn&rsquo;t work, but Heroku told me nicely about it: there is a notification in logs that server should bind to 0.0.0.0, so I changed the URI to <a href="http://0.0.0.0.">http://0.0.0.0.</a></p>
+
+<p>Secondly, the Jersey example waited for a key press to terminate the server. Unfortunately Heroku printed a message which was then passed to the application somehow and the server was terminated. To resolve this, I wrapped the System.in.read() in an endless while loop.</p>
+
+<p>This of course is not the best solution, but it worked, or so it seemed. After a few hours I checked the logs of the application and they said that the application went from up to down. So I&rsquo;ve decided to switch from Grizzly to Jetty, but that&rsquo;s out of topic for this post :)</p>
+
+<p>Before pushing all this to Heroku I also added a Procfile:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>web:    java -cp webmodule/target/classes:webmodule/target/dependency/* com.github.pbuda.recaps.Main</span></code></pre></td></tr></table></div></figure>
+
+
+<p>After pushing to Heroku the application was build and started, and request to <a href="http://growing-dawn-9158.herokuapp.com/helloworld">http://growing-dawn-9158.herokuapp.com/helloworld</a> produced some output (in this case a simple &lsquo;Message&rsquo; message). Job well done :)</p>
+
+<h3>Mistakes I&rsquo;ve made and learnt from</h3>
+
+<p>Firstly, I forgot to add the Maven Dependency plugin, but I resolved that one before pushing to Heroku. Without it configured I couldn&rsquo;t add dependencies to classpath, which in turn produced ClassNotFound exceptions. It didn&rsquo;t occur to me at first it was required, but then I looked at Heroku example and fixed it easily.</p>
+
+<p>Secondly, I didn&rsquo;t know that web dynos time out. After successful deployment I was sure the application was running, but because of time out, logs said the application went down. Because I wasn&rsquo;t aware of the fact that web dynos time out I suspected that Grizzly was simply interrupted somehow so I&rsquo;ve decided to move to Jetty. But it happened to Jetty implementation too, so I started digging and I found relevant information :)</p>
+
+<h3>Summary</h3>
+
+<p>I think that Heroku is great. It&rsquo;s free Java hosting, something that is NOT popular and yet they did it and it works quite nicely. I once tried Google App Engine, but the experience wasn&rsquo;t great (mind you it was some long time ago) so I&rsquo;ve decided to give Heroku a chance and because it was actually quite simple to set up the application I think I&rsquo;ll stick to it for a while and play with the platform &ndash; look at all those plugins :)</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/blog/page/3/">&larr; Older</a>
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2013/04/scalawebsocket.html">ScalaWebSocket</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/02/trying-to-deploy-scala-app-on-openshift.html">Trying to deploy Scala app on OpenShift</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/02/angularjs-directive-for-password-matching.html">Angular directive for password matching</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/02/my-first-month-at-softwaremill.html">My first month at SoftwareMill</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2012/12/scala-and-android-asynctask-implementation-problem.html">Scala and Android: AsyncTask implementation problem</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/pbuda">@pbuda</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'pbuda',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Piotr Buda -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'piotrbuda';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
