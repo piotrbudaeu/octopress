@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Software Development Ramblings]]></title>
-  <link href="http://piotrbudaeu.github.io/atom.xml" rel="self"/>
-  <link href="http://piotrbudaeu.github.io/"/>
-  <updated>2013-05-14T14:02:23+02:00</updated>
-  <id>http://piotrbudaeu.github.io/</id>
+  <link href="http://piotrbuda.eu/atom.xml" rel="self"/>
+  <link href="http://piotrbuda.eu/"/>
+  <updated>2013-05-14T14:13:04+02:00</updated>
+  <id>http://piotrbuda.eu/</id>
   <author>
     <name><![CDATA[Piotr Buda]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[ScalaWebSocket]]></title>
-    <link href="http://piotrbudaeu.github.io/2013/04/scalawebsocket.html"/>
+    <link href="http://piotrbuda.eu/2013/04/scalawebsocket.html"/>
     <updated>2013-04-24T16:45:00+02:00</updated>
-    <id>http://piotrbudaeu.github.io/2013/04/scalawebsocket</id>
+    <id>http://piotrbuda.eu/2013/04/scalawebsocket</id>
     <content type="html"><![CDATA[<h3>ScalaWebSocket</h3>
 
 <p>On April 21st I pushed the <a href="https://github.com/pbuda/scalawebsocket">ScalaWebSocket</a> library to GitHub. But what is it? As the name suggests, it&rsquo;s WebSockets for Scala.</p>
@@ -91,9 +91,9 @@
   
   <entry>
     <title type="html"><![CDATA[Trying to deploy Scala app on OpenShift]]></title>
-    <link href="http://piotrbudaeu.github.io/2013/02/trying-to-deploy-scala-app-on-openshift.html"/>
+    <link href="http://piotrbuda.eu/2013/02/trying-to-deploy-scala-app-on-openshift.html"/>
     <updated>2013-02-26T10:35:00+01:00</updated>
-    <id>http://piotrbudaeu.github.io/2013/02/trying-to-deploy-scala-app-on-openshift</id>
+    <id>http://piotrbuda.eu/2013/02/trying-to-deploy-scala-app-on-openshift</id>
     <content type="html"><![CDATA[<h3>The beggining</h3>
 
 <p>This is a simple log of what I have done during past few days trying to deploy a simple app to <a href="https://openshift.redhat.com/app/">OpenShift</a>. I thought it would be quite easy but apparently this is beyond my knowledge. My application is a simple Hello World app. The only real requirement is that I wanted this app to compile with Scala 2.10.</p>
@@ -373,9 +373,9 @@
   
   <entry>
     <title type="html"><![CDATA[Angular directive for password matching]]></title>
-    <link href="http://piotrbudaeu.github.io/2013/02/angularjs-directive-for-password-matching.html"/>
+    <link href="http://piotrbuda.eu/2013/02/angularjs-directive-for-password-matching.html"/>
     <updated>2013-02-12T11:30:00+01:00</updated>
-    <id>http://piotrbudaeu.github.io/2013/02/angularjs-directive-for-password-matching</id>
+    <id>http://piotrbuda.eu/2013/02/angularjs-directive-for-password-matching</id>
     <content type="html"><![CDATA[<p>Recently at <a href="http://bootstrap.softwaremill.com/#/">Bootstrap</a> I was working on the profile page part. I had to introduce a simple validation of passwords &ndash; when you type in your password, you often have to repeat it. This was implemented in a few places already, however it wasn&rsquo;t correct &ndash; changing the original password did not trigger validation.</p>
 
 <p>To see how this works, just go to the <a href="http://bootstrap.softwaremill.com">Bootstrap page</a> and play with the registration form&rsquo;s &ldquo;password&rdquo; and &ldquo;repeat password&rdquo; inputs. All code snippets are taken from <a href="http://bootstrap.softwaremill.com/#/">Bootstrap</a>.</p>
@@ -479,9 +479,9 @@
   
   <entry>
     <title type="html"><![CDATA[My first month at SoftwareMill]]></title>
-    <link href="http://piotrbudaeu.github.io/2013/02/my-first-month-at-softwaremill.html"/>
+    <link href="http://piotrbuda.eu/2013/02/my-first-month-at-softwaremill.html"/>
     <updated>2013-02-11T08:06:00+01:00</updated>
-    <id>http://piotrbudaeu.github.io/2013/02/my-first-month-at-softwaremill</id>
+    <id>http://piotrbuda.eu/2013/02/my-first-month-at-softwaremill</id>
     <content type="html"><![CDATA[<p>The year 2012 was a year of change to me. First I was moved to a new team in CGM Poland. Things were nice at first, but after a while I lost all my motivation to work. It was time to change the organization and so I applied to a company called <a href="http://www.softwaremill.com">SoftwareMill</a>.
 Why them? Trully a coincidence. I was browsing some stuff on LinkedIn and I stumbled upon their job posting and I got intrigued by the fact that they mentioned possibility to work from home. As it turned out, the whole team is distributed! But then I took a closer look at the company and noticed that on SoftwareMill website there&rsquo;s a <a href="http://softwaremill.com/why-softwaremill/our-team">section about developers</a>. Browsing short descriptions of those who worked there I thought that it was a very good company to work at. So I applied in August. It took a longer while to finish the recruitment process (I wasn&rsquo;t accepted at first), but I finally started work at SoftwareMill on 2nd January 2013.</p>
 
@@ -501,9 +501,9 @@ Why them? Trully a coincidence. I was browsing some stuff on LinkedIn and I stum
   
   <entry>
     <title type="html"><![CDATA[Scala and Android: AsyncTask implementation problem]]></title>
-    <link href="http://piotrbudaeu.github.io/2012/12/scala-and-android-asynctask-implementation-problem.html"/>
+    <link href="http://piotrbuda.eu/2012/12/scala-and-android-asynctask-implementation-problem.html"/>
     <updated>2012-12-12T13:06:00+01:00</updated>
-    <id>http://piotrbudaeu.github.io/2012/12/scala-and-android-asynctask-implementation-problem</id>
+    <id>http://piotrbuda.eu/2012/12/scala-and-android-asynctask-implementation-problem</id>
     <content type="html"><![CDATA[<p>So I recently started some really simple Scala development for Android. However because I&rsquo;m a very lucky person, I stumbled upon my first problem the very first moment I tried doing something nice.</p>
 
 <p>There is a neat way for doing things in Android with AsyncTasks &ndash; this cool utility abstracts away the need for creation and management of threads for invoking stuff that would block UI thread. For more info just go to AsyncTask documentation.</p>
@@ -552,9 +552,9 @@ Why them? Trully a coincidence. I was browsing some stuff on LinkedIn and I stum
   
   <entry>
     <title type="html"><![CDATA[Warsjawa 2012]]></title>
-    <link href="http://piotrbudaeu.github.io/2012/10/warsjawa-2012.html"/>
+    <link href="http://piotrbuda.eu/2012/10/warsjawa-2012.html"/>
     <updated>2012-10-29T13:02:00+01:00</updated>
-    <id>http://piotrbudaeu.github.io/2012/10/warsjawa-2012</id>
+    <id>http://piotrbuda.eu/2012/10/warsjawa-2012</id>
     <content type="html"><![CDATA[<p>I didn&rsquo;t attent any conference for the past 18 months. Last time I was on one was when I was sent to eye-opening meeting with Greg Young. Recently a friend of mine suggested that we should go to <a href="http://warszawa.jug.pl/warsjawa-2012">Warsjawa 2012</a> conference as it&rsquo;s free and relatively close to Lublin.</p>
 
 <p>We decided to sign up for a workshop called &lsquo;One day with a difficult client&rsquo; that was lead by guys from <a href="http://softwaremill.com/">SoftwareMill</a>. The idea of the workshop was to show attendees some common problems people face when working with their clients. Even though I don&rsquo;t work directly with our client every day I read a few things here and there how they can be PITA and I had some expectations regarding this workshop. It turned out great and here&rsquo;s how it went.</p>
@@ -577,9 +577,9 @@ Why them? Trully a coincidence. I was browsing some stuff on LinkedIn and I stum
   
   <entry>
     <title type="html"><![CDATA[Scala case classes and annotations, part 2]]></title>
-    <link href="http://piotrbudaeu.github.io/2012/10/scala-case-classes-and-annotations-part-2.html"/>
+    <link href="http://piotrbuda.eu/2012/10/scala-case-classes-and-annotations-part-2.html"/>
     <updated>2012-10-28T23:00:00+01:00</updated>
-    <id>http://piotrbudaeu.github.io/2012/10/scala-case-classes-and-annotations-part-2</id>
+    <id>http://piotrbuda.eu/2012/10/scala-case-classes-and-annotations-part-2</id>
     <content type="html"><![CDATA[<p>Before proceeding please remember that I&rsquo;m learning Scala and what follows is the result of lack of proper knowledge :)</p>
 
 <p>In the previous article I wrote how to specify where annotations should be applied. But if you remember an example class I ported from Java to Scala there was one thing left to do and that was using constants in annotations.</p>
@@ -666,9 +666,9 @@ Why them? Trully a coincidence. I was browsing some stuff on LinkedIn and I stum
   
   <entry>
     <title type="html"><![CDATA[Scala case classes and annotations, part 1]]></title>
-    <link href="http://piotrbudaeu.github.io/2012/10/scala-case-classes-and-annotations-part-1.html"/>
+    <link href="http://piotrbuda.eu/2012/10/scala-case-classes-and-annotations-part-1.html"/>
     <updated>2012-10-28T19:23:00+01:00</updated>
-    <id>http://piotrbudaeu.github.io/2012/10/scala-case-classes-and-annotations-part-1</id>
+    <id>http://piotrbuda.eu/2012/10/scala-case-classes-and-annotations-part-1</id>
     <content type="html"><![CDATA[<p>Recently in Twittory I moved from Java to Scala. Well, to be honest I just switched from Java to Scala syntax and will move on to adapt to functional programming principles.</p>
 
 <p>There was one glitch during the process. I am using Spring Data for MongoDb and to ease up a few queries I used statics to define field names of objects I store.</p>
@@ -778,9 +778,9 @@ Why them? Trully a coincidence. I was browsing some stuff on LinkedIn and I stum
   
   <entry>
     <title type="html"><![CDATA[Function Programming Principles in Scala course - week one]]></title>
-    <link href="http://piotrbudaeu.github.io/2012/09/function-programming-principles-in-scala-course-week-one.html"/>
+    <link href="http://piotrbuda.eu/2012/09/function-programming-principles-in-scala-course-week-one.html"/>
     <updated>2012-09-25T16:02:00+02:00</updated>
-    <id>http://piotrbudaeu.github.io/2012/09/function-programming-principles-in-scala-course-week-one</id>
+    <id>http://piotrbuda.eu/2012/09/function-programming-principles-in-scala-course-week-one</id>
     <content type="html"><![CDATA[<p>So the course started a week ago and I&rsquo;d like to share my opinion after the first week.</p>
 
 <p>First of all I got this feeling that most people attending the course thought that it&rsquo;ll be a Scala course. While Scala is used to demonstrate functional programming principles it is not a Scala course. You have to know Scala on your own, however for now Martin Odersky does explain it&rsquo;s syntax. If you&rsquo;re into learning Scala only, this is not a course for you IMO.</p>
@@ -799,9 +799,9 @@ Why them? Trully a coincidence. I was browsing some stuff on LinkedIn and I stum
   
   <entry>
     <title type="html"><![CDATA[Twittory lessons learned - don't mock Iterator]]></title>
-    <link href="http://piotrbudaeu.github.io/2012/09/twittory-lessons-learned-dont-mock-iterator.html"/>
+    <link href="http://piotrbuda.eu/2012/09/twittory-lessons-learned-dont-mock-iterator.html"/>
     <updated>2012-09-14T11:40:00+02:00</updated>
-    <id>http://piotrbudaeu.github.io/2012/09/twittory-lessons-learned-dont-mock-iterator</id>
+    <id>http://piotrbuda.eu/2012/09/twittory-lessons-learned-dont-mock-iterator</id>
     <content type="html"><![CDATA[<p><del>So I&rsquo;m doing this pet project now called <a href="https://github.com/pbuda/twittory">Twittory</a> and because it&rsquo;s hosted on Github, people can review it and voice their oppinions.</del><strong>Update (03 Feb 2013): I no longer develop this project.</strong></p>
 
 <p>Marcin Deryło (<a href="https://twitter.com/marcinderylo">twitter</a>, <a href="http://marcinderylo.blogspot.com/">blog</a>), a friend of mine, has recently reviewed some simple tests already present in the project and he raised an issue with mocking iterators.</p>
@@ -886,9 +886,9 @@ Why them? Trully a coincidence. I was browsing some stuff on LinkedIn and I stum
   
   <entry>
     <title type="html"><![CDATA[GitFlow Intellij Idea plugin]]></title>
-    <link href="http://piotrbudaeu.github.io/2012/08/gitflow-intellij-idea-plugin.html"/>
+    <link href="http://piotrbuda.eu/2012/08/gitflow-intellij-idea-plugin.html"/>
     <updated>2012-08-06T13:37:00+02:00</updated>
-    <id>http://piotrbudaeu.github.io/2012/08/gitflow-intellij-idea-plugin</id>
+    <id>http://piotrbuda.eu/2012/08/gitflow-intellij-idea-plugin</id>
     <content type="html"><![CDATA[<p>I am creating a few side projects currently and I use git-flow Git extension for each of them, but I lack the support from Intellij Idea in this regard – mainly the starting and stopping of features and releases.</p>
 
 <p>So because of that I’ve started a small project to include said functionality in Idea. It’s nothing major as apparently Jetbrains will include such plugin in some version of Intellij, but I need it now and I’m interested in how to write plugins for Idea
@@ -905,9 +905,9 @@ The first version I will release will be able to do 1 and 2 while option 3 will 
   
   <entry>
     <title type="html"><![CDATA[Play Store API on GitHub.com]]></title>
-    <link href="http://piotrbudaeu.github.io/2012/07/play-store-api-on-github-dot-com.html"/>
+    <link href="http://piotrbuda.eu/2012/07/play-store-api-on-github-dot-com.html"/>
     <updated>2012-07-23T11:59:00+02:00</updated>
-    <id>http://piotrbudaeu.github.io/2012/07/play-store-api-on-github-dot-com</id>
+    <id>http://piotrbuda.eu/2012/07/play-store-api-on-github-dot-com</id>
     <content type="html"><![CDATA[<p>If anyone is interested, I mirrored a great project: <a href="http://code.google.com/p/android-market-api/">Android Market API</a> and it&rsquo;s now available <a href="https://github.com/pbuda/playstoreapi">on GitHub.com</a>. I am using this API for my yet-to-be announced Android project and because of lack of support from original authors I decided to mirror it and introduce fixes/new features.</p>
 
 <p>Currently I&rsquo;m reworking the API of the project, but for now you can download the sources and build with Maven OR download the jar directly from project downloads section.</p>
@@ -918,9 +918,9 @@ The first version I will release will be able to do 1 and 2 while option 3 will 
   
   <entry>
     <title type="html"><![CDATA[Play Store on Emulator and morals]]></title>
-    <link href="http://piotrbudaeu.github.io/2012/06/play-store-on-emulator-and-morals.html"/>
+    <link href="http://piotrbuda.eu/2012/06/play-store-on-emulator-and-morals.html"/>
     <updated>2012-06-26T11:30:00+02:00</updated>
-    <id>http://piotrbudaeu.github.io/2012/06/play-store-on-emulator-and-morals</id>
+    <id>http://piotrbuda.eu/2012/06/play-store-on-emulator-and-morals</id>
     <content type="html"><![CDATA[<p>I&rsquo;ve recently noticed that I have some traffic to my blog from <a href="http://stackoverflow.com/questions/11154222/google-play-in-android-4-0-emulator">some question posted on Stack Overflow</a>. I checked out the question out of curiosity and what I found made me wonder, particularly <a href="http://stackoverflow.com/a/11155703/840794">this answer</a>. I don&rsquo;t have enough rep to comment on other answers, so I decided to rant here a little.</p>
 
 <p>I understand that Google doesn&rsquo;t want their Play Store available on devices that are not licensed, I don&rsquo;t pretend to know why, I can only guess. But I don&rsquo;t want to be called a software pirate. I did not rip Play Store from a device nor I distribute it. The Play Store apk that I used comes from CyanogenMod page, AFAIK the Google apps package for CM is the only way for their users to update Google apps. Is this also pirating?  If so, we have SO MANY pirates in Android world then! There are more than <a href="http://stats.cyanogenmod.com/">one million CM users</a> out there so that means more than one million people pirate Play Store. Not to mention some Kindle Fire users who install Play Store on their rooted devices.</p>
@@ -933,10 +933,10 @@ The first version I will release will be able to do 1 and 2 while option 3 will 
   
   <entry>
     <title type="html"><![CDATA[Trying to solve Error 491 in Play Store on Android Emulator]]></title>
-    <link href="http://piotrbudaeu.github.io/2012/06/trying-to-solve-error-491-in-play-store-on-android-emulator.html"/>
+    <link href="http://piotrbuda.eu/2012/06/trying-to-solve-error-491-in-play-store-on-android-emulator.html"/>
     <updated>2012-06-26T09:23:00+02:00</updated>
-    <id>http://piotrbudaeu.github.io/2012/06/trying-to-solve-error-491-in-play-store-on-android-emulator</id>
-    <content type="html"><![CDATA[<p>Installing Google Play Store on Android emulator is quite easy &ndash; I described it in my <a href="http://piotrbudaeu.github.io/2012/05/installing-google-play-on-android-emulator.html">previous article</a>. However there is one problem that does not allow downloading of apps &ndash; the dreadful Error 491.
+    <id>http://piotrbuda.eu/2012/06/trying-to-solve-error-491-in-play-store-on-android-emulator</id>
+    <content type="html"><![CDATA[<p>Installing Google Play Store on Android emulator is quite easy &ndash; I described it in my <a href="http://piotrbuda.eu/2012/05/installing-google-play-on-android-emulator.html">previous article</a>. However there is one problem that does not allow downloading of apps &ndash; the dreadful Error 491.
 After some investigation it appears that the error happens because Android emulator does not have DRM! This is the exact error that is displayed in Logcat:</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -995,9 +995,9 @@ After some investigation it appears that the error happens because Android emula
   
   <entry>
     <title type="html"><![CDATA[Installing Google Play on Android Emulator]]></title>
-    <link href="http://piotrbudaeu.github.io/2012/05/installing-google-play-on-android-emulator.html"/>
+    <link href="http://piotrbuda.eu/2012/05/installing-google-play-on-android-emulator.html"/>
     <updated>2012-05-02T21:40:00+02:00</updated>
-    <id>http://piotrbudaeu.github.io/2012/05/installing-google-play-on-android-emulator</id>
+    <id>http://piotrbuda.eu/2012/05/installing-google-play-on-android-emulator</id>
     <content type="html"><![CDATA[<h3>The problem</h3>
 
 <p>I wanted to install Google Play on emulator. Problem is no guide on the net could tell me precisely how to do this. I&rsquo;m not sure why, it seemed that they worked with old Android Market (pre version 3 era) or at least people shown some screenshots of that but I couldn&rsquo;t make it work at home.</p>
@@ -1058,19 +1058,19 @@ After some investigation it appears that the error happens because Android emula
 
 <h3>Settings of the AVD</h3>
 
-<p><img src="http://piotrbudaeu.github.io/images/avdsettings.png" title="Settings of the AVD" ></p>
+<p><img src="http://piotrbuda.eu/images/avdsettings.png" title="Settings of the AVD" ></p>
 
 <h3>Working Google Play Store</h3>
 
-<p><img src="http://piotrbudaeu.github.io/images/emulator.png" title="Working Google Play Store" ></p>
+<p><img src="http://piotrbuda.eu/images/emulator.png" title="Working Google Play Store" ></p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Getting auth token on an Android device]]></title>
-    <link href="http://piotrbudaeu.github.io/2012/05/getting-auth-token-on-an-android-device.html"/>
+    <link href="http://piotrbuda.eu/2012/05/getting-auth-token-on-an-android-device.html"/>
     <updated>2012-05-01T00:18:00+02:00</updated>
-    <id>http://piotrbudaeu.github.io/2012/05/getting-auth-token-on-an-android-device</id>
+    <id>http://piotrbuda.eu/2012/05/getting-auth-token-on-an-android-device</id>
     <content type="html"><![CDATA[<p>I&rsquo;m currently working on a little pet project that targets Android devices (well, at least my Galaxy) and requires auth token to operate. It wasn&rsquo;t hard to find the code to do this: <a href="http://www.toxicbakery.com/android-development/getting-google-auth-sub-tokens-in-your-android-applications/comment-page-1/#comment-238">Toxic Bakery has already shown how to do it.</a></p>
 
 <p>My first attempt of using this code was successful and running on the device was easy &ndash; I simply added a button that invoked their method and it worked. However when I used this solution in my pet project it suddenly stopped working properly. The problem was happening when I was invalidating the auth token &ndash; recursive call would fail with IllegalStateException saying that calling that method on main thread would lead to a deadlock.</p>
@@ -1083,9 +1083,9 @@ After some investigation it appears that the error happens because Android emula
   
   <entry>
     <title type="html"><![CDATA[Commenting the code is obsolete]]></title>
-    <link href="http://piotrbudaeu.github.io/2012/04/commenting-the-code-is-obsolete.html"/>
+    <link href="http://piotrbuda.eu/2012/04/commenting-the-code-is-obsolete.html"/>
     <updated>2012-04-11T12:01:00+02:00</updated>
-    <id>http://piotrbudaeu.github.io/2012/04/commenting-the-code-is-obsolete</id>
+    <id>http://piotrbuda.eu/2012/04/commenting-the-code-is-obsolete</id>
     <content type="html"><![CDATA[<p>Some time ago I had a few visits from fellow developers asking me questions about that I supposedly created. Since I obviously created some of that code months or years ago, I often couldn&rsquo;t answer their questions because either my explanations were false (changed requirements) or I didn&rsquo;t even know about that particular case (new code). It struck me that they came to me to ask these questions because I was placed as the author of the class in Javadoc&hellip;</p>
 
 <p>More recently I&rsquo;ve been in situation when our team leader told us that we&rsquo;re not putting enough comments in our classes and the we could at least provide the @author Javadoc comment (or ASDoc in that case) so that everyone knows who to talk to about this code.</p>
@@ -1117,9 +1117,9 @@ After some investigation it appears that the error happens because Android emula
   
   <entry>
     <title type="html"><![CDATA[Heroku and Java - from newbie to beginner, part 2]]></title>
-    <link href="http://piotrbudaeu.github.io/2012/03/heroku-and-java-from-newbie-to-beginner-part-2.html"/>
+    <link href="http://piotrbuda.eu/2012/03/heroku-and-java-from-newbie-to-beginner-part-2.html"/>
     <updated>2012-03-17T01:13:00+01:00</updated>
-    <id>http://piotrbudaeu.github.io/2012/03/heroku-and-java-from-newbie-to-beginner-part-2</id>
+    <id>http://piotrbuda.eu/2012/03/heroku-and-java-from-newbie-to-beginner-part-2</id>
     <content type="html"><![CDATA[<h3>The problem</h3>
 
 <p>So after a few days I could get back to my little Recaps project. I started with checking logs and found something like this:</p>
@@ -1323,9 +1323,9 @@ It&rsquo;s very simple and running foreman start made the application actually s
   
   <entry>
     <title type="html"><![CDATA[Some DOs and DON'Ts for ReST]]></title>
-    <link href="http://piotrbudaeu.github.io/2012/03/some-dos-and-donts-for-rest.html"/>
+    <link href="http://piotrbuda.eu/2012/03/some-dos-and-donts-for-rest.html"/>
     <updated>2012-03-05T15:00:00+01:00</updated>
-    <id>http://piotrbudaeu.github.io/2012/03/some-dos-and-donts-for-rest</id>
+    <id>http://piotrbuda.eu/2012/03/some-dos-and-donts-for-rest</id>
     <content type="html"><![CDATA[<p>I&rsquo;ve been googling around about ReST and how URIs should look like and I found this particular gem. It&rsquo;s available at <a href="http://stackoverflow.com/questions/1619152/how-to-create-rest-urls-without-verbs/1619677#1619677">Stack Overflow</a>, but I just wanted it posted here for reference. Of course all credits go to <a href="http://stackoverflow.com/users/90723/bob-aman">Bob Aman</a>, the author of said answer. So here goes.</p>
 
 <h3>General principles for good URI design:</h3>
@@ -1347,9 +1347,9 @@ It&rsquo;s very simple and running foreman start made the application actually s
   
   <entry>
     <title type="html"><![CDATA[Heroku and Java - from newbie to beginner, part 1]]></title>
-    <link href="http://piotrbudaeu.github.io/2012/02/heroku-and-java-from-newbie-to-beginner-part-1.html"/>
+    <link href="http://piotrbuda.eu/2012/02/heroku-and-java-from-newbie-to-beginner-part-1.html"/>
     <updated>2012-02-29T16:47:00+01:00</updated>
-    <id>http://piotrbudaeu.github.io/2012/02/heroku-and-java-from-newbie-to-beginner-part-1</id>
+    <id>http://piotrbuda.eu/2012/02/heroku-and-java-from-newbie-to-beginner-part-1</id>
     <content type="html"><![CDATA[<p>Recently I&rsquo;ve heard that <a href="http://www.heroku.com">Heroku</a> allows deployment of Java applications in it&rsquo;s Cedar stack. Having no real software idea I decided I&rsquo;ll give it a try and just configure SOMETHING to work on Heroku.</p>
 
 <p>I have some kind of crush on ReST (I still want to learn it and practice it) so I&rsquo;ve decided my first application will be a simple hello world using <a href="http://jersey.java.net">Jersey</a> (JAX-RS implementation). So I started a <a href="https://github.com/pbuda/recaps">project</a> on GitHub and started setting up Heroku CLI.</p>

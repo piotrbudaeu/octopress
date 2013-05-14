@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: scala | Software Development Ramblings]]></title>
-  <link href="http://piotrbudaeu.github.io/blog/categories/scala/atom.xml" rel="self"/>
-  <link href="http://piotrbudaeu.github.io/"/>
-  <updated>2013-05-14T14:02:23+02:00</updated>
-  <id>http://piotrbudaeu.github.io/</id>
+  <link href="http://piotrbuda.eu/blog/categories/scala/atom.xml" rel="self"/>
+  <link href="http://piotrbuda.eu/"/>
+  <updated>2013-05-14T14:13:04+02:00</updated>
+  <id>http://piotrbuda.eu/</id>
   <author>
     <name><![CDATA[Piotr Buda]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[ScalaWebSocket]]></title>
-    <link href="http://piotrbudaeu.github.io/2013/04/scalawebsocket.html"/>
+    <link href="http://piotrbuda.eu/2013/04/scalawebsocket.html"/>
     <updated>2013-04-24T16:45:00+02:00</updated>
-    <id>http://piotrbudaeu.github.io/2013/04/scalawebsocket</id>
+    <id>http://piotrbuda.eu/2013/04/scalawebsocket</id>
     <content type="html"><![CDATA[<h3>ScalaWebSocket</h3>
 
 <p>On April 21st I pushed the <a href="https://github.com/pbuda/scalawebsocket">ScalaWebSocket</a> library to GitHub. But what is it? As the name suggests, it&rsquo;s WebSockets for Scala.</p>
@@ -80,9 +80,9 @@
   
   <entry>
     <title type="html"><![CDATA[Trying to deploy Scala app on OpenShift]]></title>
-    <link href="http://piotrbudaeu.github.io/2013/02/trying-to-deploy-scala-app-on-openshift.html"/>
+    <link href="http://piotrbuda.eu/2013/02/trying-to-deploy-scala-app-on-openshift.html"/>
     <updated>2013-02-26T10:35:00+01:00</updated>
-    <id>http://piotrbudaeu.github.io/2013/02/trying-to-deploy-scala-app-on-openshift</id>
+    <id>http://piotrbuda.eu/2013/02/trying-to-deploy-scala-app-on-openshift</id>
     <content type="html"><![CDATA[<h3>The beggining</h3>
 
 <p>This is a simple log of what I have done during past few days trying to deploy a simple app to <a href="https://openshift.redhat.com/app/">OpenShift</a>. I thought it would be quite easy but apparently this is beyond my knowledge. My application is a simple Hello World app. The only real requirement is that I wanted this app to compile with Scala 2.10.</p>
