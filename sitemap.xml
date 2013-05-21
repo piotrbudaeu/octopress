@@ -2,101 +2,101 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://piotrbuda.eu/2011/12/visitor-pattern.html</loc>
-        <lastmod>2013-05-21T16:30:27+02:00</lastmod>
+        <lastmod>2013-05-21T16:58:12+02:00</lastmod>
     </url>
     <url>
         <loc>http://piotrbuda.eu/2012/02/heroku-and-java-from-newbie-to-beginner-part-1.html</loc>
-        <lastmod>2013-05-21T16:30:27+02:00</lastmod>
+        <lastmod>2013-05-21T16:58:12+02:00</lastmod>
     </url>
     <url>
         <loc>http://piotrbuda.eu/2012/03/some-dos-and-donts-for-rest.html</loc>
-        <lastmod>2013-05-21T16:30:27+02:00</lastmod>
+        <lastmod>2013-05-21T16:58:12+02:00</lastmod>
     </url>
     <url>
         <loc>http://piotrbuda.eu/2012/03/heroku-and-java-from-newbie-to-beginner-part-2.html</loc>
-        <lastmod>2013-05-21T16:30:27+02:00</lastmod>
+        <lastmod>2013-05-21T16:58:12+02:00</lastmod>
     </url>
     <url>
         <loc>http://piotrbuda.eu/2012/04/commenting-the-code-is-obsolete.html</loc>
-        <lastmod>2013-05-21T16:30:27+02:00</lastmod>
+        <lastmod>2013-05-21T16:58:12+02:00</lastmod>
     </url>
     <url>
         <loc>http://piotrbuda.eu/2012/05/getting-auth-token-on-an-android-device.html</loc>
-        <lastmod>2013-05-21T16:30:27+02:00</lastmod>
+        <lastmod>2013-05-21T16:58:12+02:00</lastmod>
     </url>
     <url>
         <loc>http://piotrbuda.eu/2012/05/installing-google-play-on-android-emulator.html</loc>
-        <lastmod>2013-05-21T16:30:27+02:00</lastmod>
+        <lastmod>2013-05-21T16:58:12+02:00</lastmod>
     </url>
     <url>
         <loc>
             http://piotrbuda.eu/2012/06/trying-to-solve-error-491-in-play-store-on-android-emulator.html
         </loc>
-        <lastmod>2013-05-21T16:30:27+02:00</lastmod>
+        <lastmod>2013-05-21T16:58:12+02:00</lastmod>
     </url>
     <url>
         <loc>http://piotrbuda.eu/2012/06/play-store-on-emulator-and-morals.html</loc>
-        <lastmod>2013-05-21T16:30:27+02:00</lastmod>
+        <lastmod>2013-05-21T16:58:12+02:00</lastmod>
     </url>
     <url>
         <loc>http://piotrbuda.eu/2012/07/play-store-api-on-github-dot-com.html</loc>
-        <lastmod>2013-05-21T16:30:27+02:00</lastmod>
+        <lastmod>2013-05-21T16:58:12+02:00</lastmod>
     </url>
     <url>
         <loc>http://piotrbuda.eu/2012/08/gitflow-intellij-idea-plugin.html</loc>
-        <lastmod>2013-05-21T16:30:27+02:00</lastmod>
+        <lastmod>2013-05-21T16:58:12+02:00</lastmod>
     </url>
     <url>
         <loc>http://piotrbuda.eu/2012/09/twittory-lessons-learned-dont-mock-iterator.html</loc>
-        <lastmod>2013-05-21T16:30:27+02:00</lastmod>
+        <lastmod>2013-05-21T16:58:12+02:00</lastmod>
     </url>
     <url>
         <loc>
             http://piotrbuda.eu/2012/09/function-programming-principles-in-scala-course-week-one.html
         </loc>
-        <lastmod>2013-05-21T16:30:27+02:00</lastmod>
+        <lastmod>2013-05-21T16:58:12+02:00</lastmod>
     </url>
     <url>
         <loc>http://piotrbuda.eu/2012/10/scala-case-classes-and-annotations-part-1.html</loc>
-        <lastmod>2013-05-21T16:30:27+02:00</lastmod>
+        <lastmod>2013-05-21T16:58:12+02:00</lastmod>
     </url>
     <url>
         <loc>http://piotrbuda.eu/2012/10/scala-case-classes-and-annotations-part-2.html</loc>
-        <lastmod>2013-05-21T16:30:27+02:00</lastmod>
+        <lastmod>2013-05-21T16:58:12+02:00</lastmod>
     </url>
     <url>
         <loc>http://piotrbuda.eu/2012/10/warsjawa-2012.html</loc>
-        <lastmod>2013-05-21T16:30:27+02:00</lastmod>
+        <lastmod>2013-05-21T16:58:12+02:00</lastmod>
     </url>
     <url>
         <loc>
             http://piotrbuda.eu/2012/12/scala-and-android-asynctask-implementation-problem.html
         </loc>
-        <lastmod>2013-05-21T16:30:27+02:00</lastmod>
+        <lastmod>2013-05-21T16:58:12+02:00</lastmod>
     </url>
     <url>
         <loc>http://piotrbuda.eu/2013/02/my-first-month-at-softwaremill.html</loc>
-        <lastmod>2013-05-21T16:30:27+02:00</lastmod>
+        <lastmod>2013-05-21T16:58:12+02:00</lastmod>
     </url>
     <url>
         <loc>http://piotrbuda.eu/2013/02/angularjs-directive-for-password-matching.html</loc>
-        <lastmod>2013-05-21T16:30:27+02:00</lastmod>
+        <lastmod>2013-05-21T16:58:12+02:00</lastmod>
     </url>
     <url>
         <loc>http://piotrbuda.eu/2013/02/trying-to-deploy-scala-app-on-openshift.html</loc>
-        <lastmod>2013-05-21T16:30:27+02:00</lastmod>
+        <lastmod>2013-05-21T16:58:12+02:00</lastmod>
     </url>
     <url>
         <loc>http://piotrbuda.eu/2013/04/scalawebsocket.html</loc>
-        <lastmod>2013-05-21T16:30:27+02:00</lastmod>
+        <lastmod>2013-05-21T16:58:12+02:00</lastmod>
     </url>
     <url>
         <loc>http://piotrbuda.eu/blog/archives/</loc>
-        <lastmod>2013-05-21T16:30:27+02:00</lastmod>
+        <lastmod>2013-05-21T16:58:12+02:00</lastmod>
     </url>
     <url>
         <loc>http://piotrbuda.eu/</loc>
-        <lastmod>2013-05-21T16:30:27+02:00</lastmod>
+        <lastmod>2013-05-21T16:58:12+02:00</lastmod>
     </url>
     <url>
         <loc>http://piotrbuda.eu/robots.txt</loc>
