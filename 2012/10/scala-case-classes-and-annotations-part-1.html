@@ -178,7 +178,7 @@
 
 <p>places the @Field annotation on constructor arguments, fields and Scala accessors which probably makes Spring Data scanner fail. The result is that these fields are no longer customizable and I wanted to somehow remedy that.</p>
 
-<p>Playing with @BeanProperty annotation didn&rsquo;t solve the problem because apparently the @Field annotation is then also placed on generated accessors. But solution to this problem is actually quite easy. In Scala there are target meta-annotations that can be put on the annotation type when instantiating the annotation. There are six of those: @beanGetter, @beanSetter, @field, @getter, @setter, @param. Consult the <a href="http://www.scala-lang.org/api/current/scala/annotation/target/package.html">target package</a> for more info.</p>
+<p>Playing with @BeanProperty annotation didn&rsquo;t solve the problem because apparently the @Field annotation is then also placed on generated accessors. But solution to this problem is actually quite easy. In Scala there are target meta-annotations that can be put on the annotation type when instantiating the annotation. There are six of those: @beanGetter, @beanSetter, @field, @getter, @setter, @param. Consult the <a href="http://www.scala-lang.org/api/2.9.2/scala/annotation/target/package.html">target package</a> for more info.</p>
 
 <p>The solution? It&rsquo;s very simple:</p>
 
