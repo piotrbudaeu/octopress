@@ -4,7 +4,7 @@
   <title><![CDATA[Category: scala | Software Development Ramblings]]></title>
   <link href="http://piotrbuda.eu/blog/categories/scala/atom.xml" rel="self"/>
   <link href="http://piotrbuda.eu/"/>
-  <updated>2013-07-04T12:35:49+02:00</updated>
+  <updated>2013-07-10T12:11:26+02:00</updated>
   <id>http://piotrbuda.eu/</id>
   <author>
     <name><![CDATA[Piotr Buda]]></name>
@@ -30,36 +30,46 @@
 
 <p>To start using it in your project</p>
 
-<p>{% codeblock Dependency in SBT %}
-libraryDependncies += &ldquo;eu.piotrbuda&rdquo; %% &ldquo;scalawebsocket&rdquo; % &ldquo;0.1.0&rdquo;
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Dependency in SBT </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>libraryDependncies += &ldquo;eu.piotrbuda&rdquo; %% &ldquo;scalawebsocket&rdquo; % &ldquo;0.1.0&rdquo;</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
-<p>{% codeblock Dependency in Maven %}
-<dependency>
-  <groupId>eu.piotrbuda</groupId>
-  <artifactId>scalawebsocket_2.10</artifactId>
-  <version>0.1.0</version>
-</dependency>
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Dependency in Maven </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;dependency>
+</span><span class='line'>  &lt;groupId>eu.piotrbuda&lt;/groupId>
+</span><span class='line'>  &lt;artifactId>scalawebsocket_2.10&lt;/artifactId>
+</span><span class='line'>  &lt;version>0.1.0&lt;/version>
+</span><span class='line'>&lt;/dependency></span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <h3>Examples</h3>
 
 <p>Usage of this library is very simple.</p>
 
-<p>{% codeblock Open a WebSocket connection lang:scala %}
-WebSocket().open(&ldquo;ws://echo.websocket.org/&rdquo;).sendText(&ldquo;text&rdquo;).close().shutdown()
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Open a WebSocket connection </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="nc">WebSocket</span><span class="o">().</span><span class="n">open</span><span class="o">(&amp;</span><span class="n">ldquo</span><span class="o">;</span><span class="n">ws</span><span class="o">://</span><span class="n">echo</span><span class="o">.</span><span class="n">websocket</span><span class="o">.</span><span class="n">org</span><span class="o">/&amp;</span><span class="n">rdquo</span><span class="o">;).</span><span class="n">sendText</span><span class="o">(&amp;</span><span class="n">ldquo</span><span class="o">;</span><span class="n">text</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="o">;).</span><span class="n">close</span><span class="o">().</span><span class="n">shutdown</span><span class="o">()</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
-<p>{% codeblock Listen for text messages lang:scala %}
-WebSocket().open(&ldquo;ws://echo.websocket.org/&rdquo;)
-.onTextMessage(msg => doSomethingWithMessage(msg))
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Listen for text messages </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="nc">WebSocket</span><span class="o">().</span><span class="n">open</span><span class="o">(&amp;</span><span class="n">ldquo</span><span class="o">;</span><span class="n">ws</span><span class="o">://</span><span class="n">echo</span><span class="o">.</span><span class="n">websocket</span><span class="o">.</span><span class="n">org</span><span class="o">/&amp;</span><span class="n">rdquo</span><span class="o">;)</span>
+</span><span class='line'><span class="o">.</span><span class="n">onTextMessage</span><span class="o">(</span><span class="n">msg</span> <span class="k">=&gt;</span> <span class="n">doSomethingWithMessage</span><span class="o">(</span><span class="n">msg</span><span class="o">))</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
-<p>{% codeblock Add several listeners lang:scala %}
-WebSocket().open(&ldquo;ws://echo.websocket.org/&rdquo;)
-.onTextMessage(msg => doSomethingWithMessage(msg))
-.onBinaryMessage(msg => doSomethingWithBinaryMessage(msg))
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Add several listeners </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="nc">WebSocket</span><span class="o">().</span><span class="n">open</span><span class="o">(&amp;</span><span class="n">ldquo</span><span class="o">;</span><span class="n">ws</span><span class="o">://</span><span class="n">echo</span><span class="o">.</span><span class="n">websocket</span><span class="o">.</span><span class="n">org</span><span class="o">/&amp;</span><span class="n">rdquo</span><span class="o">;)</span>
+</span><span class='line'><span class="o">.</span><span class="n">onTextMessage</span><span class="o">(</span><span class="n">msg</span> <span class="k">=&gt;</span> <span class="n">doSomethingWithMessage</span><span class="o">(</span><span class="n">msg</span><span class="o">))</span>
+</span><span class='line'><span class="o">.</span><span class="n">onBinaryMessage</span><span class="o">(</span><span class="n">msg</span> <span class="k">=&gt;</span> <span class="n">doSomethingWithBinaryMessage</span><span class="o">(</span><span class="n">msg</span><span class="o">))</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <h3>Future</h3>
 
@@ -84,31 +94,45 @@ WebSocket().open(&ldquo;ws://echo.websocket.org/&rdquo;)
 <h3>SBT</h3>
 
 <p>There is no <a href="http://www.scala-sbt.org/">SBT</a> on <a href="https://openshift.redhat.com/app/">OpenShift</a>. That&rsquo;s right, you have to get it yourself. <a href="https://openshift.redhat.com/app/">OpenShift</a> however provides a nice way of storing things with its data directory (available at $OPENSHIFT_DATA_DIR) and it&rsquo;s action hooks are the way to go in this case. After some trial and error this is the script I came up with.
-{%codeblock pre_build script%}
-cd $OPENSHIFT_DATA_DIR</p>
-
-<p>if [[ -d sbt ]]; then
-  echo &ldquo;SBT installed&rdquo;
-else
-  curl -o sbt.tgz <a href="http://scalasbt.artifactoryonline.com/scalasbt/sbt-native-packages/org/scala-sbt/sbt/0.12.2/sbt.tgz">http://scalasbt.artifactoryonline.com/scalasbt/sbt-native-packages/org/scala-sbt/sbt/0.12.2/sbt.tgz</a>
-  tar zxvf sbt.tgz sbt
-  rm sbt.tgz
-fi
-{%endcodeblock%}
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>pre_build script</span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd $OPENSHIFT_DATA_DIR&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>if [[ -d sbt ]]; then
+</span><span class='line'>  echo &ldquo;SBT installed&rdquo;
+</span><span class='line'>else
+</span><span class='line'>  curl -o sbt.tgz &lt;a href="http://scalasbt.artifactoryonline.com/scalasbt/sbt-native-packages/org/scala-sbt/sbt/0.12.2/sbt.tgz">http://scalasbt.artifactoryonline.com/scalasbt/sbt-native-packages/org/scala-sbt/sbt/0.12.2/sbt.tgz&lt;/a>
+</span><span class='line'>  tar zxvf sbt.tgz sbt
+</span><span class='line'>  rm sbt.tgz
+</span><span class='line'>fi</span></code></pre></td></tr></table></div></figure></notextile></div>
 This script basically downloads SBT from its site but only if SBT folder is not present in the data directory. Then the downloaded tgz archive gets unpacked and SBT is ready to be used.</p>
 
 <h3>Building</h3>
 
 <p>Now this is the part I spent most time with and unfortunately I can&rsquo;t make it fully work :( There were several issues with building using <a href="http://www.scala-sbt.org/">SBT</a>, but after some time it almost worked. Here&rsquo;s the build script I developed that semi-works.
-{%codeblock build script%}
-SBT_PATH=$OPENSHIFT_DATA_DIR/sbt
-SBT_DIR=$OPENSHIFT_DATA_DIR/.sbt
-IVY_DIR=$OPENSHIFT_DATA_DIR/.ivy</p>
-
-<p>cd $OPENSHIFT_REPO_DIR</p>
-
-<p>$SBT_PATH/bin/sbt -sbt-dir $SBT_DIR -ivy $IVY_DIR start-script
-{%endcodeblock%}
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>build script</span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>SBT_PATH=$OPENSHIFT_DATA_DIR/sbt
+</span><span class='line'>SBT_DIR=$OPENSHIFT_DATA_DIR/.sbt
+</span><span class='line'>IVY_DIR=$OPENSHIFT_DATA_DIR/.ivy&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>cd $OPENSHIFT_REPO_DIR&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>$SBT_PATH/bin/sbt -sbt-dir $SBT_DIR -ivy $IVY_DIR start-script</span></code></pre></td></tr></table></div></figure></notextile></div>
 This took a while to figure out. Let&rsquo;s go line by line to see what everything is needed for. Lines 1, 2 and 3 define three variables that are required to run <a href="http://www.scala-sbt.org/">SBT</a> (they could have been moved to pre_build script to keep everything SBT related in one place).
 * Line 1 simply defines the path to <a href="http://www.scala-sbt.org/">SBT</a> directory.
 * Line 2 is a variable with path to folder <a href="http://www.scala-sbt.org/">SBT</a> uses to store its data. On <a href="https://openshift.redhat.com/app/">OpenShift</a> you don&rsquo;t have permission to write to your home directory, hence a need for custom dir.
@@ -119,113 +143,206 @@ This took a while to figure out. Let&rsquo;s go line by line to see what everyth
 <p>This somewhat works. Considering the requirements we now have a project that uses Scala 2.10. But there are now two things to consider.</p>
 
 <p>At first in pre_build I downloaded SBT 0.12.2 and in project build.settings I had SBT setup to 0.12.1. This triggered a compilation of &lsquo;compiler-interface&rsquo;.
-{%codeblock%}
-remote: [info] Compiling 1 Scala source to /var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/target/scala-2.10/classes&hellip;
-remote: [info] &lsquo;compiler-interface&rsquo; not yet compiled for Scala 2.10.0. Compiling&hellip;
-{%endcodeblock%}
+<div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>remote: [info] Compiling 1 Scala source to /var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/target/scala-2.10/classes&hellip;
+</span><span class='line'>remote: [info] &lsquo;compiler-interface&rsquo; not yet compiled for Scala 2.10.0. Compiling&hellip;</span></code></pre></td></tr></table></div></figure></notextile></div>
 But this failed. Compilation wouldn&rsquo;t finish and the process was killed. Small fix in build.properties and upping the actual <a href="http://www.scala-sbt.org/">SBT</a> version to 0.12.2 fixed this &ndash; no more recompilation of &lsquo;compiler-interface&rsquo;.</p>
 
 <p>When you push your project to <a href="https://openshift.redhat.com/app/">OpenShift</a> now, it downloads SBT, unpacks it and tries to build your project. And it fails with the same error as above.
-{%codeblock Build fails after git push%}
-remote: restart_on_add=false
-remote: stop
-remote: Done
-remote: restart_on_add=false
-remote: Running .openshift/action_hooks/pre_build
-remote: pre_build
-remote: SBT installed
-remote: Running .openshift/action_hooks/build
-remote: build
-remote: /var/lib/openshift/512617424382ec272a0000b1/git/yatstaging2.git
-remote: /var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo
-remote: [info] Loading project definition from /var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/project
-remote: [info] Updating {file:/var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/project/}default-2353b7&hellip;</p>
-
-<pre><code>    [info] Resolving org.scala-sbt#precompiled-2_10_0;0.12.2 ...
-</code></pre>
-
-<p>remote: [info] Done updating.
-remote: [info] Set current project to YAT Server (in build file:/var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/)
-remote: [info] Updating {file:/var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/}default-e6271e&hellip;
-remote: [info] Resolving org.scala-lang#scala-library;2.10.0 &hellip;
-remote: [info] Done updating.
-remote: [debug]
-remote: [debug] Initial source changes:
-remote: [debug]   removed:Set()
-remote: [debug]     added: Set(/var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/src/main/scala/pl/apptile/yat/YAT.scala)
-remote: [debug]     modified: Set()
-remote: [debug] Removed products: Set()
-remote: [debug] Modified external sources: Set()
-remote: [debug] Modified binary dependencies: Set()
-remote: [debug] Initial directly invalidated sources: Set(/var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/src/main/scala/pl/apptile/yat/YAT.scala)
-remote: [debug]
-remote: [debug] Sources indirectly invalidated by:
-remote: [debug]     product: Set()
-remote: [debug]     binary dep: Set()
-remote: [debug]     external source: Set()
-remote: [debug] Initially invalidated: Set(/var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/src/main/scala/pl/apptile/yat/YAT.scala)
-remote: [debug] Recompiling all 1 sources: invalidated sources (1) exceeded 50.0% of all sources
-remote: [info] Compiling 1 Scala source to /var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/target/scala-2.10/classes&hellip;
-remote: [debug] Running cached compiler 18d45f0, interfacing (CompilerInterface) with Scala compiler version 2.10.0
-remote: [debug] Calling Scala compiler with arguments  (CompilerInterface):
-remote: [debug]     -d
-remote: [debug]     /var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/target/scala-2.10/classes
-remote: [debug]     -bootclasspath
-remote: [debug]     /usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/resources.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/rt.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/jsse.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/jce.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/charsets.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/netx.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/plugin.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/rhino.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/jfr.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/classes:/var/lib/openshift/512617424382ec272a0000b1/app-root/data/.sbt/boot/scala-2.10.0/lib/scala-library.jar
-remote: [debug]     -classpath
-remote: [debug]     /var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/target/scala-2.10/classes
-remote: /var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/.openshift/action_hooks/build: line 21:  7042 Killed            $SBT_PATH/bin/sbt -sbt-dir $SBT_DIR -ivy $IVY_DIR start-script
-remote: Running .openshift/action_hooks/deploy
-remote: deploy
-remote: hot_deploy_added=false
-remote: start
-remote: Done
-remote: start: missing job name
-remote: Try `start &mdash;help' for more information.
-remote: Running .openshift/action_hooks/post_deploy
-remote: post_deploy
-{%endcodeblock%}
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Build fails after git push</span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>remote: restart_on_add=false
+</span><span class='line'>remote: stop
+</span><span class='line'>remote: Done
+</span><span class='line'>remote: restart_on_add=false
+</span><span class='line'>remote: Running .openshift/action_hooks/pre_build
+</span><span class='line'>remote: pre_build
+</span><span class='line'>remote: SBT installed
+</span><span class='line'>remote: Running .openshift/action_hooks/build
+</span><span class='line'>remote: build
+</span><span class='line'>remote: /var/lib/openshift/512617424382ec272a0000b1/git/yatstaging2.git
+</span><span class='line'>remote: /var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo
+</span><span class='line'>remote: [info] Loading project definition from /var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/project
+</span><span class='line'>remote: [info] Updating {file:/var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/project/}default-2353b7&hellip;&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>    [info] Resolving org.scala-sbt#precompiled-2_10_0;0.12.2 ...
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p>remote: [info] Done updating.
+</span><span class='line'>remote: [info] Set current project to YAT Server (in build file:/var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/)
+</span><span class='line'>remote: [info] Updating {file:/var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/}default-e6271e&hellip;
+</span><span class='line'>remote: [info] Resolving org.scala-lang#scala-library;2.10.0 &hellip;
+</span><span class='line'>remote: [info] Done updating.
+</span><span class='line'>remote: [debug]
+</span><span class='line'>remote: [debug] Initial source changes:
+</span><span class='line'>remote: [debug]   removed:Set()
+</span><span class='line'>remote: [debug]     added: Set(/var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/src/main/scala/pl/apptile/yat/YAT.scala)
+</span><span class='line'>remote: [debug]     modified: Set()
+</span><span class='line'>remote: [debug] Removed products: Set()
+</span><span class='line'>remote: [debug] Modified external sources: Set()
+</span><span class='line'>remote: [debug] Modified binary dependencies: Set()
+</span><span class='line'>remote: [debug] Initial directly invalidated sources: Set(/var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/src/main/scala/pl/apptile/yat/YAT.scala)
+</span><span class='line'>remote: [debug]
+</span><span class='line'>remote: [debug] Sources indirectly invalidated by:
+</span><span class='line'>remote: [debug]     product: Set()
+</span><span class='line'>remote: [debug]     binary dep: Set()
+</span><span class='line'>remote: [debug]     external source: Set()
+</span><span class='line'>remote: [debug] Initially invalidated: Set(/var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/src/main/scala/pl/apptile/yat/YAT.scala)
+</span><span class='line'>remote: [debug] Recompiling all 1 sources: invalidated sources (1) exceeded 50.0% of all sources
+</span><span class='line'>remote: [info] Compiling 1 Scala source to /var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/target/scala-2.10/classes&hellip;
+</span><span class='line'>remote: [debug] Running cached compiler 18d45f0, interfacing (CompilerInterface) with Scala compiler version 2.10.0
+</span><span class='line'>remote: [debug] Calling Scala compiler with arguments  (CompilerInterface):
+</span><span class='line'>remote: [debug]     -d
+</span><span class='line'>remote: [debug]     /var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/target/scala-2.10/classes
+</span><span class='line'>remote: [debug]     -bootclasspath
+</span><span class='line'>remote: [debug]     /usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/resources.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/rt.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/jsse.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/jce.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/charsets.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/netx.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/plugin.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/rhino.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/jfr.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/classes:/var/lib/openshift/512617424382ec272a0000b1/app-root/data/.sbt/boot/scala-2.10.0/lib/scala-library.jar
+</span><span class='line'>remote: [debug]     -classpath
+</span><span class='line'>remote: [debug]     /var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/target/scala-2.10/classes
+</span><span class='line'>remote: /var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/.openshift/action_hooks/build: line 21:  7042 Killed            $SBT_PATH/bin/sbt -sbt-dir $SBT_DIR -ivy $IVY_DIR start-script
+</span><span class='line'>remote: Running .openshift/action_hooks/deploy
+</span><span class='line'>remote: deploy
+</span><span class='line'>remote: hot_deploy_added=false
+</span><span class='line'>remote: start
+</span><span class='line'>remote: Done
+</span><span class='line'>remote: start: missing job name
+</span><span class='line'>remote: Try `start &mdash;help' for more information.
+</span><span class='line'>remote: Running .openshift/action_hooks/post_deploy
+</span><span class='line'>remote: post_deploy</span></code></pre></td></tr></table></div></figure></notextile></div>
 The process is being killed anyway. This was driving me crazy, because no matter what I did the build always crashed. Then I tried SSH and run the script manually and… bam! It worked.
-{%codeblock Build successful when run manually from SSH session%}
-build
-/var/lib/openshift/512617424382ec272a0000b1
-/var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo
-[info] Loading project definition from /var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/project
-[info] Set current project to YAT Server (in build file:/var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/)
-[debug]
-[debug] Initial source changes:
-[debug]   removed:Set()
-[debug]     added: Set(/var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/src/main/scala/pl/apptile/yat/YAT.scala)
-[debug]     modified: Set()
-[debug] Removed products: Set()
-[debug] Modified external sources: Set()
-[debug] Modified binary dependencies: Set()
-[debug] Initial directly invalidated sources: Set(/var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/src/main/scala/pl/apptile/yat/YAT.scala)
-[debug]
-[debug] Sources indirectly invalidated by:
-[debug]     product: Set()
-[debug]     binary dep: Set()
-[debug]     external source: Set()
-[debug] Initially invalidated: Set(/var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/src/main/scala/pl/apptile/yat/YAT.scala)
-[debug] Recompiling all 1 sources: invalidated sources (1) exceeded 50.0% of all sources
-[info] Compiling 1 Scala source to /var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/target/scala-2.10/classes&hellip;
-[debug] Running cached compiler 12a6774, interfacing (CompilerInterface) with Scala compiler version 2.10.0
-[debug] Calling Scala compiler with arguments  (CompilerInterface):
-[debug]     -d
-[debug]     /var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/target/scala-2.10/classes
-[debug]     -bootclasspath
-[debug]     /usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/resources.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/rt.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/jsse.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/jce.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/charsets.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/netx.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/plugin.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/rhino.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/jfr.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/classes:/var/lib/openshift/512617424382ec272a0000b1/app-root/data/.sbt/boot/scala-2.10.0/lib/scala-library.jar
-[debug]     -classpath
-[debug]     /var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/target/scala-2.10/classes
-[debug] Scala compilation took 34.206682197 s
-[debug] Step 2 changed sources and immdediate dependencies:
-[debug]     Set(/var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/src/main/scala/pl/apptile/yat/YAT.scala)
-[debug] Non-trivial strongly connected components:
-[debug]
-[debug] Step 2 invalidated sources:
-[debug]     Set(/var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/src/main/scala/pl/apptile/yat/YAT.scala)
-[info] Wrote start script for mainClass := Some(pl.apptile.yat.YAT) to /var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/target/start
-{%endcodeblock%}
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Build successful when run manually from SSH session</span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>build
+</span><span class='line'>/var/lib/openshift/512617424382ec272a0000b1
+</span><span class='line'>/var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo
+</span><span class='line'>[info] Loading project definition from /var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/project
+</span><span class='line'>[info] Set current project to YAT Server (in build file:/var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/)
+</span><span class='line'>[debug]
+</span><span class='line'>[debug] Initial source changes:
+</span><span class='line'>[debug]   removed:Set()
+</span><span class='line'>[debug]     added: Set(/var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/src/main/scala/pl/apptile/yat/YAT.scala)
+</span><span class='line'>[debug]     modified: Set()
+</span><span class='line'>[debug] Removed products: Set()
+</span><span class='line'>[debug] Modified external sources: Set()
+</span><span class='line'>[debug] Modified binary dependencies: Set()
+</span><span class='line'>[debug] Initial directly invalidated sources: Set(/var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/src/main/scala/pl/apptile/yat/YAT.scala)
+</span><span class='line'>[debug]
+</span><span class='line'>[debug] Sources indirectly invalidated by:
+</span><span class='line'>[debug]     product: Set()
+</span><span class='line'>[debug]     binary dep: Set()
+</span><span class='line'>[debug]     external source: Set()
+</span><span class='line'>[debug] Initially invalidated: Set(/var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/src/main/scala/pl/apptile/yat/YAT.scala)
+</span><span class='line'>[debug] Recompiling all 1 sources: invalidated sources (1) exceeded 50.0% of all sources
+</span><span class='line'>[info] Compiling 1 Scala source to /var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/target/scala-2.10/classes&hellip;
+</span><span class='line'>[debug] Running cached compiler 12a6774, interfacing (CompilerInterface) with Scala compiler version 2.10.0
+</span><span class='line'>[debug] Calling Scala compiler with arguments  (CompilerInterface):
+</span><span class='line'>[debug]     -d
+</span><span class='line'>[debug]     /var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/target/scala-2.10/classes
+</span><span class='line'>[debug]     -bootclasspath
+</span><span class='line'>[debug]     /usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/resources.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/rt.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/jsse.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/jce.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/charsets.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/netx.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/plugin.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/rhino.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/jfr.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/classes:/var/lib/openshift/512617424382ec272a0000b1/app-root/data/.sbt/boot/scala-2.10.0/lib/scala-library.jar
+</span><span class='line'>[debug]     -classpath
+</span><span class='line'>[debug]     /var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/target/scala-2.10/classes
+</span><span class='line'>[debug] Scala compilation took 34.206682197 s
+</span><span class='line'>[debug] Step 2 changed sources and immdediate dependencies:
+</span><span class='line'>[debug]     Set(/var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/src/main/scala/pl/apptile/yat/YAT.scala)
+</span><span class='line'>[debug] Non-trivial strongly connected components:
+</span><span class='line'>[debug]
+</span><span class='line'>[debug] Step 2 invalidated sources:
+</span><span class='line'>[debug]     Set(/var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/src/main/scala/pl/apptile/yat/YAT.scala)
+</span><span class='line'>[info] Wrote start script for mainClass := Some(pl.apptile.yat.YAT) to /var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/target/start</span></code></pre></td></tr></table></div></figure></notextile></div>
 This is quite puzzling and I can&rsquo;t figure out why automatic build doesn&rsquo;t work. What&rsquo;s worth mentioning though is that it does work when you change Scala to 2.9.2. But it&rsquo;s against requirements and hence I stopped at this point, unable to continue.</p>
 
 <h3>Summary</h3>
