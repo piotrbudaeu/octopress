@@ -1,0 +1,1376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Software Development Ramblings]]></title>
+  <link href="http://piotrbuda.eu/atom.xml" rel="self"/>
+  <link href="http://piotrbuda.eu/"/>
+  <updated>2013-07-12T10:32:18+02:00</updated>
+  <id>http://piotrbuda.eu/</id>
+  <author>
+    <name><![CDATA[Piotr Buda]]></name>
+    <email><![CDATA[pibuda@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Microsoft Natural Ergonomic Keyboard 4000]]></title>
+    <link href="http://piotrbuda.eu/2013/05/microsoft-natural-ergonomic-keyboard-4000.html"/>
+    <updated>2013-05-22T14:00:00+02:00</updated>
+    <id>http://piotrbuda.eu/2013/05/microsoft-natural-ergonomic-keyboard-4000</id>
+    <content type="html"><![CDATA[<p>I&rsquo;ve been using computers for almost 28 years now (yes, my first ever computer was ZX Spectrum when I was 3) and thoughout that time I was always using traditional keyboards. Some of them were better, some of them were worse, but I never thought about all those fancy &lsquo;flat&rsquo;, waved or ergonomic keyboards. That changed recently as I got a nice and shiny Macbook Pro.</p>
+
+<!-- more -->
+
+
+<p>I&rsquo;ve been using laptops before and I always disgusted their keyboards &ndash; small keys, uncomfortable layout for things like arrows, PgUp/PgDown keys. Macbook&rsquo;s Pro keyboard is allright (it doesn&rsquo;t have any additional keys beyond arrows) but it&rsquo;s also smaller than your typical desktop keyboard. After a few weeks of using it I feld uncomfortable, my wrists were in very unnatural position and I&rsquo;ve decided it&rsquo;s high time to check out on of these ergonomic layouts.</p>
+
+<p>When I started looking for ergonomic keyboards, I immediately found <a href="http://www.kinesis-ergo.com/freestyle2.htm">Kinesis Ergo Freestyle 2</a>. It seems alright, being split you can put it at exactly right angle for your wrists, it comes with some accessory that will be very helpful for me in a while (I am getting a proper standing desk soon) but it ain&rsquo;t cheap (I&rsquo;d need to buy it from some EU resseler, i.e. at £127 excl. VAT). Of course I also found <a href="http://www.goldtouch.com/p-2-goldtouch-v2-adjustable-comfort-keyboard-pc-mac-compatible-usb.aspx">Goldtouch V2 Adjustable Comfort Keyboard</a> and it&rsquo;s also quite nice and at $119 it&rsquo;s cheaper than Freestyle 2, but I&rsquo;d have to also add VAT and customs to that, so again, it&rsquo;s not cheap. My dream keyboard is now the one made by <a href="http://www.trulyergonomic.com/">Trully Ergonomic</a> &ndash; it is expensive, but it&rsquo;s compact (I can live without numeric pad), it&rsquo;s got mechanical keys, awesome looks, Mac keys &ndash; just awesome. However at price point of somewhere around £200 it&rsquo;s far beyond my budget at this moment (I do accept donations though :D).</p>
+
+<p>Many people recommended a much cheaper solution to all these trully great keyboards &ndash; the <a href="http://www.microsoft.com/hardware/en-us/p/natural-ergonomic-keyboard-4000">Microsoft Natural Ergonomic Keyboard 4000</a>. I bought it at 180PLN (so it&rsquo;s around $60) and what&rsquo;s different in this keyboard from the ones I mentioned earlier is that it&rsquo;s quite big. It is a full keyboard, with numeric pad, typical insert, delete, home, end, pgup and pgdown keys. It&rsquo;s not flat like Kinesis or Goldtouch but instead curved in the middle with very noticable gap between key sections. It&rsquo;s wristpad is covered with leather-like material which to my astonishment prevents my hands from sweating. The angle of the keyboard is nice, and since I started using it all my wrist pain is gone now.</p>
+
+<p>It took me a few days to adapt to the new layout, mainly because I had a bit different key stroking habits, i.e. I used to hit B key with right hand and on this keyboard B is properly placed for left hand. Despite the first few problems with mishits and typos, now after about three weeks of using it it feels great and my typing speed is almost back to normal.</p>
+
+<p>The keys are not that loud, when typing slowly (like in games) it&rsquo;s almost noiseless; but when you start going full-speed (like writing a blog post) it starts to get ugly, but who cares? Keys are very different, some are smaller (q, a, z) but in this case it means normal for other keyboards; other keys are larger (t, n, h, g) and they take a lot of space. This keyboard forces you to change yoruwritng habits and I think that&rsquo;s good, because now I type without moving my wrists to much.</p>
+
+<p>It has drawbacks though. Beging a PC keyboard, it lacks Mac keyboards, but if you&rsquo;re typing without looking at keys, then that&rsquo;s not really a big problem. Another bad thing for me is this keyboard&rsquo;s size &ndash; it&rsquo;s a full keyboard, so it&rsquo;s quite wide. To effectively use it, you&rsquo;d rather want the middle of the letter section to be in front of you, pushing the numeric pad to the far right. This is necessary for both wrists to lay loosely on the keyboard, but it makes usage of the mouse a bit inconvenient &ndash; you have to reach quite far to grab it and there goes the ergonomics. That&rsquo;s it, I can&rsquo;t really think of any other problems with it, which for me makes this $60 keyboard a real bang for the buck. I think that the only thing that I&rsquo;d ever add to this keyboard is wireless capability &ndash; Macbook Pro has 2 USB ports and having both used for keyboard and mouse I can no longer connect my pendrives to it :(</p>
+
+<p>I hope you&rsquo;ll find this little review enough to buy that Microsoft keyboard, or at least start some interest in ergonomic keyboard designs. Trust me, once you try an ergonomic keyboard, you will feel awkward trying to type on a normal one :)</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[ScalaWebSocket]]></title>
+    <link href="http://piotrbuda.eu/2013/04/scalawebsocket.html"/>
+    <updated>2013-04-24T16:45:00+02:00</updated>
+    <id>http://piotrbuda.eu/2013/04/scalawebsocket</id>
+    <content type="html"><![CDATA[<h3>ScalaWebSocket</h3>
+
+<p>On April 21st I pushed the <a href="https://github.com/pbuda/scalawebsocket">ScalaWebSocket</a> library to GitHub. But what is it? As the name suggests, it&rsquo;s WebSockets for Scala.</p>
+
+<p>There are already a few implementations of WebSocket for Java, there is also the Scala project called <a href="https://github.com/jfarcand/WCS">wCS</a> but all of them support Javaish style of passing the anonymous implementations of some kind of Listener interface. I didn&rsquo;t want that as I prefer the functional style of handlers.</p>
+
+<p>ScalaWebSocket is a thin wrapper around <a href="https://github.com/AsyncHttpClient/async-http-client">async-http-client</a> and it exposes a more Scala-like vocabulary to interact with WebSockets.</p>
+
+<h3>Installation</h3>
+
+<p>To start using it in your project</p>
+
+<figure class='code'><figcaption><span>Dependency in SBT </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>libraryDependncies += "eu.piotrbuda" %% "scalawebsocket" % "0.1.0"</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span>Dependency in Maven </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;dependency>
+</span><span class='line'>  &lt;groupId>eu.piotrbuda&lt;/groupId>
+</span><span class='line'>  &lt;artifactId>scalawebsocket_2.10&lt;/artifactId>
+</span><span class='line'>  &lt;version>0.1.0&lt;/version>
+</span><span class='line'>&lt;/dependency></span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Examples</h3>
+
+<p>Usage of this library is very simple.</p>
+
+<figure class='code'><figcaption><span>Open a WebSocket connection </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="nc">WebSocket</span><span class="o">().</span><span class="n">open</span><span class="o">(</span><span class="s">&quot;ws://echo.websocket.org/&quot;</span><span class="o">).</span><span class="n">sendText</span><span class="o">(</span><span class="s">&quot;text&quot;</span><span class="o">).</span><span class="n">close</span><span class="o">().</span><span class="n">shutdown</span><span class="o">()</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span>Listen for text messages </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="nc">WebSocket</span><span class="o">().</span><span class="n">open</span><span class="o">(</span><span class="s">&quot;ws://echo.websocket.org/&quot;</span><span class="o">)</span>
+</span><span class='line'><span class="o">.</span><span class="n">onTextMessage</span><span class="o">(</span><span class="n">msg</span> <span class="k">=&gt;</span> <span class="n">doSomethingWithMessage</span><span class="o">(</span><span class="n">msg</span><span class="o">))</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span>Add several listeners </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="nc">WebSocket</span><span class="o">().</span><span class="n">open</span><span class="o">(</span><span class="s">&quot;ws://echo.websocket.org/&quot;</span><span class="o">)</span>
+</span><span class='line'><span class="o">.</span><span class="n">onTextMessage</span><span class="o">(</span><span class="n">msg</span> <span class="k">=&gt;</span> <span class="n">doSomethingWithMessage</span><span class="o">(</span><span class="n">msg</span><span class="o">))</span>
+</span><span class='line'><span class="o">.</span><span class="n">onBinaryMessage</span><span class="o">(</span><span class="n">msg</span> <span class="k">=&gt;</span> <span class="n">doSomethingWithBinaryMessage</span><span class="o">(</span><span class="n">msg</span><span class="o">))</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Future</h3>
+
+<p>I need this library to talk to SocketIO servers, so in version 0.2.0 I will implement some basic support for SocketIO.
+ For now, please use it and report any issues you have. My goal for this library is to make WebSocket natural in Scala.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Trying to deploy Scala app on OpenShift]]></title>
+    <link href="http://piotrbuda.eu/2013/02/trying-to-deploy-scala-app-on-openshift.html"/>
+    <updated>2013-02-26T10:35:00+01:00</updated>
+    <id>http://piotrbuda.eu/2013/02/trying-to-deploy-scala-app-on-openshift</id>
+    <content type="html"><![CDATA[<h3>The beggining</h3>
+
+<p>This is a simple log of what I have done during past few days trying to deploy a simple app to <a href="https://openshift.redhat.com/app/">OpenShift</a>. I thought it would be quite easy but apparently this is beyond my knowledge. My application is a simple Hello World app. The only real requirement is that I wanted this app to compile with Scala 2.10.</p>
+
+<h3>Setup</h3>
+
+<p>I won&rsquo;t discuss how to set up the application on <a href="https://openshift.redhat.com/app/">OpenShift</a> (unless it is really needed). The only thing worth mentioning is that you will need a Do-It-Yourself type.</p>
+
+<h3>SBT</h3>
+
+<p>There is no <a href="http://www.scala-sbt.org/">SBT</a> on <a href="https://openshift.redhat.com/app/">OpenShift</a>. That&rsquo;s right, you have to get it yourself. <a href="https://openshift.redhat.com/app/">OpenShift</a> however provides a nice way of storing things with its data directory (available at $OPENSHIFT_DATA_DIR) and it&rsquo;s action hooks are the way to go in this case. After some trial and error this is the script I came up with.</p>
+
+<figure class='code'><figcaption><span>pre_build script</span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd $OPENSHIFT_DATA_DIR
+</span><span class='line'>
+</span><span class='line'>if [[ -d sbt ]]; then
+</span><span class='line'>  echo "SBT installed"
+</span><span class='line'>else
+</span><span class='line'>  curl -o sbt.tgz http://scalasbt.artifactoryonline.com/scalasbt/sbt-native-packages/org/scala-sbt/sbt/0.12.2/sbt.tgz
+</span><span class='line'>  tar zxvf sbt.tgz sbt
+</span><span class='line'>  rm sbt.tgz
+</span><span class='line'>fi</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This script basically downloads SBT from its site but only if SBT folder is not present in the data directory. Then the downloaded tgz archive gets unpacked and SBT is ready to be used.</p>
+
+<h3>Building</h3>
+
+<p>Now this is the part I spent most time with and unfortunately I can&rsquo;t make it fully work :( There were several issues with building using <a href="http://www.scala-sbt.org/">SBT</a>, but after some time it almost worked. Here&rsquo;s the build script I developed that semi-works.</p>
+
+<figure class='code'><figcaption><span>build script</span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>SBT_PATH=$OPENSHIFT_DATA_DIR/sbt
+</span><span class='line'>SBT_DIR=$OPENSHIFT_DATA_DIR/.sbt
+</span><span class='line'>IVY_DIR=$OPENSHIFT_DATA_DIR/.ivy
+</span><span class='line'>
+</span><span class='line'>cd $OPENSHIFT_REPO_DIR
+</span><span class='line'>
+</span><span class='line'>$SBT_PATH/bin/sbt -sbt-dir $SBT_DIR -ivy $IVY_DIR start-script</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This took a while to figure out. Let&rsquo;s go line by line to see what everything is needed for. Lines 1, 2 and 3 define three variables that are required to run <a href="http://www.scala-sbt.org/">SBT</a> (they could have been moved to pre_build script to keep everything SBT related in one place).
+* Line 1 simply defines the path to <a href="http://www.scala-sbt.org/">SBT</a> directory.
+* Line 2 is a variable with path to folder <a href="http://www.scala-sbt.org/">SBT</a> uses to store its data. On <a href="https://openshift.redhat.com/app/">OpenShift</a> you don&rsquo;t have permission to write to your home directory, hence a need for custom dir.
+* Line 3 is like line 2 except for Ivy cache.
+* Line 5 then switches to the repository directory. This is the place where your sources reside and this is mostly the place where you should start your build at.
+* Line 7 is a simple invocation of the SBT with the predefined settings. I&rsquo;m generating a start script here (using xsbt-start-script-plugin) and that&rsquo;s why I only include this goal.</p>
+
+<p>This somewhat works. Considering the requirements we now have a project that uses Scala 2.10. But there are now two things to consider.</p>
+
+<p>At first in pre_build I downloaded SBT 0.12.2 and in project build.settings I had SBT setup to 0.12.1. This triggered a compilation of &lsquo;compiler-interface&rsquo;.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>remote: [info] Compiling 1 Scala source to /var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/target/scala-2.10/classes...
+</span><span class='line'>remote: [info] 'compiler-interface' not yet compiled for Scala 2.10.0. Compiling...</span></code></pre></td></tr></table></div></figure>
+
+
+<p>But this failed. Compilation wouldn&rsquo;t finish and the process was killed. Small fix in build.properties and upping the actual <a href="http://www.scala-sbt.org/">SBT</a> version to 0.12.2 fixed this &ndash; no more recompilation of &lsquo;compiler-interface&rsquo;.</p>
+
+<p>When you push your project to <a href="https://openshift.redhat.com/app/">OpenShift</a> now, it downloads SBT, unpacks it and tries to build your project. And it fails with the same error as above.</p>
+
+<figure class='code'><figcaption><span>Build fails after git push</span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>remote: restart_on_add=false
+</span><span class='line'>remote: stop
+</span><span class='line'>remote: Done
+</span><span class='line'>remote: restart_on_add=false
+</span><span class='line'>remote: Running .openshift/action_hooks/pre_build
+</span><span class='line'>remote: pre_build
+</span><span class='line'>remote: SBT installed
+</span><span class='line'>remote: Running .openshift/action_hooks/build
+</span><span class='line'>remote: build
+</span><span class='line'>remote: /var/lib/openshift/512617424382ec272a0000b1/git/yatstaging2.git
+</span><span class='line'>remote: /var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo
+</span><span class='line'>remote: [info] Loading project definition from /var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/project
+</span><span class='line'>remote: [info] Updating {file:/var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/project/}default-2353b7...
+</span><span class='line'>        [info] Resolving org.scala-sbt#precompiled-2_10_0;0.12.2 ...
+</span><span class='line'>remote: [info] Done updating.
+</span><span class='line'>remote: [info] Set current project to YAT Server (in build file:/var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/)
+</span><span class='line'>remote: [info] Updating {file:/var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/}default-e6271e...
+</span><span class='line'>remote: [info] Resolving org.scala-lang#scala-library;2.10.0 ...
+</span><span class='line'>remote: [info] Done updating.
+</span><span class='line'>remote: [debug]
+</span><span class='line'>remote: [debug] Initial source changes:
+</span><span class='line'>remote: [debug]   removed:Set()
+</span><span class='line'>remote: [debug]   added: Set(/var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/src/main/scala/pl/apptile/yat/YAT.scala)
+</span><span class='line'>remote: [debug]   modified: Set()
+</span><span class='line'>remote: [debug] Removed products: Set()
+</span><span class='line'>remote: [debug] Modified external sources: Set()
+</span><span class='line'>remote: [debug] Modified binary dependencies: Set()
+</span><span class='line'>remote: [debug] Initial directly invalidated sources: Set(/var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/src/main/scala/pl/apptile/yat/YAT.scala)
+</span><span class='line'>remote: [debug]
+</span><span class='line'>remote: [debug] Sources indirectly invalidated by:
+</span><span class='line'>remote: [debug]   product: Set()
+</span><span class='line'>remote: [debug]   binary dep: Set()
+</span><span class='line'>remote: [debug]   external source: Set()
+</span><span class='line'>remote: [debug] Initially invalidated: Set(/var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/src/main/scala/pl/apptile/yat/YAT.scala)
+</span><span class='line'>remote: [debug] Recompiling all 1 sources: invalidated sources (1) exceeded 50.0% of all sources
+</span><span class='line'>remote: [info] Compiling 1 Scala source to /var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/target/scala-2.10/classes...
+</span><span class='line'>remote: [debug] Running cached compiler 18d45f0, interfacing (CompilerInterface) with Scala compiler version 2.10.0
+</span><span class='line'>remote: [debug] Calling Scala compiler with arguments  (CompilerInterface):
+</span><span class='line'>remote: [debug]   -d
+</span><span class='line'>remote: [debug]   /var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/target/scala-2.10/classes
+</span><span class='line'>remote: [debug]   -bootclasspath
+</span><span class='line'>remote: [debug]   /usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/resources.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/rt.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/jsse.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/jce.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/charsets.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/netx.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/plugin.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/rhino.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/jfr.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/classes:/var/lib/openshift/512617424382ec272a0000b1/app-root/data/.sbt/boot/scala-2.10.0/lib/scala-library.jar
+</span><span class='line'>remote: [debug]   -classpath
+</span><span class='line'>remote: [debug]   /var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/target/scala-2.10/classes
+</span><span class='line'>remote: /var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/.openshift/action_hooks/build: line 21:  7042 Killed            $SBT_PATH/bin/sbt -sbt-dir $SBT_DIR -ivy $IVY_DIR start-script
+</span><span class='line'>remote: Running .openshift/action_hooks/deploy
+</span><span class='line'>remote: deploy
+</span><span class='line'>remote: hot_deploy_added=false
+</span><span class='line'>remote: start
+</span><span class='line'>remote: Done
+</span><span class='line'>remote: start: missing job name
+</span><span class='line'>remote: Try `start --help' for more information.
+</span><span class='line'>remote: Running .openshift/action_hooks/post_deploy
+</span><span class='line'>remote: post_deploy</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The process is being killed anyway. This was driving me crazy, because no matter what I did the build always crashed. Then I tried SSH and run the script manually and… bam! It worked.</p>
+
+<figure class='code'><figcaption><span>Build successful when run manually from SSH session</span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>build
+</span><span class='line'>/var/lib/openshift/512617424382ec272a0000b1
+</span><span class='line'>/var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo
+</span><span class='line'>[info] Loading project definition from /var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/project
+</span><span class='line'>[info] Set current project to YAT Server (in build file:/var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/)
+</span><span class='line'>[debug]
+</span><span class='line'>[debug] Initial source changes:
+</span><span class='line'>[debug]   removed:Set()
+</span><span class='line'>[debug]   added: Set(/var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/src/main/scala/pl/apptile/yat/YAT.scala)
+</span><span class='line'>[debug]   modified: Set()
+</span><span class='line'>[debug] Removed products: Set()
+</span><span class='line'>[debug] Modified external sources: Set()
+</span><span class='line'>[debug] Modified binary dependencies: Set()
+</span><span class='line'>[debug] Initial directly invalidated sources: Set(/var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/src/main/scala/pl/apptile/yat/YAT.scala)
+</span><span class='line'>[debug]
+</span><span class='line'>[debug] Sources indirectly invalidated by:
+</span><span class='line'>[debug]   product: Set()
+</span><span class='line'>[debug]   binary dep: Set()
+</span><span class='line'>[debug]   external source: Set()
+</span><span class='line'>[debug] Initially invalidated: Set(/var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/src/main/scala/pl/apptile/yat/YAT.scala)
+</span><span class='line'>[debug] Recompiling all 1 sources: invalidated sources (1) exceeded 50.0% of all sources
+</span><span class='line'>[info] Compiling 1 Scala source to /var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/target/scala-2.10/classes...
+</span><span class='line'>[debug] Running cached compiler 12a6774, interfacing (CompilerInterface) with Scala compiler version 2.10.0
+</span><span class='line'>[debug] Calling Scala compiler with arguments  (CompilerInterface):
+</span><span class='line'>[debug]   -d
+</span><span class='line'>[debug]   /var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/target/scala-2.10/classes
+</span><span class='line'>[debug]   -bootclasspath
+</span><span class='line'>[debug]   /usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/resources.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/rt.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/jsse.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/jce.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/charsets.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/netx.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/plugin.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/rhino.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/lib/jfr.jar:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9/jre/classes:/var/lib/openshift/512617424382ec272a0000b1/app-root/data/.sbt/boot/scala-2.10.0/lib/scala-library.jar
+</span><span class='line'>[debug]   -classpath
+</span><span class='line'>[debug]   /var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/target/scala-2.10/classes
+</span><span class='line'>[debug] Scala compilation took 34.206682197 s
+</span><span class='line'>[debug] Step 2 changed sources and immdediate dependencies:
+</span><span class='line'>[debug]   Set(/var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/src/main/scala/pl/apptile/yat/YAT.scala)
+</span><span class='line'>[debug] Non-trivial strongly connected components:
+</span><span class='line'>[debug]
+</span><span class='line'>[debug] Step 2 invalidated sources:
+</span><span class='line'>[debug]   Set(/var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/src/main/scala/pl/apptile/yat/YAT.scala)
+</span><span class='line'>[info] Wrote start script for mainClass := Some(pl.apptile.yat.YAT) to /var/lib/openshift/512617424382ec272a0000b1/app-root/runtime/repo/target/start</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This is quite puzzling and I can&rsquo;t figure out why automatic build doesn&rsquo;t work. What&rsquo;s worth mentioning though is that it does work when you change Scala to 2.9.2. But it&rsquo;s against requirements and hence I stopped at this point, unable to continue.</p>
+
+<h3>Summary</h3>
+
+<p>While I was really happy that most of the things were quite easy to start with, inability to compile the sources makes it a no-no for further work, like actually starting a spray-can server. My application was a Hello World app and if this can&rsquo;t compile… Sorry <a href="https://openshift.redhat.com/app/">OpenShift</a>, for now I&rsquo;m switching to <a href="http://www.cloudfoundry.com/">CloudFoundry</a> to see how it fares.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Angular directive for password matching]]></title>
+    <link href="http://piotrbuda.eu/2013/02/angularjs-directive-for-password-matching.html"/>
+    <updated>2013-02-12T11:30:00+01:00</updated>
+    <id>http://piotrbuda.eu/2013/02/angularjs-directive-for-password-matching</id>
+    <content type="html"><![CDATA[<p>Recently at <a href="http://bootstrap.softwaremill.com/#/">Bootstrap</a> I was working on the profile page part. I had to introduce a simple validation of passwords &ndash; when you type in your password, you often have to repeat it. This was implemented in a few places already, however it wasn&rsquo;t correct &ndash; changing the original password did not trigger validation.</p>
+
+<p>To see how this works, just go to the <a href="http://bootstrap.softwaremill.com">Bootstrap page</a> and play with the registration form&rsquo;s &ldquo;password&rdquo; and &ldquo;repeat password&rdquo; inputs. All code snippets are taken from <a href="http://bootstrap.softwaremill.com/#/">Bootstrap</a>.</p>
+
+<h3>Requirements</h3>
+
+<p>We have two input fields and we just need to validate whether values in them are synchronized. Values entered in both these fields need to be the same, if they&rsquo;re not, then display error message next to the second input field that the contents are invalid.</p>
+
+<h3>Simple approach</h3>
+
+<p>When I started, there was something implemented already. It was a simple solution that based on the <a href="http://docs.angularjs.org/api/ng.directive:ngChange">ng-change</a> directive. This directive was attached to the repeated field and every time the value changed, method checkPassword() in RegisterController was called.</p>
+
+<figure class='code'><figcaption><span>How checkPassword() was used</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;password&quot;</span> <span class="na">name=</span><span class="s">&quot;repeatPassword&quot;</span> <span class="na">id=</span><span class="s">&quot;repeatPassword&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;repeat password&quot;</span> <span class="na">ng-model=</span><span class="s">&quot;user.repeatPassword&quot;</span> <span class="na">ng-change=</span><span class="s">&quot;checkPassword()&quot;</span> <span class="na">required</span><span class="nt">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span>Validation in checkPassword method</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">$scope</span><span class="p">.</span><span class="nx">checkPassword</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">$scope</span><span class="p">.</span><span class="nx">registerForm</span><span class="p">.</span><span class="nx">repeatPassword</span><span class="p">.</span><span class="nx">$error</span><span class="p">.</span><span class="nx">dontMatch</span> <span class="o">=</span> <span class="nx">$scope</span><span class="p">.</span><span class="nx">user</span><span class="p">.</span><span class="nx">password</span> <span class="o">!==</span> <span class="nx">$scope</span><span class="p">.</span><span class="nx">user</span><span class="p">.</span><span class="nx">repeatPassword</span><span class="p">;</span>
+</span><span class='line'><span class="p">};</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The dontMatch error flag was then used to display error message.</p>
+
+<figure class='code'><figcaption><span>Using dontMatch flag to display error</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;text-error&quot;</span> <span class="na">ng-show=</span><span class="s">&quot;registerForm.repeatPassword.$dirty &amp;&amp; registerForm.repeatPassword.$error.dontMatch&quot;</span><span class="nt">&gt;</span>Passwords don&#39;t match!<span class="nt">&lt;/span&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This isn&rsquo;t the best solution. First of all, this only checked equity upon changing the repeated field, not the original password field. To make this work it would be required in both original and repeated fields. This also wasn&rsquo;t reusable &ndash; to use it in another place, checkPassword method had to be actually copied.</p>
+
+<h3>Angular directive to the rescue</h3>
+
+<p>Directives in AngularJS are used to create reusable components so I thought about how to use them to solve the validation problem. It was rather easy and straightforward.</p>
+
+<figure class='code'><figcaption><span>The repeatPassword directive</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">directives</span><span class="p">.</span><span class="nx">directive</span><span class="p">(</span><span class="s2">&quot;repeatPassword&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">return</span> <span class="p">{</span>
+</span><span class='line'>        <span class="nx">require</span><span class="o">:</span> <span class="s2">&quot;ngModel&quot;</span><span class="p">,</span>
+</span><span class='line'>        <span class="nx">link</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">scope</span><span class="p">,</span> <span class="nx">elem</span><span class="p">,</span> <span class="nx">attrs</span><span class="p">,</span> <span class="nx">ctrl</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>            <span class="kd">var</span> <span class="nx">otherInput</span> <span class="o">=</span> <span class="nx">elem</span><span class="p">.</span><span class="nx">inheritedData</span><span class="p">(</span><span class="s2">&quot;$formController&quot;</span><span class="p">)[</span><span class="nx">attrs</span><span class="p">.</span><span class="nx">repeatPassword</span><span class="p">];</span>
+</span><span class='line'>
+</span><span class='line'>            <span class="nx">ctrl</span><span class="p">.</span><span class="nx">$parsers</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>                <span class="k">if</span><span class="p">(</span><span class="nx">value</span> <span class="o">===</span> <span class="nx">otherInput</span><span class="p">.</span><span class="nx">$viewValue</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>                    <span class="nx">ctrl</span><span class="p">.</span><span class="nx">$setValidity</span><span class="p">(</span><span class="s2">&quot;repeat&quot;</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+</span><span class='line'>                    <span class="k">return</span> <span class="nx">value</span><span class="p">;</span>
+</span><span class='line'>                <span class="p">}</span>
+</span><span class='line'>                <span class="nx">ctrl</span><span class="p">.</span><span class="nx">$setValidity</span><span class="p">(</span><span class="s2">&quot;repeat&quot;</span><span class="p">,</span> <span class="kc">false</span><span class="p">);</span>
+</span><span class='line'>            <span class="p">});</span>
+</span><span class='line'>
+</span><span class='line'>            <span class="nx">otherInput</span><span class="p">.</span><span class="nx">$parsers</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>                <span class="nx">ctrl</span><span class="p">.</span><span class="nx">$setValidity</span><span class="p">(</span><span class="s2">&quot;repeat&quot;</span><span class="p">,</span> <span class="nx">value</span> <span class="o">===</span> <span class="nx">ctrl</span><span class="p">.</span><span class="nx">$viewValue</span><span class="p">);</span>
+</span><span class='line'>                <span class="k">return</span> <span class="nx">value</span><span class="p">;</span>
+</span><span class='line'>            <span class="p">});</span>
+</span><span class='line'>        <span class="p">}</span>
+</span><span class='line'>    <span class="p">};</span>
+</span><span class='line'><span class="p">});</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<figure class='code'><figcaption><span>Using repeatPassword directive</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;password&quot;</span> <span class="na">name=</span><span class="s">&quot;repeatPassword&quot;</span> <span class="na">id=</span><span class="s">&quot;repeatPassword&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;repeat password&quot;</span> <span class="na">ng-model=</span><span class="s">&quot;user.repeatPassword&quot;</span> <span class="na">repeat-password=</span><span class="s">&quot;password&quot;</span> <span class="na">required</span><span class="nt">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>At first I was trying to attach $parser function to just the element the directive was attached to. But this didn&rsquo;t work, because when I was comparing to the value stored in controller the results not always were correct. The reason for this is that invalid values are not passed to controller, and so when one value was invalid, it wasn&rsquo;t present in controller, and directive failed. As you can see, the trick is to attach $parsers to each control that requires syncing. This took me some time to figure out, but for now it works quite nice.</p>
+
+<h3>Summary</h3>
+
+<p>Angular directives are quite nice. They can be used to create reusable components and in this case, I created something that was automatically usable in three places, without the need to writing any controller code. Moreover, this directive is not only for passwords &ndash; rename that to stringsMatch and you get a nice directive that checks if you string values are in sync. Neat!</p>
+
+<p>This change has been introduced in <a href="http://bootstrap.softwaremill.com/#/">Bootstrap</a> in <a href="https://github.com/softwaremill/bootstrap/commit/515d289ddea2159b8c3eaa956cdfb658898b5358">this commit</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[My first month at SoftwareMill]]></title>
+    <link href="http://piotrbuda.eu/2013/02/my-first-month-at-softwaremill.html"/>
+    <updated>2013-02-11T08:06:00+01:00</updated>
+    <id>http://piotrbuda.eu/2013/02/my-first-month-at-softwaremill</id>
+    <content type="html"><![CDATA[<p>The year 2012 was a year of change to me. First I was moved to a new team in CGM Poland. Things were nice at first, but after a while I lost all my motivation to work. It was time to change the organization and so I applied to a company called <a href="http://www.softwaremill.com">SoftwareMill</a>.
+Why them? Trully a coincidence. I was browsing some stuff on LinkedIn and I stumbled upon their job posting and I got intrigued by the fact that they mentioned possibility to work from home. As it turned out, the whole team is distributed! But then I took a closer look at the company and noticed that on SoftwareMill website there&rsquo;s a <a href="http://softwaremill.com/why-softwaremill/our-team">section about developers</a>. Browsing short descriptions of those who worked there I thought that it was a very good company to work at. So I applied in August. It took a longer while to finish the recruitment process (I wasn&rsquo;t accepted at first), but I finally started work at SoftwareMill on 2nd January 2013.</p>
+
+<p>Now a month has passed and I have to say that I&rsquo;m very happy I was given the chance. Not only have I met some brilliant people but it was also a great cultural change for me: from big company, corporation, to a smaller entity with more focus on single developers.</p>
+
+<p>This experience is quite pleasant. Frequent code reviews is something I often missed in my previous jobs but here I have them almost every push to Git repo. That&rsquo;s reassuring, as any mistake I make may be quickly recognized by someone else, but I think I don&rsquo;t have to stress out how important code reviews are :)</p>
+
+<p>The next thing I&rsquo;d like to mention is the Scrum/Chrum meetings. Every team has a Scrum sometime before 10:00. It&rsquo;s your normal Scrum meeting where you answer the three questions. Then is the Chrum meeting. Since the team is distributed, we don&rsquo;t see each other normally, so at 10:00 we have a video meeting where we answer additional, fourth question. This question can be anything &ndash; from what was your yesterday&rsquo;s dinner to how does your surrounding look like at the moment. This is really quite fun meeting and most importantly it&rsquo;s self organizing. There is no specific order at which people speak out but we usually end the meeting around 10:20. When the official meeting is over we are free to discuss about anything.</p>
+
+<p>Working from home was something I always wanted to try and now I have the chance. I was affraid though that some responsibilities might take over my work (like cooking dinner, for example) but fortunately that&rsquo;s not the case. I think I adapted pretty quickly to working from home, <a href="http://dilbert.com/strips/comic/2013-02-10/">despite many distractions</a>. There are occasional problems, like having a sick kid at home, but other than that, distractions can be avoided. It&rsquo;s also worth noting that remote work does not equal to working from home, which I hope to prove sometime soon :)</p>
+
+<p>For now I&rsquo;m developing this open source project called <a href="https://github.com/softwaremill/bootstrap">SML Bootstrap</a> and while it&rsquo;s nothing too big, it helps me to familiarize with how things work at SoftwareMill. I also encourage you to check this project out &ndash; it&rsquo;s quite simple, but can be useful if you start your project with Scala and AngularJS.</p>
+
+<p>As a last note I&rsquo;ll just mention that I was given this Macbook Pro to work with ;) While I never agreed with how Apple works, but I have to admit that the quality of build of this machine is just superb.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Scala and Android: AsyncTask implementation problem]]></title>
+    <link href="http://piotrbuda.eu/2012/12/scala-and-android-asynctask-implementation-problem.html"/>
+    <updated>2012-12-12T13:06:00+01:00</updated>
+    <id>http://piotrbuda.eu/2012/12/scala-and-android-asynctask-implementation-problem</id>
+    <content type="html"><![CDATA[<p>So I recently started some really simple Scala development for Android. However because I&rsquo;m a very lucky person, I stumbled upon my first problem the very first moment I tried doing something nice.</p>
+
+<p>There is a neat way for doing things in Android with AsyncTasks &ndash; this cool utility abstracts away the need for creation and management of threads for invoking stuff that would block UI thread. For more info just go to AsyncTask documentation.</p>
+
+<p>So I tried doing something with this cool AsyncTask and here&rsquo;s the class definition:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">class</span> <span class="nf">ObtainRequestTokenTask</span><span class="o">()</span> <span class="kd">extends</span> <span class="n">AsyncTask</span><span class="o">[</span><span class="n">String</span><span class="o">,</span> <span class="n">Void</span><span class="o">,</span> <span class="n">String</span><span class="o">]</span> <span class="o">{</span>
+</span><span class='line'><span class="o">...</span>
+</span><span class='line'><span class="n">override</span> <span class="kd">protected</span> <span class="n">def</span> <span class="nf">doInBackground</span><span class="o">(</span><span class="nl">p1:</span> <span class="n">String</span><span class="o">*):</span> <span class="n">String</span> <span class="o">=</span> <span class="o">{</span>
+</span><span class='line'><span class="o">...</span>
+</span><span class='line'><span class="o">}</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The major problem here is that this thing compiles. Running this on Android emulator I got an exception suggesting that doInBackground is not implemented (it&rsquo;s abstract in AsyncTask)&hellip; So where&rsquo;s the problem?</p>
+
+<p>Googling about this I found <a href="https://issues.scala-lang.org/browse/SI-1459">this bug</a>. I won&rsquo;t go into detail, however to make this code work you have to actually change the signature of doInBackground. Instead of String input, you need AnyRef and just cast params to the desired class.</p>
+
+<p>For me this now looks something like this:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">class</span> <span class="nf">ObtainRequestTokenTask</span><span class="o">()</span> <span class="kd">extends</span> <span class="n">AsyncTask</span><span class="o">[</span><span class="n">AnyRef</span><span class="o">,</span> <span class="n">Void</span><span class="o">,</span> <span class="n">String</span><span class="o">]</span> <span class="o">{</span>
+</span><span class='line'><span class="o">...</span>
+</span><span class='line'><span class="n">override</span> <span class="kd">protected</span> <span class="n">def</span> <span class="nf">doInBackground</span><span class="o">(</span><span class="nl">p1:</span> <span class="n">AnyRef</span><span class="o">*):</span> <span class="n">String</span> <span class="o">=</span> <span class="o">{</span>
+</span><span class='line'><span class="n">p1</span><span class="o">.</span><span class="na">head</span><span class="o">.</span><span class="na">asInstanceOf</span><span class="o">[</span><span class="n">String</span><span class="o">]</span>
+</span><span class='line'><span class="o">...</span>
+</span><span class='line'><span class="o">}</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Warsjawa 2012]]></title>
+    <link href="http://piotrbuda.eu/2012/10/warsjawa-2012.html"/>
+    <updated>2012-10-29T13:02:00+01:00</updated>
+    <id>http://piotrbuda.eu/2012/10/warsjawa-2012</id>
+    <content type="html"><![CDATA[<p>I didn&rsquo;t attent any conference for the past 18 months. Last time I was on one was when I was sent to eye-opening meeting with Greg Young. Recently a friend of mine suggested that we should go to <a href="http://warszawa.jug.pl/warsjawa-2012">Warsjawa 2012</a> conference as it&rsquo;s free and relatively close to Lublin.</p>
+
+<p>We decided to sign up for a workshop called &lsquo;One day with a difficult client&rsquo; that was lead by guys from <a href="http://softwaremill.com/">SoftwareMill</a>. The idea of the workshop was to show attendees some common problems people face when working with their clients. Even though I don&rsquo;t work directly with our client every day I read a few things here and there how they can be PITA and I had some expectations regarding this workshop. It turned out great and here&rsquo;s how it went.</p>
+
+<p>The whole workshop began with a short, but fun, game which helped every attendee remember other&rsquo;s names. This game is very simple: just say your name and make up some kind of symbol (V sign, finger on your mouth, anything) and the person after you has to repeat EVERY name and EVERY symbol before. There were 13 attendees and 3 leaders so after 16 rounds we pretty much knew every name. Very fun way of introducing a group of people to each other, and very efficient at that.</p>
+
+<p>After that we were split into three groups and each group was given a contract to build a space capsule. We were presented with some stuff that we could use (scissors, paper, glue, boxes, foil &ndash; you get the picture) and we had some time to think about the contract. The whole game was to take around 1,5 hours and it was split into a few 15-20 minute sprints. After each sprint our client would come and look at what we&rsquo;ve done and answer questions.</p>
+
+<p>When the time run out we were taken to the launch site &ndash; the capsule had to actually fly! The clients were mostly happy and we mostly delivered what they wanted. Or did we? That was the whole point of the workshop. We started out with a contract for a space capsule and ended up with a prototype model that instead of flying out to space was to fly just three meters straight from the launcher, which wasn&rsquo;t a rocket booster but a simple slingshot.</p>
+
+<p>At the end, we were doing retrospectives in teams and shared our experiences with others. Some teams had problems other didn&rsquo;t and guys from SoftwareMill told us what we did good and where our attention should be next time. I can&rsquo;t tell for other teams, but our team didn&rsquo;t have most of the problems, and we also did the best looking capsule! Unfortunately we did one thing wrong &ndash; we emphasized one aspect of the capsule without much regard to another which resulted in the best looking and most secure capsule that&hellip; didn&rsquo;t fly.</p>
+
+<p>There were a few things I didn&rsquo;t like though. The difficult client didn&rsquo;t appear that difficult after all. I expected the client to be a little more aggresive, inconsistent (the &lsquo;client&rsquo; had three representatives and on each meeting another representative was present, and mostly agreed with his/her colegues) and impatient. But apparently some previous groups had problems already and this workshop was meant to be fun and not hardcore :) I can live with that.</p>
+
+<p>Another &lsquo;thing&rsquo; was that shortly after the workshop was over, everyone was gone. We couldn&rsquo;t talk more about what happened and share more experiences, not only regarding workshops. I&rsquo;d definately fix that next time because for me this was the worst thing to happen.</p>
+
+<p>Overall, it was one of the best days lately. Lots of laughter, lots of good experience and lots of great people to work with. I think I will attend Warsjawa 2013 :)</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Scala case classes and annotations, part 2]]></title>
+    <link href="http://piotrbuda.eu/2012/10/scala-case-classes-and-annotations-part-2.html"/>
+    <updated>2012-10-28T23:00:00+01:00</updated>
+    <id>http://piotrbuda.eu/2012/10/scala-case-classes-and-annotations-part-2</id>
+    <content type="html"><![CDATA[<p>Before proceeding please remember that I&rsquo;m learning Scala and what follows is the result of lack of proper knowledge :)</p>
+
+<p>In the previous article I wrote how to specify where annotations should be applied. But if you remember an example class I ported from Java to Scala there was one thing left to do and that was using constants in annotations.</p>
+
+<p>In Java you can easily do</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">USER_ID</span> <span class="o">=</span> <span class="s">&quot;userId&quot;</span><span class="o">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nd">@Field</span><span class="o">(</span><span class="n">USER_ID</span><span class="o">)</span>
+</span><span class='line'><span class="kd">private</span> <span class="kt">long</span> <span class="n">userId</span><span class="o">;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>but in Scala this doesn&rsquo;t work.</p>
+
+<p>First of all I tried adding constant in a class like this:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="k">case</span> <span class="k">class</span> <span class="nc">ScanningBookmark</span><span class="o">(@(</span><span class="nc">Field</span><span class="nd">@field</span><span class="o">)(</span><span class="nc">USER_ID</span><span class="o">)</span> <span class="n">userId</span><span class="k">:</span> <span class="kt">Long</span><span class="o">,</span>
+</span><span class='line'>                            <span class="o">@(</span><span class="nc">Field</span><span class="nd">@field</span><span class="o">)(</span><span class="nc">STATUS_ID</span><span class="o">)</span> <span class="n">statusId</span><span class="k">:</span> <span class="kt">Long</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>    <span class="k">final</span> <span class="k">val</span> <span class="nc">USER_ID</span><span class="k">:</span><span class="kt">String</span> <span class="o">=</span> <span class="s">&quot;userId&quot;</span>
+</span><span class='line'>    <span class="k">final</span> <span class="k">val</span> <span class="nc">STATUS_ID</span><span class="k">:</span><span class="kt">String</span> <span class="o">=</span> <span class="s">&quot;statusId&quot;</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>but in Scala USER_ID and STATUS_ID are not resolved. Since normally an object is used for defining static content I then tried using a companion object to store those constants:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="k">case</span> <span class="k">class</span> <span class="nc">ScanningBookmark</span><span class="o">(@(</span><span class="nc">Field</span><span class="nd">@field</span><span class="o">)(</span><span class="nc">ScanningBookmark</span><span class="o">.</span><span class="nc">USER_ID</span><span class="o">)</span> <span class="n">userId</span><span class="k">:</span> <span class="kt">Long</span><span class="o">,</span>
+</span><span class='line'>                            <span class="o">@(</span><span class="nc">Field</span><span class="nd">@field</span><span class="o">)(</span><span class="nc">ScanningBookmark</span><span class="o">.</span><span class="nc">STATUS_ID</span><span class="o">)</span> <span class="n">statusId</span><span class="k">:</span> <span class="kt">Long</span><span class="o">)</span>
+</span><span class='line'><span class="k">object</span> <span class="nc">ScanningBookmark</span> <span class="o">{</span>
+</span><span class='line'>    <span class="k">final</span> <span class="k">val</span> <span class="nc">USER_ID</span><span class="k">:</span><span class="kt">String</span> <span class="o">=</span> <span class="s">&quot;userId&quot;</span>
+</span><span class='line'>    <span class="k">final</span> <span class="k">val</span> <span class="nc">STATUS_ID</span><span class="k">:</span><span class="kt">String</span> <span class="o">=</span> <span class="s">&quot;statusId&quot;</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>but this also didn&rsquo;t work as it gave the following error:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>error: annotation argument needs to be a constant; found: ScanningBookmark.USER_ID
+</span><span class='line'>case class ScanningBookmark(@(Field@field)(ScanningBookmark.USER_ID) userId: Long,</span></code></pre></td></tr></table></div></figure>
+
+
+<p>At this point I gave up. I tried looking for answer at Google but didn&rsquo;t find it &ndash; or as it occured later &ndash; just missed it.</p>
+
+<p>The problem here is that in Scala a constant doesn&rsquo;t have type in definition. The last thing necessary to make those constants work was removing the String type from definitions:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="k">case</span> <span class="k">class</span> <span class="nc">ScanningBookmark</span><span class="o">(@(</span><span class="nc">Field</span><span class="nd">@field</span><span class="o">)(</span><span class="nc">ScanningBookmark</span><span class="o">.</span><span class="nc">USER_ID</span><span class="o">)</span> <span class="n">userId</span><span class="k">:</span> <span class="kt">Long</span><span class="o">,</span>
+</span><span class='line'>                            <span class="o">@(</span><span class="nc">Field</span><span class="nd">@field</span><span class="o">)(</span><span class="nc">ScanningBookmark</span><span class="o">.</span><span class="nc">STATUS_ID</span><span class="o">)</span> <span class="n">statusId</span><span class="k">:</span> <span class="kt">Long</span><span class="o">)</span>
+</span><span class='line'><span class="k">object</span> <span class="nc">ScanningBookmark</span> <span class="o">{</span>
+</span><span class='line'>    <span class="k">final</span> <span class="k">val</span> <span class="nc">USER_ID</span> <span class="k">=</span> <span class="s">&quot;userId&quot;</span>
+</span><span class='line'>    <span class="k">final</span> <span class="k">val</span> <span class="nc">STATUS_ID</span> <span class="k">=</span> <span class="s">&quot;statusId&quot;</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Now it compiles and works as expected.</p>
+
+<p>This is the end of my short experience with Scala and annotations.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Scala case classes and annotations, part 1]]></title>
+    <link href="http://piotrbuda.eu/2012/10/scala-case-classes-and-annotations-part-1.html"/>
+    <updated>2012-10-28T19:23:00+01:00</updated>
+    <id>http://piotrbuda.eu/2012/10/scala-case-classes-and-annotations-part-1</id>
+    <content type="html"><![CDATA[<p>Recently in Twittory I moved from Java to Scala. Well, to be honest I just switched from Java to Scala syntax and will move on to adapt to functional programming principles.</p>
+
+<p>There was one glitch during the process. I am using Spring Data for MongoDb and to ease up a few queries I used statics to define field names of objects I store.</p>
+
+<p>Here&rsquo;s an example: very simple class that I use to store tweet scanning bookmarks:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ScanningBookmark</span> <span class="o">{</span>
+</span><span class='line'>    <span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">USER_ID</span> <span class="o">=</span> <span class="s">&quot;userId&quot;</span><span class="o">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">STATUS_ID</span> <span class="o">=</span> <span class="s">&quot;statusId&quot;</span><span class="o">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="kd">private</span> <span class="nf">ScanningBookmark</span><span class="o">(</span><span class="kt">long</span> <span class="n">userId</span><span class="o">,</span> <span class="kt">long</span> <span class="n">statusId</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>        <span class="k">this</span><span class="o">.</span><span class="na">userId</span> <span class="o">=</span> <span class="n">userId</span><span class="o">;</span>
+</span><span class='line'>        <span class="k">this</span><span class="o">.</span><span class="na">statusId</span> <span class="o">=</span> <span class="n">statusId</span><span class="o">;</span>
+</span><span class='line'>    <span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="nd">@Field</span><span class="o">(</span><span class="n">USER_ID</span><span class="o">)</span>
+</span><span class='line'>    <span class="kd">private</span> <span class="kt">long</span> <span class="n">userId</span><span class="o">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="kd">public</span> <span class="kt">long</span> <span class="nf">getUserId</span><span class="o">()</span> <span class="o">{</span>
+</span><span class='line'>        <span class="k">return</span> <span class="n">userId</span><span class="o">;</span>
+</span><span class='line'>    <span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="nd">@Field</span><span class="o">(</span><span class="n">STATUS_ID</span><span class="o">)</span>
+</span><span class='line'>    <span class="kd">private</span> <span class="kt">long</span> <span class="n">statusId</span><span class="o">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="kd">public</span> <span class="kt">long</span> <span class="nf">getStatusId</span><span class="o">()</span> <span class="o">{</span>
+</span><span class='line'>        <span class="k">return</span> <span class="n">statusId</span><span class="o">;</span>
+</span><span class='line'>    <span class="o">}</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Storing this thing with Spring Data. The static fields defining field names are here so that somewhere else I can define a query using those fields. The @Field annotations allow customization of field names in collections and while here they are the same as actual field names, they could be set differently.</p>
+
+<p>Now when I was rewriting this to Scala, it&rsquo;s quite obvious I ended up with a case class.</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="k">case</span> <span class="k">class</span> <span class="nc">ScanningBookmark</span><span class="o">(</span><span class="n">userId</span><span class="k">:</span> <span class="kt">Long</span><span class="o">,</span> <span class="n">statusId</span><span class="k">:</span> <span class="kt">Long</span><span class="o">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>But the problem with case class is that adding @Field annotations doesn&rsquo;t work anymore. This is because writing like this:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="k">case</span> <span class="k">class</span> <span class="nc">ScanningBookmark</span><span class="o">(</span><span class="nd">@Field</span><span class="o">(</span><span class="s">&quot;userId&quot;</span><span class="o">)</span> <span class="n">userId</span><span class="k">:</span> <span class="kt">Long</span><span class="o">,</span>
+</span><span class='line'>                            <span class="nd">@Field</span><span class="o">(</span><span class="s">&quot;statusId&quot;</span><span class="o">)</span> <span class="n">statusId</span><span class="k">:</span> <span class="kt">Long</span><span class="o">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>places the @Field annotation on constructor arguments, fields and Scala accessors which probably makes Spring Data scanner fail. The result is that these fields are no longer customizable and I wanted to somehow remedy that.</p>
+
+<p>Playing with @BeanProperty annotation didn&rsquo;t solve the problem because apparently the @Field annotation is then also placed on generated accessors. But solution to this problem is actually quite easy. In Scala there are target meta-annotations that can be put on the annotation type when instantiating the annotation. There are six of those: @beanGetter, @beanSetter, @field, @getter, @setter, @param. Consult the <a href="http://www.scala-lang.org/api/2.9.2/scala/annotation/target/package.html">target package</a> for more info.</p>
+
+<p>The solution? It&rsquo;s very simple:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="k">case</span> <span class="k">class</span> <span class="nc">ScanningBookmark</span><span class="o">(@(</span><span class="nc">Field</span><span class="nd">@field</span><span class="o">)(</span><span class="s">&quot;userId2&quot;</span><span class="o">)</span> <span class="n">userId</span><span class="k">:</span> <span class="kt">Long</span><span class="o">,</span>
+</span><span class='line'>                            <span class="o">@(</span><span class="nc">Field</span><span class="nd">@field</span><span class="o">)(</span><span class="s">&quot;statusId2&quot;</span><span class="o">)</span> <span class="n">statusId</span><span class="k">:</span> <span class="kt">Long</span><span class="o">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And that&rsquo;s it! But there&rsquo;s one last thing to make it behave like Java version. In Java I used statics to define field values (so that there&rsquo;s no problem when some name changes). So I want something like this:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="k">case</span> <span class="k">class</span> <span class="nc">ScanningBookmark</span><span class="o">(@(</span><span class="nc">Field</span><span class="nd">@field</span><span class="o">)(</span><span class="nc">USER_ID</span><span class="o">)</span> <span class="n">userId</span><span class="k">:</span> <span class="kt">Long</span><span class="o">,</span>
+</span><span class='line'>                            <span class="o">@(</span><span class="nc">Field</span><span class="nd">@field</span><span class="o">)(</span><span class="nc">STATUS_ID</span><span class="o">)</span> <span class="n">statusId</span><span class="k">:</span> <span class="kt">Long</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>  <span class="k">final</span> <span class="k">val</span> <span class="nc">USER_ID</span><span class="k">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">&quot;userId2&quot;</span>
+</span><span class='line'>  <span class="k">final</span> <span class="k">val</span> <span class="nc">STATUS_ID</span><span class="k">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">&quot;statusId2&quot;</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>But this is not how things work in Scala and it took a while to learn that :) But this is for another short post.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Function Programming Principles in Scala course - week one]]></title>
+    <link href="http://piotrbuda.eu/2012/09/function-programming-principles-in-scala-course-week-one.html"/>
+    <updated>2012-09-25T16:02:00+02:00</updated>
+    <id>http://piotrbuda.eu/2012/09/function-programming-principles-in-scala-course-week-one</id>
+    <content type="html"><![CDATA[<p>So the course started a week ago and I&rsquo;d like to share my opinion after the first week.</p>
+
+<p>First of all I got this feeling that most people attending the course thought that it&rsquo;ll be a Scala course. While Scala is used to demonstrate functional programming principles it is not a Scala course. You have to know Scala on your own, however for now Martin Odersky does explain it&rsquo;s syntax. If you&rsquo;re into learning Scala only, this is not a course for you IMO.</p>
+
+<p>Lectures are recorded with good quality and Martin&rsquo;s English is very good, he also speaks slowly. This is OK for people who have problems with understanding English and for those who don&rsquo;t, you can increase video speed to 1.25x or even 1.5x and it&rsquo;s still quite easy to understand what he&rsquo;s saying.</p>
+
+<p>Since it&rsquo;s my first Coursera course, I was surprised with the first quiz during a lecture :) but these are nice little stops for you to think. Sometimes you have to check a proper answer and sometimes you are only asked to do something on your own.</p>
+
+<p>As for assignments, they are pretty clear. You have to do a thing or two and submit your solutions. Altough there are tests written for you already, the very first thing that I did for the first assignment was adding a few tests for corner cases. Later on things were smoothly as the assignments were not that hard.</p>
+
+<p>I&rsquo;ve had a few problems with the countChange function but mainly because I made some wrong assumptions (thanks go to <a href="https://twitter.com/marcinderylo">@marcinderylo</a> for pointing that out to me). I didn&rsquo;t use Eclipse or Intellij Idea for the first assignment &ndash; I used vim and just set tests to run continously in sbt. For the next week I plan to use Intellij, however the course is setup using Eclipse (it&rsquo;s probably easier to do, since Scala plugin for Intellij is like alpha stage).</p>
+
+<p>And that&rsquo;s it. This is the first &lsquo;real&rsquo; learning since I finished university, but this time it&rsquo;s for the good cause :) I hope everyone enjoys the course and I really hope that my skills in functional programming will benefit from the it.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Twittory lessons learned - don't mock Iterator]]></title>
+    <link href="http://piotrbuda.eu/2012/09/twittory-lessons-learned-dont-mock-iterator.html"/>
+    <updated>2012-09-14T11:40:00+02:00</updated>
+    <id>http://piotrbuda.eu/2012/09/twittory-lessons-learned-dont-mock-iterator</id>
+    <content type="html"><![CDATA[<p><del>So I&rsquo;m doing this pet project now called <a href="https://github.com/pbuda/twittory">Twittory</a> and because it&rsquo;s hosted on Github, people can review it and voice their oppinions.</del><strong>Update (03 Feb 2013): I no longer develop this project.</strong></p>
+
+<p>Marcin Deryło (<a href="https://twitter.com/marcinderylo">twitter</a>, <a href="http://marcinderylo.blogspot.com/">blog</a>), a friend of mine, has recently reviewed some simple tests already present in the project and he raised an issue with mocking iterators.</p>
+
+<p>I&rsquo;ve had a very simple method which iterated over a collection returned by Twitter4J API. To do that, I simply mocked an Iterator and it&rsquo;s hasNext() and next() methods (using Mockito it&rsquo;s really simple anyway):</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="nd">@Test</span>
+</span><span class='line'><span class="kd">public</span> <span class="kt">void</span> <span class="nf">returns_details_only_for_tweets_with_links</span><span class="o">()</span> <span class="kd">throws</span> <span class="n">Exception</span> <span class="o">{</span>
+</span><span class='line'>    <span class="n">Status</span> <span class="n">status1</span> <span class="o">=</span> <span class="n">prepareStatus</span><span class="o">(</span><span class="s">&quot;Status 1&quot;</span><span class="o">);</span>
+</span><span class='line'>    <span class="n">Status</span> <span class="n">status2</span> <span class="o">=</span> <span class="n">prepareStatus</span><span class="o">(</span><span class="s">&quot;Text with link http://www.onet.pl in it&quot;</span><span class="o">);</span>
+</span><span class='line'>    <span class="n">Status</span> <span class="n">status3</span> <span class="o">=</span> <span class="n">prepareStatus</span><span class="o">(</span><span class="s">&quot;Status 3&quot;</span><span class="o">);</span>
+</span><span class='line'>    <span class="n">ResponseList</span><span class="o">&lt;</span><span class="n">Status</span><span class="o">&gt;</span> <span class="n">mockResponse</span> <span class="o">=</span> <span class="n">mock</span><span class="o">(</span><span class="n">ResponseList</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>
+</span><span class='line'>    <span class="n">Iterator</span> <span class="n">mockIterator</span> <span class="o">=</span> <span class="n">mock</span><span class="o">(</span><span class="n">Iterator</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">when</span><span class="o">(</span><span class="n">mockIterator</span><span class="o">.</span><span class="na">hasNext</span><span class="o">()).</span><span class="na">thenReturn</span><span class="o">(</span><span class="kc">true</span><span class="o">).</span><span class="na">thenReturn</span><span class="o">(</span><span class="kc">true</span><span class="o">).</span><span class="na">thenReturn</span><span class="o">(</span><span class="kc">true</span><span class="o">).</span><span class="na">thenReturn</span><span class="o">(</span><span class="kc">false</span><span class="o">);</span>
+</span><span class='line'>    <span class="n">when</span><span class="o">(</span><span class="n">mockIterator</span><span class="o">.</span><span class="na">next</span><span class="o">()).</span><span class="na">thenReturn</span><span class="o">(</span><span class="n">status1</span><span class="o">).</span><span class="na">thenReturn</span><span class="o">(</span><span class="n">status2</span><span class="o">).</span><span class="na">thenReturn</span><span class="o">(</span><span class="n">status3</span><span class="o">);</span>
+</span><span class='line'>    <span class="n">when</span><span class="o">(</span><span class="n">mockResponse</span><span class="o">.</span><span class="na">iterator</span><span class="o">()).</span><span class="na">thenReturn</span><span class="o">(</span><span class="n">mockIterator</span><span class="o">);</span>
+</span><span class='line'>    <span class="n">when</span><span class="o">(</span><span class="n">twitter</span><span class="o">.</span><span class="na">getHomeTimeline</span><span class="o">()).</span><span class="na">thenReturn</span><span class="o">(</span><span class="n">mockResponse</span><span class="o">);</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">List</span><span class="o">&lt;</span><span class="n">LinkDetails</span><span class="o">&gt;</span> <span class="n">scan</span> <span class="o">=</span> <span class="n">scanner</span><span class="o">.</span><span class="na">scan</span><span class="o">();</span>
+</span><span class='line'>    <span class="n">assertNotNull</span><span class="o">(</span><span class="n">scan</span><span class="o">);</span>
+</span><span class='line'>    <span class="n">assertEquals</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span> <span class="n">scan</span><span class="o">.</span><span class="na">size</span><span class="o">());</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>But said friend of mine suggested to drop mocking here in favor of actually returning a real iterator:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="nd">@Test</span>
+</span><span class='line'><span class="kd">public</span> <span class="kt">void</span> <span class="nf">returns_details_only_for_tweets_with_links</span><span class="o">()</span> <span class="kd">throws</span> <span class="n">Exception</span> <span class="o">{</span>
+</span><span class='line'>    <span class="n">Status</span> <span class="n">status1</span> <span class="o">=</span> <span class="n">prepareStatus</span><span class="o">(</span><span class="s">&quot;Status 1&quot;</span><span class="o">);</span>
+</span><span class='line'>    <span class="n">Status</span> <span class="n">status2</span> <span class="o">=</span> <span class="n">prepareStatus</span><span class="o">(</span><span class="s">&quot;Text with link http://www.onet.pl in it&quot;</span><span class="o">);</span>
+</span><span class='line'>    <span class="n">Status</span> <span class="n">status3</span> <span class="o">=</span> <span class="n">prepareStatus</span><span class="o">(</span><span class="s">&quot;Status 3&quot;</span><span class="o">);</span>
+</span><span class='line'>    <span class="n">ResponseList</span><span class="o">&lt;</span><span class="n">Status</span><span class="o">&gt;</span> <span class="n">mockResponse</span> <span class="o">=</span> <span class="n">mock</span><span class="o">(</span><span class="n">ResponseList</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">when</span><span class="o">(</span><span class="n">mockResponse</span><span class="o">.</span><span class="na">iterator</span><span class="o">()).</span><span class="na">thenReturn</span><span class="o">(</span><span class="n">Arrays</span><span class="o">.</span><span class="na">asList</span><span class="o">(</span><span class="n">status1</span><span class="o">,</span> <span class="n">status2</span><span class="o">,</span> <span class="n">status3</span><span class="o">).</span><span class="na">iterator</span><span class="o">());</span>
+</span><span class='line'>    <span class="n">when</span><span class="o">(</span><span class="n">twitter</span><span class="o">.</span><span class="na">getHomeTimeline</span><span class="o">()).</span><span class="na">thenReturn</span><span class="o">(</span><span class="n">mockResponse</span><span class="o">);</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">List</span><span class="o">&lt;</span><span class="n">LinkDetails</span><span class="o">&gt;</span> <span class="n">scan</span> <span class="o">=</span> <span class="n">scanner</span><span class="o">.</span><span class="na">scan</span><span class="o">();</span>
+</span><span class='line'>    <span class="n">assertNotNull</span><span class="o">(</span><span class="n">scan</span><span class="o">);</span>
+</span><span class='line'>    <span class="n">assertEquals</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span> <span class="n">scan</span><span class="o">.</span><span class="na">size</span><span class="o">());</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Pretty slick, eh? Saves code and complexity while becoming much more readable at the same time.</p>
+
+<p>Learning FTW.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[GitFlow Intellij Idea plugin]]></title>
+    <link href="http://piotrbuda.eu/2012/08/gitflow-intellij-idea-plugin.html"/>
+    <updated>2012-08-06T13:37:00+02:00</updated>
+    <id>http://piotrbuda.eu/2012/08/gitflow-intellij-idea-plugin</id>
+    <content type="html"><![CDATA[<p>I am creating a few side projects currently and I use git-flow Git extension for each of them, but I lack the support from Intellij Idea in this regard – mainly the starting and stopping of features and releases.</p>
+
+<p>So because of that I’ve started a small project to include said functionality in Idea. It’s nothing major as apparently Jetbrains will include such plugin in some version of Intellij, but I need it now and I’m interested in how to write plugins for Idea
+What will the plugin be able to do?</p>
+
+<p>git flow init -d
+git flow feature start/finish
+git flow release start/finish
+The first version I will release will be able to do 1 and 2 while option 3 will be available at some later time. But I don’t know yet when I will release it, so stay tuned if you’re interested.</p>
+
+<p>The project is of course at <a href="https://github.com/pbuda/gitflowidea">GitHub</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Play Store API on GitHub.com]]></title>
+    <link href="http://piotrbuda.eu/2012/07/play-store-api-on-github-dot-com.html"/>
+    <updated>2012-07-23T11:59:00+02:00</updated>
+    <id>http://piotrbuda.eu/2012/07/play-store-api-on-github-dot-com</id>
+    <content type="html"><![CDATA[<p><strong>[Update 2013-05-14] I will no longer keep this project on my GitHub, I didn&rsquo;t have time to play with it and most likely this is already obsolete API. It has been removed.</strong></p>
+
+<p><del>If anyone is interested, I mirrored a great project: <a href="http://code.google.com/p/android-market-api/">Android Market API</a> and it&rsquo;s now available <a href="https://github.com/pbuda/playstoreapi">on GitHub.com</a>. I am using this API for my yet-to-be announced Android project and because of lack of support from original authors I decided to mirror it and introduce fixes/new features.</del></p>
+
+<p><del>Currently I&rsquo;m reworking the API of the project, but for now you can download the sources and build with Maven OR download the jar directly from project downloads section.</del></p>
+
+<p><del>However, please notice that I focus on making this library work well on Android devices because in order to work properly it requires actual Android device capable of running Play Store.</del></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Play Store on Emulator and morals]]></title>
+    <link href="http://piotrbuda.eu/2012/06/play-store-on-emulator-and-morals.html"/>
+    <updated>2012-06-26T11:30:00+02:00</updated>
+    <id>http://piotrbuda.eu/2012/06/play-store-on-emulator-and-morals</id>
+    <content type="html"><![CDATA[<p>I&rsquo;ve recently noticed that I have some traffic to my blog from <a href="http://stackoverflow.com/questions/11154222/google-play-in-android-4-0-emulator">some question posted on Stack Overflow</a>. I checked out the question out of curiosity and what I found made me wonder, particularly <a href="http://stackoverflow.com/a/11155703/840794">this answer</a>. I don&rsquo;t have enough rep to comment on other answers, so I decided to rant here a little.</p>
+
+<p>I understand that Google doesn&rsquo;t want their Play Store available on devices that are not licensed, I don&rsquo;t pretend to know why, I can only guess. But I don&rsquo;t want to be called a software pirate. I did not rip Play Store from a device nor I distribute it. The Play Store apk that I used comes from CyanogenMod page, AFAIK the Google apps package for CM is the only way for their users to update Google apps. Is this also pirating?  If so, we have SO MANY pirates in Android world then! There are more than <a href="http://stats.cyanogenmod.com/">one million CM users</a> out there so that means more than one million people pirate Play Store. Not to mention some Kindle Fire users who install Play Store on their rooted devices.</p>
+
+<p>I am no lawyer, but after reading Google Play EULA several times, I don&rsquo;t find any point that prohibits me from installing it on emulator. Now Google did make an attempt to limit Play Store use on emulator (even if not on purpose) by using DRM protection which makes Google Play not work on emulator anyway &ndash; <a href="http://www.piotrbuda.eu/2012/06/trying-to-solve-error-491-in-play-store.html">you can&rsquo;t download apps!</a></p>
+
+<p>Rant over, I just needed to vent.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Trying to solve Error 491 in Play Store on Android Emulator]]></title>
+    <link href="http://piotrbuda.eu/2012/06/trying-to-solve-error-491-in-play-store-on-android-emulator.html"/>
+    <updated>2012-06-26T09:23:00+02:00</updated>
+    <id>http://piotrbuda.eu/2012/06/trying-to-solve-error-491-in-play-store-on-android-emulator</id>
+    <content type="html"><![CDATA[<p>Installing Google Play Store on Android emulator is quite easy &ndash; I described it in my <a href="http://piotrbuda.eu/2012/05/installing-google-play-on-android-emulator.html">previous article</a>. However there is one problem that does not allow downloading of apps &ndash; the dreadful Error 491.
+After some investigation it appears that the error happens because Android emulator does not have DRM! This is the exact error that is displayed in Logcat:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>06-25 07:51:42.142: WARN/DownloadManager(342): Exception for id 7: android/drm/DrmManagerClient
+</span><span class='line'>        java.lang.NoClassDefFoundError: android/drm/DrmManagerClient
+</span><span class='line'>        at com.android.providers.downloads.DownloadDrmHelper.isDrmMimeType(DownloadDrmHelper.java:45)
+</span><span class='line'>        at com.android.providers.downloads.Helpers.checkCanHandleDownload(Helpers.java:148)
+</span><span class='line'>        at com.android.providers.downloads.Helpers.generateSaveFile(Helpers.java:81)
+</span><span class='line'>        at com.android.providers.downloads.DownloadThread.processResponseHeaders(DownloadThread.java:563)
+</span><span class='line'>        at com.android.providers.downloads.DownloadThread.executeDownload(DownloadThread.java:256)
+</span><span class='line'>        at com.android.providers.downloads.DownloadThread.run(DownloadThread.java:172)</span></code></pre></td></tr></table></div></figure>
+
+
+<p>I&rsquo;ve tried a few things to fix this, but nothing really helped. The CyanogenMod Google Apps package contained some DRM jar, but it didn&rsquo;t help at all. So I&rsquo;ve decided to browse my Galaxy S2 and found this <em>/system/app/DrmProvider.apk</em> which I thought might help. So I pulled it from device and pushed it to the emulator. As expected, it kind of worked, but it now threw another exception:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>06-25 07:53:52.043: WARN/DownloadManager(724): Exception for id 8: null
+</span><span class='line'>        java.lang.ExceptionInInitializerError
+</span><span class='line'>        at com.android.providers.downloads.DownloadDrmHelper.isDrmMimeType(DownloadDrmHelper.java:45)
+</span><span class='line'>        at com.android.providers.downloads.Helpers.checkCanHandleDownload(Helpers.java:148)
+</span><span class='line'>        at com.android.providers.downloads.Helpers.generateSaveFile(Helpers.java:81)
+</span><span class='line'>        at com.android.providers.downloads.DownloadThread.processResponseHeaders(DownloadThread.java:563)
+</span><span class='line'>        at com.android.providers.downloads.DownloadThread.executeDownload(DownloadThread.java:256)
+</span><span class='line'>        at com.android.providers.downloads.DownloadThread.run(DownloadThread.java:172)
+</span><span class='line'>        Caused by: java.lang.UnsatisfiedLinkError: Library drmframework_jni not found; tried [/vendor/lib/libdrmframework_jni.so, /system/lib/libdrmframework_jni.so]
+</span><span class='line'>        at java.lang.Runtime.loadLibrary(Runtime.java:393)
+</span><span class='line'>        at java.lang.System.loadLibrary(System.java:535)
+</span><span class='line'>        at android.drm.DrmManagerClient.&lt;clinit>(DrmManagerClient.java:56)
+</span><span class='line'>        ... 6 more</span></code></pre></td></tr></table></div></figure>
+
+
+<p>So I dig deeper and tried extracting missing .so files. Browsing my phone revealed four files that I might be interested in: <em>libdrm1.so</em>, <em>libdrm1_jni.so</em>, <em>libdrmframework.so</em> and <em>libdrmframework_jni.so</em>. Again, pulled those from device and pushed to emulator but I got the first exception and got stuck.</p>
+
+<p>At this point I don&rsquo;t have any more ideas how to solve this problem, but I will still try. It appears that installing DRM on emulator might be much more problematic than pulling some apks from real devices.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Installing Google Play on Android Emulator]]></title>
+    <link href="http://piotrbuda.eu/2012/05/installing-google-play-on-android-emulator.html"/>
+    <updated>2012-05-02T21:40:00+02:00</updated>
+    <id>http://piotrbuda.eu/2012/05/installing-google-play-on-android-emulator</id>
+    <content type="html"><![CDATA[<h3>The problem</h3>
+
+<p>I wanted to install Google Play on emulator. Problem is no guide on the net could tell me precisely how to do this. I&rsquo;m not sure why, it seemed that they worked with old Android Market (pre version 3 era) or at least people shown some screenshots of that but I couldn&rsquo;t make it work at home.</p>
+
+<p>The difference was that I tried to install Google Play on an Ice Cream Sandwitch emulator (API level 15) and it always failed.</p>
+
+<h3>First attempts</h3>
+
+<p>I first found <a href="http://blog.varunkumar.me/2010/11/how-to-install-android-market-in-google.html">this site</a>. I tried setting up everything from there but I just couldn&rsquo;t make it work. Possible because their Vending.apk couldn&rsquo;t start, I have no clue. Then I found <a href="http://www.tech-recipes.com/rx/10004/accessing-android-market-from-android-sdk/">this site</a> and I somehow managed to install Vending.apk on emulator using this guide, but I couldn&rsquo;t reproduce that.</p>
+
+<p>One of the problems with those guides (which made me spend a lot of time on something useless) was that both these guides made me delete two files from AVD: cache.img and userdata-qemu.img. Why? Apparently when you wanted to restart emulator, these files were responsible for reinitialization of emulator to it&rsquo;s starting state (like full wipe/factory reset). I tried and tried and I always ended up without my changes.</p>
+
+<h3>New Hope</h3>
+
+<p>After that I found that there is a snapshot option in AVD configuration window so I just checked it and finally I was able to see last state of emulator. Maybe it&rsquo;s not perfect &ndash; it works like hibernation on your laptop &ndash; but it works and after a whole day of fight it was enough.</p>
+
+<p>I then though why do I install some obsolete Vending.apk and GoogleServicesFramework.apk? Why can&rsquo;t I have a new one there? So I connected my phone and pulled those apks from it. Of course it didn&rsquo;t work, but I was not sure why. But I remembered something &ndash; <del>CyanogenMod has Google apps packed in a zip</del> (UPDATE: CyanogenMod does no longer host Google Apps, but you can <a href="http://goo.im/gapps/">find them here</a>! So I downloaded their package and extracted everything I needed &ndash; Vending.apk and GoogleServicesFramework.apk. But it was not enough.</p>
+
+<p>So I had an AVD set up with snapshots enabled and I proceeded to installing my new apks &ndash; full script will be posted at the end.</p>
+
+<pre><code>1. You have to remount system partition in read-write mode.
+2. Then it's necessary to allow writing to /system/app directory
+3. After that is done just push apks to /system/app/. (notice the dot at the end) 
+4. Just for the sake of other guides I also remove /system/app/SdkSetup* (both apk and odex)
+</code></pre>
+
+<p>Voila! Google Play is installed on emulator! But it still doesn&rsquo;t work. In order for it to start working, you need an account &ndash; Google account. This step also cost me some time. My AVD was based on Android 4.0.3, not the Google APIs one. So I changed it and&hellip; still nothing.</p>
+
+<p>Apparently in recent releases Google decided to decouple their account provider from the OS so they have a separate apk that allows configuration of Google accounts &ndash; it&rsquo;s called GoogleLoginService.apk. Pushing this to emulator solved all the problems &ndash; you don&rsquo;t even need Google APIs (you can set up against Android 4.0.3 option). Now when you enter Play Store you get prompted for an account and it works!</p>
+
+<h3>Conclusion</h3>
+
+<p>After two days of trying I finally was able to launch and browse Google Play Store on an Android emulator with Ice Cream Sandwitch. Phew.</p>
+
+<p>Command I use to start my emulator</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>emulator -avd am -partition-size 200 -no-audio -no-boot-anim</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Full script (assumes you have created and started your AVD)</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>adb shell mount -o remount,rw -t yaffs2 /dev/block/mtdblock0 /system
+</span><span class='line'>adb shell chmod 777 /system/app
+</span><span class='line'>adb push GoogleLoginService.apk /system/app/.
+</span><span class='line'>adb push GoogleServicesFramework.apk /system/app/.
+</span><span class='line'>adb push Vending.apk /system/app/.
+</span><span class='line'>adb shell rm /system/app/SdkSetup*</span></code></pre></td></tr></table></div></figure>
+
+
+<p>That script will work as long as you run it from a dir in which you have all the necessary apks. Of course you have to have your PATH environment variable set correctly (so that all those commands are actually accessible) but I suppose you know that already.</p>
+
+<h3>Settings of the AVD</h3>
+
+<p><img src="http://piotrbuda.eu/images/avdsettings.png" title="Settings of the AVD" ></p>
+
+<h3>Working Google Play Store</h3>
+
+<p><img src="http://piotrbuda.eu/images/emulator.png" title="Working Google Play Store" ></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Getting auth token on an Android device]]></title>
+    <link href="http://piotrbuda.eu/2012/05/getting-auth-token-on-an-android-device.html"/>
+    <updated>2012-05-01T00:18:00+02:00</updated>
+    <id>http://piotrbuda.eu/2012/05/getting-auth-token-on-an-android-device</id>
+    <content type="html"><![CDATA[<p>I&rsquo;m currently working on a little pet project that targets Android devices (well, at least my Galaxy) and requires auth token to operate. It wasn&rsquo;t hard to find the code to do this: <a href="http://www.toxicbakery.com/android-development/getting-google-auth-sub-tokens-in-your-android-applications/comment-page-1/#comment-238">Toxic Bakery has already shown how to do it.</a></p>
+
+<p>My first attempt of using this code was successful and running on the device was easy &ndash; I simply added a button that invoked their method and it worked. However when I used this solution in my pet project it suddenly stopped working properly. The problem was happening when I was invalidating the auth token &ndash; recursive call would fail with IllegalStateException saying that calling that method on main thread would lead to a deadlock.</p>
+
+<p>At first I didn&rsquo;t know what to do &ndash; I am, after all, Android newbie. I spent some time trying to find out why my first code worked and second didn&rsquo;t and I found a single difference &ndash; I used minSdkVersion in AndroidManifest.xml for my pet project. I have no idea why this happens, I don&rsquo;t even know where to start looking. But I created a simple workaround to solve the problem &ndash; I used AsyncTask to create a background loader and it works very well now, not to mention I&rsquo;ve had a good time reading about threading in Android.</p>
+
+<p>The project with workaround can be found at <a href="https://github.com/piotrbudaeu/android-authtoken">GitHub</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Commenting the code is obsolete]]></title>
+    <link href="http://piotrbuda.eu/2012/04/commenting-the-code-is-obsolete.html"/>
+    <updated>2012-04-11T12:01:00+02:00</updated>
+    <id>http://piotrbuda.eu/2012/04/commenting-the-code-is-obsolete</id>
+    <content type="html"><![CDATA[<p>Some time ago I had a few visits from fellow developers asking me questions about that I supposedly created. Since I obviously created some of that code months or years ago, I often couldn&rsquo;t answer their questions because either my explanations were false (changed requirements) or I didn&rsquo;t even know about that particular case (new code). It struck me that they came to me to ask these questions because I was placed as the author of the class in Javadoc&hellip;</p>
+
+<p>More recently I&rsquo;ve been in situation when our team leader told us that we&rsquo;re not putting enough comments in our classes and the we could at least provide the @author Javadoc comment (or ASDoc in that case) so that everyone knows who to talk to about this code.</p>
+
+<p>Revelation came to me sometime after that statement &ndash; why the hell do I need author information in a file?! I am checking in my code to a VCS which provides that information out of the box, moreover when the code changes it can report who changed the code! @author becomes meaningless after some time, VCS history does not &ndash; so use VCS instead.</p>
+
+<p>This also applies to other comments (IMO). Instead of creating some code and heavily comment what it does (bad) I prefer to write smaller methods that tell what they&rsquo;re doing (good). The only thing I think a comment is necessary for is method arguments, but I could also omit them when I call my arguments with meaningful names. This does not apply to function arguments, because I have to comment that function arguments. But that can also lead to something like this:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='actionscript'><span class='line'><span class="cm">/**</span>
+</span><span class='line'><span class="cm">* @param callback function to call with signature </span>
+</span><span class='line'><span class="cm">*                 &lt;code&gt;function(arg1:String, arg2:Object):void&lt;/code&gt;</span>
+</span><span class='line'><span class="cm">*/</span>
+</span><span class='line'><span class="kd">public</span> <span class="kd">function</span> <span class="nx">myFunction</span><span class="p">(</span><span class="nx">callback</span><span class="o">:</span><span class="nb">Function</span><span class="p">)</span><span class="o">:</span><span class="nx">void</span> <span class="p">{</span>
+</span><span class='line'>  <span class="nx">callback</span><span class="p">(</span><span class="nx">arg1</span><span class="o">,</span> <span class="nx">arg2</span><span class="o">,</span> <span class="nx">arg3</span><span class="p">)</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Summary: instead of extensive comments, write better code and use tools that you&rsquo;re given.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Heroku and Java - from newbie to beginner, part 2]]></title>
+    <link href="http://piotrbuda.eu/2012/03/heroku-and-java-from-newbie-to-beginner-part-2.html"/>
+    <updated>2012-03-17T01:13:00+01:00</updated>
+    <id>http://piotrbuda.eu/2012/03/heroku-and-java-from-newbie-to-beginner-part-2</id>
+    <content type="html"><![CDATA[<h3>The problem</h3>
+
+<p>So after a few days I could get back to my little Recaps project. I started with checking logs and found something like this:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>2012-03-04T01:52:51+00:00 heroku[web.1]: Idling
+</span><span class='line'>2012-03-04T01:52:53+00:00 heroku[web.1]: Stopping process with SIGTERM
+</span><span class='line'>2012-03-04T01:53:03+00:00 heroku[web.1]: Error R12 (Exit timeout) -> Process failed to exit within 10 seconds of SIGTERM
+</span><span class='line'>2012-03-04T01:53:03+00:00 heroku[web.1]: Stopping process with SIGKILL</span></code></pre></td></tr></table></div></figure>
+
+
+<p>I don&rsquo;t know what you think but whenever I see &lsquo;Error&rsquo; in my logs I get concerned. So I decided to remove that nasty line. What transpired was not pleasant.</p>
+
+<h3>The solution</h3>
+
+<p>This seems like a simple problem. I started up with finding what this SIGTERM is all about. I knew it was Linux signal, I just wanted to know what Heroku is actually doing. So basically sometimes Heroku just sends SIGTERM to your process so that it&rsquo;s allowed to gracefully shut down. This is very simple.</p>
+
+<p>As I mentioned in my last post, I decided to use Jetty instead of Grizzly. At first I decided to use jetty-runner to run my web application and it worked fine, resources were scanned as Jersey servlet started up. Deploying to Heroku was also easy and with modified Procfile the application started up.</p>
+
+<p>Nevertheless the application did not react correctly to SIGTERM, so without delving deeper in jetty-runner configuration, I decided to just use the embedded Jetty server.
+It&rsquo;s very simple and running foreman start made the application actually start. So without further consideration I just deployed the changed application to Heroku. To check whether the error appears again, after first startup I just did heroku restart and connected to logs in another terminal. But the exit timeout error message was still there. My mistake there &ndash; I did not test the application whether it will exit properly when using foreman. So again, foreman start and then ctrl+c just to see what happens (later I tried kill -s TERM procand got similar output):</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>pbu@pbudesk ~/recaps $ foreman start
+</span><span class='line'>21:57:27 web.1     | started with pid 9603
+</span><span class='line'>21:57:27 web.1     | 0    [main] INFO  org.eclipse.jetty.server.Server  - jetty-8.1.1.v20120215
+</span><span class='line'>21:57:27 web.1     | 110  [main] INFO  org.eclipse.jetty.webapp.StandardDescriptorProcessor  - NO JSP Support for /, did not find org.apache.jasper.servlet.JspServlet
+</span><span class='line'>21:57:27 web.1     | 132  [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - started o.e.j.w.WebAppContext{/,file:/home/pbu/Devel/IdeaProjects/recaps/webmodule/src/main/webapp/},webmodule/src/main/webapp
+</span><span class='line'>21:57:27 web.1     | 133  [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - started o.e.j.w.WebAppContext{/,file:/home/pbu/Devel/IdeaProjects/recaps/webmodule/src/main/webapp/},webmodule/src/main/webapp
+</span><span class='line'>21:57:27 web.1     | 183  [main] INFO  org.eclipse.jetty.server.AbstractConnector  - Started SelectChannelConnector@0.0.0.0:5000
+</span><span class='line'>^CSIGINT received
+</span><span class='line'>21:57:57 system    | sending SIGTERM to all processes
+</span><span class='line'>21:57:57 system    | sending SIGTERM to pid 9603
+</span><span class='line'>21:57:57 web.1     | process terminated
+</span><span class='line'>pbu@pbudesk ~/recaps $</span></code></pre></td></tr></table></div></figure>
+
+
+<p>OK, so when foreman receives SIGINT it sends SIGTERM to all processes, cool &ndash; probably Heroku dynos behave the same. Still, it wasn&rsquo;t a graceful shutdown, but Jetty has a <a href="http://docs.codehaus.org/display/JETTY/How+to+gracefully+shutdown">graceful shutdown section</a> that mentions two nice properties: gracefulShutdown and stopAtShutdown. The modified class looks like this:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Serve</span> <span class="o">{</span>
+</span><span class='line'>    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">Exception</span> <span class="o">{</span>
+</span><span class='line'>        <span class="kt">int</span> <span class="n">port</span> <span class="o">=</span> <span class="n">Integer</span><span class="o">.</span><span class="na">valueOf</span><span class="o">(</span><span class="n">System</span><span class="o">.</span><span class="na">getenv</span><span class="o">(</span><span class="s">&quot;PORT&quot;</span><span class="o">));</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="n">Server</span> <span class="n">jetty</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Server</span><span class="o">(</span><span class="n">port</span><span class="o">);</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="n">WebAppContext</span> <span class="n">context</span> <span class="o">=</span> <span class="k">new</span> <span class="n">WebAppContext</span><span class="o">();</span>
+</span><span class='line'>        <span class="n">context</span><span class="o">.</span><span class="na">setContextPath</span><span class="o">(</span><span class="s">&quot;/&quot;</span><span class="o">);</span>
+</span><span class='line'>        <span class="n">String</span> <span class="n">webapp</span> <span class="o">=</span> <span class="s">&quot;webmodule/src/main/webapp&quot;</span><span class="o">;</span>
+</span><span class='line'>        <span class="n">context</span><span class="o">.</span><span class="na">setWar</span><span class="o">(</span><span class="n">webapp</span><span class="o">);</span>
+</span><span class='line'>        <span class="n">context</span><span class="o">.</span><span class="na">setResourceBase</span><span class="o">(</span><span class="n">webapp</span><span class="o">);</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="n">jetty</span><span class="o">.</span><span class="na">setHandler</span><span class="o">(</span><span class="n">context</span><span class="o">);</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="n">jetty</span><span class="o">.</span><span class="na">setGracefulShutdown</span><span class="o">(</span><span class="mi">1000</span><span class="o">);</span>
+</span><span class='line'>        <span class="n">jetty</span><span class="o">.</span><span class="na">setStopAtShutdown</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="n">jetty</span><span class="o">.</span><span class="na">start</span><span class="o">();</span>
+</span><span class='line'>        <span class="n">jetty</span><span class="o">.</span><span class="na">join</span><span class="o">();</span>
+</span><span class='line'>    <span class="o">}</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Running foreman again and using ctrl+c proves this to be working! Great!</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>pbu@pbudesk ~/recaps $ foreman start
+</span><span class='line'>22:11:47 web.1     | started with pid 9863
+</span><span class='line'>22:11:47 web.1     | 0    [main] INFO  org.eclipse.jetty.server.Server  - jetty-8.1.1.v20120215
+</span><span class='line'>22:11:47 web.1     | 110  [main] INFO  org.eclipse.jetty.webapp.StandardDescriptorProcessor  - NO JSP Support for /, did not find org.apache.jasper.servlet.JspServlet
+</span><span class='line'>22:11:47 web.1     | 131  [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - started o.e.j.w.WebAppContext{/,file:/home/pbu/Devel/IdeaProjects/recaps/webmodule/src/main/webapp/},webmodule/src/main/webapp
+</span><span class='line'>22:11:47 web.1     | 132  [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - started o.e.j.w.WebAppContext{/,file:/home/pbu/Devel/IdeaProjects/recaps/webmodule/src/main/webapp/},webmodule/src/main/webapp
+</span><span class='line'>22:11:48 web.1     | 183  [main] INFO  org.eclipse.jetty.server.AbstractConnector  - Started SelectChannelConnector@0.0.0.0:5000
+</span><span class='line'>^C22:11:49 web.1     | 1969 [Thread-1] INFO  org.eclipse.jetty.server.Server  - Graceful shutdown SelectChannelConnector@0.0.0.0:5000
+</span><span class='line'>22:11:49 web.1     | 1970 [Thread-1] INFO  org.eclipse.jetty.server.Server  - Graceful shutdown o.e.j.w.WebAppContext{/,file:/home/pbu/Devel/IdeaProjects/recaps/webmodule/src/main/webapp/},webmodule/src/main/webapp
+</span><span class='line'>SIGINT received
+</span><span class='line'>22:11:49 system    | sending SIGTERM to all processes
+</span><span class='line'>22:11:49 system    | sending SIGTERM to pid 9863
+</span><span class='line'>22:11:50 web.1     | 2982 [Thread-1] INFO  org.eclipse.jetty.server.handler.ContextHandler  - stopped o.e.j.w.WebAppContext{/,file:/home/pbu/Devel/IdeaProjects/recaps/webmodule/src/main/webapp/},webmodule/src/main/webapp
+</span><span class='line'>22:11:50 web.1     | process terminated
+</span><span class='line'>pbu@pbudesk ~/recaps $
+</span><span class='line'>So off to deploy it to the cloud! Again, deploy, heroku restart and watch logs... but it doesn't work.</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Different way</h3>
+
+<p>After initial failure I&rsquo;ve tried a different approach. I found out that you can register shutdown hooks &ndash; very easy thing. To do that, just register a new thread with Runtime.getRuntime().addShutdownHook(Thread) method:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Serve</span> <span class="o">{</span>
+</span><span class='line'>    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">Exception</span> <span class="o">{</span>
+</span><span class='line'>        <span class="n">Runtime</span><span class="o">.</span><span class="na">getRuntime</span><span class="o">().</span><span class="na">addShutdownHook</span><span class="o">(</span><span class="k">new</span> <span class="n">Thread</span><span class="o">()</span> <span class="o">{</span>
+</span><span class='line'>            <span class="nd">@Override</span>
+</span><span class='line'>            <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
+</span><span class='line'>                <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;Shutting down by shutdown hook&quot;</span><span class="o">);</span>
+</span><span class='line'>            <span class="o">}</span>
+</span><span class='line'>        <span class="o">});</span>
+</span><span class='line'>        <span class="kt">int</span> <span class="n">port</span> <span class="o">=</span> <span class="n">Integer</span><span class="o">.</span><span class="na">valueOf</span><span class="o">(</span><span class="n">System</span><span class="o">.</span><span class="na">getenv</span><span class="o">(</span><span class="s">&quot;PORT&quot;</span><span class="o">));</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="n">Server</span> <span class="n">jetty</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Server</span><span class="o">(</span><span class="n">port</span><span class="o">);</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="n">WebAppContext</span> <span class="n">context</span> <span class="o">=</span> <span class="k">new</span> <span class="n">WebAppContext</span><span class="o">();</span>
+</span><span class='line'>        <span class="n">context</span><span class="o">.</span><span class="na">setContextPath</span><span class="o">(</span><span class="s">&quot;/&quot;</span><span class="o">);</span>
+</span><span class='line'>        <span class="n">String</span> <span class="n">webapp</span> <span class="o">=</span> <span class="s">&quot;webmodule/src/main/webapp&quot;</span><span class="o">;</span>
+</span><span class='line'>        <span class="n">context</span><span class="o">.</span><span class="na">setWar</span><span class="o">(</span><span class="n">webapp</span><span class="o">);</span>
+</span><span class='line'>        <span class="n">context</span><span class="o">.</span><span class="na">setResourceBase</span><span class="o">(</span><span class="n">webapp</span><span class="o">);</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="n">jetty</span><span class="o">.</span><span class="na">setHandler</span><span class="o">(</span><span class="n">context</span><span class="o">);</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="n">jetty</span><span class="o">.</span><span class="na">setGracefulShutdown</span><span class="o">(</span><span class="mi">1000</span><span class="o">);</span>
+</span><span class='line'>        <span class="n">jetty</span><span class="o">.</span><span class="na">setStopAtShutdown</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="n">jetty</span><span class="o">.</span><span class="na">start</span><span class="o">();</span>
+</span><span class='line'>        <span class="n">jetty</span><span class="o">.</span><span class="na">join</span><span class="o">();</span>
+</span><span class='line'>    <span class="o">}</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Final test with foreman proves it to be working too, however once again it doesn&rsquo;t work on Heroku.</p>
+
+<p>At this point, I have no idea how to get rid of that timeout. It is not very important, I just wanted to check whether I can somehow react to it, but to no avail. For now I guess I&rsquo;ll just contact Heroku, maybe they&rsquo;ll help. Another option could be trying embedded Tomcat, but maybe at a later time. For now, I have other things to do, like checking out <a href="http://jelastic.com/">Jelastic</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Some DOs and DON'Ts for ReST]]></title>
+    <link href="http://piotrbuda.eu/2012/03/some-dos-and-donts-for-rest.html"/>
+    <updated>2012-03-05T15:00:00+01:00</updated>
+    <id>http://piotrbuda.eu/2012/03/some-dos-and-donts-for-rest</id>
+    <content type="html"><![CDATA[<p>I&rsquo;ve been googling around about ReST and how URIs should look like and I found this particular gem. It&rsquo;s available at <a href="http://stackoverflow.com/questions/1619152/how-to-create-rest-urls-without-verbs/1619677#1619677">Stack Overflow</a>, but I just wanted it posted here for reference. Of course all credits go to <a href="http://stackoverflow.com/users/90723/bob-aman">Bob Aman</a>, the author of said answer. So here goes.</p>
+
+<h3>General principles for good URI design:</h3>
+
+<blockquote><p>Don&#8217;t use query parameters to alter state<br/>Don&#8217;t use mixed-case paths if you can help it; lowercase is best<br/>Don&#8217;t use implementation-specific extensions in your URIs (.php, .py, .pl, etc.)<br/>Don&#8217;t fall into RPC with your URIs<br/>Do limit your URI space as much as possible<br/>Do keep path segments short<br/>Do prefer either /resource or /resource/; create 301 redirects from the one you don&#8217;t use<br/>Do use query parameters for sub-selection of a resource; i.e. pagination, search queries<br/>Do move stuff out of the URI that should be in an HTTP header or a body</p></blockquote>
+
+
+<h3>General principles for HTTP method choice:</h3>
+
+<blockquote><p>Don&#8217;t ever use GET to alter state; this is a great way to have the Googlebot ruin your day<br/>Don&#8217;t use PUT unless you are updating an entire resource<br/>Don&#8217;t use PUT unless you can also legitimately do a GET on the same URI<br/>Don&#8217;t use POST to retrieve information that is long-lived or that might be reasonable to cache<br/>Don&#8217;t perform an operation that is not idempotent with PUT<br/>Do use GET for as much as possible<br/>Do use POST in preference to PUT when in doubt<br/>Do use POST whenever you have to do something that feels RPC-like<br/>Do use PUT for classes of resources that are larger or hierarchical<br/>Do use DELETE in preference to POST to remove resources<br/>Do use GET for things like calculations, unless your input is large, in which case use POST</p></blockquote>
+
+
+<h3>General principles of web service design with <a href="HTTP:">HTTP:</a></h3>
+
+<blockquote><p>Don&#8217;t put metadata in the body of a response that should be in a header<br/>Don&#8217;t put metadata in a separate resource unless including it would create significant overhead<br/>Do use the appropriate status code<br/>201 Created after creating a resource; resource must exist at the time the response is sent<br/>202 Accepted after performing an operation successfully or creating a resource asynchronously<br/>400 Bad Request when someone does an operation on data that&#8217;s clearly bogus; for your application this could be a validation error; generally reserve 500 for uncaught exceptions<br/>403 Forbidden when someone accesses your API in a way that might be malicious or if they aren&#8217;t authorized<br/>405 Method Not Allowed when someone uses POST when they should have used PUT, etc<br/>413 Request Entity Too Large when someone attempts to send you an unacceptably large file<br/>418 I&#8217;m a teapot when attempting to brew coffee with a teapot<br/>Do use caching headers whenever you can<br/>ETag headers are good when you can easily reduce a resource to a hash value<br/>Last-Modified should indicate to you that keeping around a timestamp of when resources are updated is a good idea<br/>Cache-Control and Expires should be given sensible values<br/>Do everything you can to honor caching headers in a request (If-None-Modified, If-Modified-Since)<br/>Do use redirects when they make sense, but these should be rare for a web service</p></blockquote>
+
+]]></content>
+  </entry>
+  
+</feed>
